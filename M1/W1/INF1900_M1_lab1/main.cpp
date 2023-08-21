@@ -1,3 +1,13 @@
+/**
+ * @file operacoes.cpp
+ *
+ * @brief Calculadora simples em C++
+ 
+ * @author Rafael Taveira / Renan Alencar
+ * Contact: rafael.t@sidi.org.br / renan.a@sidi.org.br
+ *
+ */
+
 #include<iostream>
 
 int main()
