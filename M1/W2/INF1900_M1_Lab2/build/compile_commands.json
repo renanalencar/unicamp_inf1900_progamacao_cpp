@@ -1,0 +1,8 @@
+[
+{
+  "directory": "C:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M1/W2/INF1900_M1_Lab2/build",
+  "command": "C:/ProgramData/chocolatey/bin/g++.exe   -g -o CMakeFiles/matriz.dir/matriz.cpp.obj -c C:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M1/W2/INF1900_M1_Lab2/matriz.cpp",
+  "file": "C:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M1/W2/INF1900_M1_Lab2/matriz.cpp",
+  "output": "CMakeFiles/matriz.dir/matriz.cpp.obj"
+}
+]
