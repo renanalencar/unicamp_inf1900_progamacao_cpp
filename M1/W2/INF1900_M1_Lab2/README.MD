@@ -1,8 +1,8 @@
 
-# Atividade prática 1: Introdução ao C++ e Criação de Makefile
+# Atividade prática 2: Funções, Ponteiros e Strings
 
-O objetivo desta atividade é familiarizar o aluno com os conceitos básicos da linguagem de programação C++ através
-da criação de um programa simples e um arquivo Makefile para compilar o código-fonte em um executável.
+Desenvolva um programa que utilize uma matriz de caracteres para simular uma tela de arte ASCII com uma dimensão
+inicial de 20x40, para isso use alocação dinâmica de memória.
 
 ## Referência
 
@@ -21,7 +21,7 @@ Para fazer o deploy desse projeto rode
 
 ```bash
   cmake -S . -B Build -G "MinGW Makefiles"
-  cmake --build INF1900_M1_lab1\
-  make operacoes
+  cmake --build INF1900_M1_lab2\
+  make matriz
 ```
 
