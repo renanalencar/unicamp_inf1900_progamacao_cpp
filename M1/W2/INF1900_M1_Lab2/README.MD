@@ -6,10 +6,7 @@ inicial de 20x40, para isso use alocação dinâmica de memória.
 
 ## Referência
 
-- [Using GCC with MinGW](https://code.visualstudio.com/docs/cpp/config-mingw)
-- [Get started with CMake Tools on Linux](https://code.visualstudio.com/docs/cpp/cmake-linux)
-- [Step 1: A Basic Starting Point](https://cmake.org/cmake/help/latest/guide/tutorial/A%20Basic%20Starting%20Point.html#)
-- [Error while configuring CMake project: Running 'nmake' '-?' failed](https://stackoverflow.com/questions/69338088/error-while-configuring-cmake-project-running-nmake-failed)
+- [What is a segmentation fault?](https://stackoverflow.com/questions/2346806/what-is-a-segmentation-fault)
 ## Autores
 - [@rottaveira](https://www.github.com/rottaveira)
 - [@renanalencar](https://www.github.com/renanalencar)
@@ -24,4 +21,3 @@ Para fazer o deploy desse projeto rode
   cmake --build INF1900_M1_lab2\
   make matriz
 ```
-

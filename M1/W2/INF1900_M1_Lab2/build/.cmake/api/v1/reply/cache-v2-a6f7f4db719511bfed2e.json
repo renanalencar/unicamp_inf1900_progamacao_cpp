@@ -1599,7 +1599,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "C:/Program\\ Files/CMake/bin/cmake.exe --build . --config \"${CTEST_CONFIGURATION_TYPE}\" -- -i"
+			"value" : "C:/Program\\ Files/CMake/bin/cmake.exe --build . --config \"${CTEST_CONFIGURATION_TYPE}\""
 		},
 		{
 			"name" : "MEMORYCHECK_COMMAND",
