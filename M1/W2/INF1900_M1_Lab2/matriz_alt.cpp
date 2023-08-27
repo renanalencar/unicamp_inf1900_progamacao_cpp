@@ -25,7 +25,7 @@ int main()
 {
     int linhas = 20;
     int colunas = 40;
-    auto tela = new char *[linhas];
+    char **tela;
 
     alocarMemoria(tela, linhas, colunas);
     preencherTela(tela, linhas, colunas);
@@ -170,6 +170,7 @@ void limparMemoria(char **tela, int linhas)
     {
         delete[] tela[i];
     }
+
     delete[] tela;
 }
 

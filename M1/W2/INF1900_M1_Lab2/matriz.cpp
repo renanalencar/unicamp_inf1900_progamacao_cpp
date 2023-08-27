@@ -15,11 +15,34 @@
 class Matrix
 {
 private:
-    char **_matrix;
-    int _rows;
-    int _columns;
+    char **_matrix = nullptr;
+    int _rows = 0;
+    int _columns = 0;
 
 public:
+    // Constructor
+    Matrix()
+    {
+    }
+
+    // Function to define size of global matrix
+    void DefineMatrixSize(int rows, int columns)
+    {
+        this->_rows = rows;
+        this->_columns = columns;
+    }
+
+    // Function to initialize global matrix
+    void Initialize()
+    {
+        // Initialize Matrix
+        this->_matrix = new char *[this->_rows];
+        for (int i = 0; i < this->_rows; i++)
+        {
+            this->_matrix[i] = new char[this->_columns];
+        }
+    }
+
     // Function to copy values from old matrix to new matrix
     void CopyValuesTo(Matrix dest)
     {
@@ -45,29 +68,11 @@ public:
         }
     }
 
-    // Function to define size of global matrix
-    void DefineMatrixSize(int rows, int columns)
-    {
-        this->_rows = rows;
-        this->_columns = columns;
-    }
-
-    // Function to initialize global matrix
-    void Initialize()
-    {
-        // Initialize Matrix
-        this->_matrix = new char *[this->_rows];
-        for (int i = 0; i < this->_rows; i++)
-        {
-            this->_matrix[i] = new char[this->_columns];
-        }
-    }
-
     // Function to fill global matrix with dots
     void FillWithBlankSpaces()
     {
         // populate Matrix
-        std::fill(this->_matrix[0], this->_matrix[this->_rows - 1] + this->_columns, '.');
+        std::fill(this->_matrix[0], this->_matrix[this->_rows - 1] + this->_columns, ' ');
     }
 
     // Function to print global matrix
@@ -102,6 +107,7 @@ public:
         this->DefineMatrixSize(rows, columns);
 
         // 5. Allocate memory for global matrix
+        this->_matrix = nullptr;
         this->Initialize();
 
         // 6. Delegate newMatrix to global matrix
@@ -119,34 +125,31 @@ public:
         {
             delete[] this->_matrix[i];
         }
+
         delete[] this->_matrix;
     }
 };
 
+void showMenu();
+
 int main()
 {
+    int rows = 20;
+    int columns = 40;
+    auto matrix = Matrix();
 
-    Matrix matrix;
-    matrix.DefineMatrixSize(20, 40);
+    matrix.DefineMatrixSize(rows, columns);
     matrix.Initialize();
     matrix.FillWithBlankSpaces();
-    bool exit = true;
 
-    int row;
-    int column;
+    int option = 0;
 
-    while (exit)
+    do
     {
-        std::cout << "### ASCII Screen 1.0 ###" << std::endl;
-        std::cout << "## Choose an option ##" << std::endl;
-        std::cout << "#1 Show screen" << std::endl;
-        std::cout << "#2 Change size" << std::endl;
-        std::cout << "#3 Put value" << std::endl;
-        std::cout << "#4 Exit" << std::endl;
-        int *option;
-        std::cin >> *option;
+        showMenu();
+        std::cin >> option;
 
-        switch (*option)
+        switch (option)
         {
         case 1:
             matrix.PrintMatrix();
@@ -154,36 +157,44 @@ int main()
 
         case 2:
             std::cout << "Enter the number of rows" << std::endl;
-            std::cin >> row;
+            std::cin >> rows;
             std::cout << "Enter the numbers of columns" << std::endl;
-            std::cin >> column;
-            matrix.ChangeSize(row, column);
+            std::cin >> columns;
+
+            matrix.ChangeSize(rows, columns);
             break;
 
         case 3:
             char value;
             std::cout << "Type in the desired row" << std::endl;
-            std::cin >> row;
+            std::cin >> rows;
             std::cout << "Type in the desired column" << std::endl;
-            std::cin >> column;
+            std::cin >> columns;
             std::cout << "Type in the desired value" << std::endl;
             std::cin >> value;
-            matrix.InsertValue(row, column, value);
+
+            matrix.InsertValue(rows, columns, value);
             break;
 
         case 4:
-            exit = false;
+            std::cout << "Exiting program." << std::endl;
             break;
 
         default:
             std::cout << "Invalid Option, try again." << std::endl;
             break;
         }
-    }
+    } while (option != 4);
 
-    matrix.PrintMatrix();
+    return 0;
+}
 
-    matrix.ChangeSize(10, 10);
-    std::cout << "---------------------------------------" << std::endl;
-    matrix.PrintMatrix();
+void showMenu()
+{
+    std::cout << "### ASCII Screen 1.0 ###" << std::endl;
+    std::cout << "## Choose an option ##" << std::endl;
+    std::cout << "#1 Show screen" << std::endl;
+    std::cout << "#2 Change size" << std::endl;
+    std::cout << "#3 Put value" << std::endl;
+    std::cout << "#4 Exit" << std::endl;
 }
