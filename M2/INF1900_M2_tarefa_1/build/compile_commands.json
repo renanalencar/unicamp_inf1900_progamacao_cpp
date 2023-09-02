@@ -1,0 +1,8 @@
+[
+{
+  "directory": "C:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M2/INF1900_M2_tarefa_1/build",
+  "command": "C:/ProgramData/chocolatey/bin/c++.exe   -g -o CMakeFiles/jewel_collector.dir/jogo.cpp.obj -c C:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M2/INF1900_M2_tarefa_1/jogo.cpp",
+  "file": "C:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M2/INF1900_M2_tarefa_1/jogo.cpp",
+  "output": "CMakeFiles/jewel_collector.dir/jogo.cpp.obj"
+}
+]
