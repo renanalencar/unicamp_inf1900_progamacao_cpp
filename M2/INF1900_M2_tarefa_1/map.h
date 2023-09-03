@@ -1,3 +1,13 @@
+/**
+ * @file map.h
+ *
+ * @brief Header da classe que representa um mapa.
+ * 
+ * @author Rafael Taveira / Renan Alencar
+ * Contact: rafael.t@sidi.org.br / renan.a@sidi.org.br
+ *
+ */
+
 #pragma once
 #ifndef MAP_H
 #define MAP_H

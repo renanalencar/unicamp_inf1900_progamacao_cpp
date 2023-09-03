@@ -1,3 +1,13 @@
+/**
+ * @file main.cpp
+ *
+ * @brief Programa que simula um ambiente com um mapa e um baú de tesouro.
+ * 
+ * @author Rafael Taveira / Renan Alencar
+ * Contact: rafael.t@sidi.org.br / renan.a@sidi.org.br
+ *
+ */
+
 #include <iostream>
 #include <vector>
 #include "map.h"
