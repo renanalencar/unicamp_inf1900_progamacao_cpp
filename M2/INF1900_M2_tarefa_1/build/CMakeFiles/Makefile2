@@ -837,12 +837,12 @@ CMakeFiles/ContinuousSubmit.dir/clean:
 CMakeFiles/jewel_collector.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/jewel_collector.dir/build.make CMakeFiles/jewel_collector.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/jewel_collector.dir/build.make CMakeFiles/jewel_collector.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M2/INF1900_M2_tarefa_1/build/CMakeFiles --progress-num=1,2 "Built target jewel_collector"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M2/INF1900_M2_tarefa_1/build/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target jewel_collector"
 .PHONY : CMakeFiles/jewel_collector.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/jewel_collector.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M2/INF1900_M2_tarefa_1/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start C:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M2/INF1900_M2_tarefa_1/build/CMakeFiles 7
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/jewel_collector.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M2/INF1900_M2_tarefa_1/build/CMakeFiles 0
 .PHONY : CMakeFiles/jewel_collector.dir/rule

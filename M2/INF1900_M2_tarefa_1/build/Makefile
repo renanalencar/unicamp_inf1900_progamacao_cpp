@@ -523,29 +523,149 @@ jewel_collector/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/jewel_collector.dir/build.make CMakeFiles/jewel_collector.dir/build
 .PHONY : jewel_collector/fast
 
-jogo.obj: jogo.cpp.obj
-.PHONY : jogo.obj
+food.obj: food.cpp.obj
+.PHONY : food.obj
 
 # target to build an object file
-jogo.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/jewel_collector.dir/build.make CMakeFiles/jewel_collector.dir/jogo.cpp.obj
-.PHONY : jogo.cpp.obj
+food.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/jewel_collector.dir/build.make CMakeFiles/jewel_collector.dir/food.cpp.obj
+.PHONY : food.cpp.obj
 
-jogo.i: jogo.cpp.i
-.PHONY : jogo.i
+food.i: food.cpp.i
+.PHONY : food.i
 
 # target to preprocess a source file
-jogo.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/jewel_collector.dir/build.make CMakeFiles/jewel_collector.dir/jogo.cpp.i
-.PHONY : jogo.cpp.i
+food.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/jewel_collector.dir/build.make CMakeFiles/jewel_collector.dir/food.cpp.i
+.PHONY : food.cpp.i
 
-jogo.s: jogo.cpp.s
-.PHONY : jogo.s
+food.s: food.cpp.s
+.PHONY : food.s
 
 # target to generate assembly for a file
-jogo.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/jewel_collector.dir/build.make CMakeFiles/jewel_collector.dir/jogo.cpp.s
-.PHONY : jogo.cpp.s
+food.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/jewel_collector.dir/build.make CMakeFiles/jewel_collector.dir/food.cpp.s
+.PHONY : food.cpp.s
+
+item.obj: item.cpp.obj
+.PHONY : item.obj
+
+# target to build an object file
+item.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/jewel_collector.dir/build.make CMakeFiles/jewel_collector.dir/item.cpp.obj
+.PHONY : item.cpp.obj
+
+item.i: item.cpp.i
+.PHONY : item.i
+
+# target to preprocess a source file
+item.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/jewel_collector.dir/build.make CMakeFiles/jewel_collector.dir/item.cpp.i
+.PHONY : item.cpp.i
+
+item.s: item.cpp.s
+.PHONY : item.s
+
+# target to generate assembly for a file
+item.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/jewel_collector.dir/build.make CMakeFiles/jewel_collector.dir/item.cpp.s
+.PHONY : item.cpp.s
+
+jewel.obj: jewel.cpp.obj
+.PHONY : jewel.obj
+
+# target to build an object file
+jewel.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/jewel_collector.dir/build.make CMakeFiles/jewel_collector.dir/jewel.cpp.obj
+.PHONY : jewel.cpp.obj
+
+jewel.i: jewel.cpp.i
+.PHONY : jewel.i
+
+# target to preprocess a source file
+jewel.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/jewel_collector.dir/build.make CMakeFiles/jewel_collector.dir/jewel.cpp.i
+.PHONY : jewel.cpp.i
+
+jewel.s: jewel.cpp.s
+.PHONY : jewel.s
+
+# target to generate assembly for a file
+jewel.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/jewel_collector.dir/build.make CMakeFiles/jewel_collector.dir/jewel.cpp.s
+.PHONY : jewel.cpp.s
+
+main.obj: main.cpp.obj
+.PHONY : main.obj
+
+# target to build an object file
+main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/jewel_collector.dir/build.make CMakeFiles/jewel_collector.dir/main.cpp.obj
+.PHONY : main.cpp.obj
+
+main.i: main.cpp.i
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/jewel_collector.dir/build.make CMakeFiles/jewel_collector.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/jewel_collector.dir/build.make CMakeFiles/jewel_collector.dir/main.cpp.s
+.PHONY : main.cpp.s
+
+map.obj: map.cpp.obj
+.PHONY : map.obj
+
+# target to build an object file
+map.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/jewel_collector.dir/build.make CMakeFiles/jewel_collector.dir/map.cpp.obj
+.PHONY : map.cpp.obj
+
+map.i: map.cpp.i
+.PHONY : map.i
+
+# target to preprocess a source file
+map.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/jewel_collector.dir/build.make CMakeFiles/jewel_collector.dir/map.cpp.i
+.PHONY : map.cpp.i
+
+map.s: map.cpp.s
+.PHONY : map.s
+
+# target to generate assembly for a file
+map.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/jewel_collector.dir/build.make CMakeFiles/jewel_collector.dir/map.cpp.s
+.PHONY : map.cpp.s
+
+treasure.obj: treasure.cpp.obj
+.PHONY : treasure.obj
+
+# target to build an object file
+treasure.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/jewel_collector.dir/build.make CMakeFiles/jewel_collector.dir/treasure.cpp.obj
+.PHONY : treasure.cpp.obj
+
+treasure.i: treasure.cpp.i
+.PHONY : treasure.i
+
+# target to preprocess a source file
+treasure.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/jewel_collector.dir/build.make CMakeFiles/jewel_collector.dir/treasure.cpp.i
+.PHONY : treasure.cpp.i
+
+treasure.s: treasure.cpp.s
+.PHONY : treasure.s
+
+# target to generate assembly for a file
+treasure.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/jewel_collector.dir/build.make CMakeFiles/jewel_collector.dir/treasure.cpp.s
+.PHONY : treasure.cpp.s
 
 # Help Target
 help:
@@ -587,9 +707,24 @@ help:
 	@echo "... NightlyTest"
 	@echo "... NightlyUpdate"
 	@echo "... jewel_collector"
-	@echo "... jogo.obj"
-	@echo "... jogo.i"
-	@echo "... jogo.s"
+	@echo "... food.obj"
+	@echo "... food.i"
+	@echo "... food.s"
+	@echo "... item.obj"
+	@echo "... item.i"
+	@echo "... item.s"
+	@echo "... jewel.obj"
+	@echo "... jewel.i"
+	@echo "... jewel.s"
+	@echo "... main.obj"
+	@echo "... main.i"
+	@echo "... main.s"
+	@echo "... map.obj"
+	@echo "... map.i"
+	@echo "... map.s"
+	@echo "... treasure.obj"
+	@echo "... treasure.i"
+	@echo "... treasure.s"
 .PHONY : help
 
 

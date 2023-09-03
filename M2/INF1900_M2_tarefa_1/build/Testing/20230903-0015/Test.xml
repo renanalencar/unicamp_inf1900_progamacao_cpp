@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Site BuildName="Win32-make"
-	BuildStamp="20230902-1332-Experimental"
+	BuildStamp="20230903-0015-Experimental"
 	Name="B760M-AORUS-ELI"
 	Generator="ctest-3.27.3"
 	CompilerName="C:/ProgramData/chocolatey/bin/c++.exe"
@@ -24,11 +24,11 @@
 	ProcessorClockFrequency="3417"
 	>
 	<Testing>
-		<StartDateTime>Sep 02 20:10 Hora oficial do Brasil</StartDateTime>
-		<StartTestTime>1693696238</StartTestTime>
+		<StartDateTime>Sep 02 22:10 Hora oficial do Brasil</StartDateTime>
+		<StartTestTime>1693703410</StartTestTime>
 		<TestList/>
-		<EndDateTime>Sep 02 20:10 Hora oficial do Brasil</EndDateTime>
-		<EndTestTime>1693696238</EndTestTime>
+		<EndDateTime>Sep 02 22:10 Hora oficial do Brasil</EndDateTime>
+		<EndTestTime>1693703410</EndTestTime>
 		<ElapsedMinutes>0</ElapsedMinutes>
 	</Testing>
 </Site>

@@ -69,38 +69,118 @@ include CMakeFiles/jewel_collector.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/jewel_collector.dir/flags.make
 
-CMakeFiles/jewel_collector.dir/jogo.cpp.obj: CMakeFiles/jewel_collector.dir/flags.make
-CMakeFiles/jewel_collector.dir/jogo.cpp.obj: C:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M2/INF1900_M2_tarefa_1/jogo.cpp
-CMakeFiles/jewel_collector.dir/jogo.cpp.obj: CMakeFiles/jewel_collector.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M2/INF1900_M2_tarefa_1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/jewel_collector.dir/jogo.cpp.obj"
-	C:/ProgramData/chocolatey/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/jewel_collector.dir/jogo.cpp.obj -MF CMakeFiles/jewel_collector.dir/jogo.cpp.obj.d -o CMakeFiles/jewel_collector.dir/jogo.cpp.obj -c C:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M2/INF1900_M2_tarefa_1/jogo.cpp
+CMakeFiles/jewel_collector.dir/main.cpp.obj: CMakeFiles/jewel_collector.dir/flags.make
+CMakeFiles/jewel_collector.dir/main.cpp.obj: C:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M2/INF1900_M2_tarefa_1/main.cpp
+CMakeFiles/jewel_collector.dir/main.cpp.obj: CMakeFiles/jewel_collector.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M2/INF1900_M2_tarefa_1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/jewel_collector.dir/main.cpp.obj"
+	C:/ProgramData/chocolatey/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/jewel_collector.dir/main.cpp.obj -MF CMakeFiles/jewel_collector.dir/main.cpp.obj.d -o CMakeFiles/jewel_collector.dir/main.cpp.obj -c C:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M2/INF1900_M2_tarefa_1/main.cpp
 
-CMakeFiles/jewel_collector.dir/jogo.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/jewel_collector.dir/jogo.cpp.i"
-	C:/ProgramData/chocolatey/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M2/INF1900_M2_tarefa_1/jogo.cpp > CMakeFiles/jewel_collector.dir/jogo.cpp.i
+CMakeFiles/jewel_collector.dir/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/jewel_collector.dir/main.cpp.i"
+	C:/ProgramData/chocolatey/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M2/INF1900_M2_tarefa_1/main.cpp > CMakeFiles/jewel_collector.dir/main.cpp.i
 
-CMakeFiles/jewel_collector.dir/jogo.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/jewel_collector.dir/jogo.cpp.s"
-	C:/ProgramData/chocolatey/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M2/INF1900_M2_tarefa_1/jogo.cpp -o CMakeFiles/jewel_collector.dir/jogo.cpp.s
+CMakeFiles/jewel_collector.dir/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/jewel_collector.dir/main.cpp.s"
+	C:/ProgramData/chocolatey/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M2/INF1900_M2_tarefa_1/main.cpp -o CMakeFiles/jewel_collector.dir/main.cpp.s
+
+CMakeFiles/jewel_collector.dir/item.cpp.obj: CMakeFiles/jewel_collector.dir/flags.make
+CMakeFiles/jewel_collector.dir/item.cpp.obj: C:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M2/INF1900_M2_tarefa_1/item.cpp
+CMakeFiles/jewel_collector.dir/item.cpp.obj: CMakeFiles/jewel_collector.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M2/INF1900_M2_tarefa_1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/jewel_collector.dir/item.cpp.obj"
+	C:/ProgramData/chocolatey/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/jewel_collector.dir/item.cpp.obj -MF CMakeFiles/jewel_collector.dir/item.cpp.obj.d -o CMakeFiles/jewel_collector.dir/item.cpp.obj -c C:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M2/INF1900_M2_tarefa_1/item.cpp
+
+CMakeFiles/jewel_collector.dir/item.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/jewel_collector.dir/item.cpp.i"
+	C:/ProgramData/chocolatey/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M2/INF1900_M2_tarefa_1/item.cpp > CMakeFiles/jewel_collector.dir/item.cpp.i
+
+CMakeFiles/jewel_collector.dir/item.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/jewel_collector.dir/item.cpp.s"
+	C:/ProgramData/chocolatey/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M2/INF1900_M2_tarefa_1/item.cpp -o CMakeFiles/jewel_collector.dir/item.cpp.s
+
+CMakeFiles/jewel_collector.dir/food.cpp.obj: CMakeFiles/jewel_collector.dir/flags.make
+CMakeFiles/jewel_collector.dir/food.cpp.obj: C:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M2/INF1900_M2_tarefa_1/food.cpp
+CMakeFiles/jewel_collector.dir/food.cpp.obj: CMakeFiles/jewel_collector.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M2/INF1900_M2_tarefa_1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/jewel_collector.dir/food.cpp.obj"
+	C:/ProgramData/chocolatey/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/jewel_collector.dir/food.cpp.obj -MF CMakeFiles/jewel_collector.dir/food.cpp.obj.d -o CMakeFiles/jewel_collector.dir/food.cpp.obj -c C:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M2/INF1900_M2_tarefa_1/food.cpp
+
+CMakeFiles/jewel_collector.dir/food.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/jewel_collector.dir/food.cpp.i"
+	C:/ProgramData/chocolatey/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M2/INF1900_M2_tarefa_1/food.cpp > CMakeFiles/jewel_collector.dir/food.cpp.i
+
+CMakeFiles/jewel_collector.dir/food.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/jewel_collector.dir/food.cpp.s"
+	C:/ProgramData/chocolatey/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M2/INF1900_M2_tarefa_1/food.cpp -o CMakeFiles/jewel_collector.dir/food.cpp.s
+
+CMakeFiles/jewel_collector.dir/jewel.cpp.obj: CMakeFiles/jewel_collector.dir/flags.make
+CMakeFiles/jewel_collector.dir/jewel.cpp.obj: C:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M2/INF1900_M2_tarefa_1/jewel.cpp
+CMakeFiles/jewel_collector.dir/jewel.cpp.obj: CMakeFiles/jewel_collector.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M2/INF1900_M2_tarefa_1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/jewel_collector.dir/jewel.cpp.obj"
+	C:/ProgramData/chocolatey/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/jewel_collector.dir/jewel.cpp.obj -MF CMakeFiles/jewel_collector.dir/jewel.cpp.obj.d -o CMakeFiles/jewel_collector.dir/jewel.cpp.obj -c C:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M2/INF1900_M2_tarefa_1/jewel.cpp
+
+CMakeFiles/jewel_collector.dir/jewel.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/jewel_collector.dir/jewel.cpp.i"
+	C:/ProgramData/chocolatey/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M2/INF1900_M2_tarefa_1/jewel.cpp > CMakeFiles/jewel_collector.dir/jewel.cpp.i
+
+CMakeFiles/jewel_collector.dir/jewel.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/jewel_collector.dir/jewel.cpp.s"
+	C:/ProgramData/chocolatey/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M2/INF1900_M2_tarefa_1/jewel.cpp -o CMakeFiles/jewel_collector.dir/jewel.cpp.s
+
+CMakeFiles/jewel_collector.dir/map.cpp.obj: CMakeFiles/jewel_collector.dir/flags.make
+CMakeFiles/jewel_collector.dir/map.cpp.obj: C:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M2/INF1900_M2_tarefa_1/map.cpp
+CMakeFiles/jewel_collector.dir/map.cpp.obj: CMakeFiles/jewel_collector.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M2/INF1900_M2_tarefa_1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/jewel_collector.dir/map.cpp.obj"
+	C:/ProgramData/chocolatey/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/jewel_collector.dir/map.cpp.obj -MF CMakeFiles/jewel_collector.dir/map.cpp.obj.d -o CMakeFiles/jewel_collector.dir/map.cpp.obj -c C:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M2/INF1900_M2_tarefa_1/map.cpp
+
+CMakeFiles/jewel_collector.dir/map.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/jewel_collector.dir/map.cpp.i"
+	C:/ProgramData/chocolatey/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M2/INF1900_M2_tarefa_1/map.cpp > CMakeFiles/jewel_collector.dir/map.cpp.i
+
+CMakeFiles/jewel_collector.dir/map.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/jewel_collector.dir/map.cpp.s"
+	C:/ProgramData/chocolatey/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M2/INF1900_M2_tarefa_1/map.cpp -o CMakeFiles/jewel_collector.dir/map.cpp.s
+
+CMakeFiles/jewel_collector.dir/treasure.cpp.obj: CMakeFiles/jewel_collector.dir/flags.make
+CMakeFiles/jewel_collector.dir/treasure.cpp.obj: C:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M2/INF1900_M2_tarefa_1/treasure.cpp
+CMakeFiles/jewel_collector.dir/treasure.cpp.obj: CMakeFiles/jewel_collector.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M2/INF1900_M2_tarefa_1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/jewel_collector.dir/treasure.cpp.obj"
+	C:/ProgramData/chocolatey/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/jewel_collector.dir/treasure.cpp.obj -MF CMakeFiles/jewel_collector.dir/treasure.cpp.obj.d -o CMakeFiles/jewel_collector.dir/treasure.cpp.obj -c C:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M2/INF1900_M2_tarefa_1/treasure.cpp
+
+CMakeFiles/jewel_collector.dir/treasure.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/jewel_collector.dir/treasure.cpp.i"
+	C:/ProgramData/chocolatey/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M2/INF1900_M2_tarefa_1/treasure.cpp > CMakeFiles/jewel_collector.dir/treasure.cpp.i
+
+CMakeFiles/jewel_collector.dir/treasure.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/jewel_collector.dir/treasure.cpp.s"
+	C:/ProgramData/chocolatey/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M2/INF1900_M2_tarefa_1/treasure.cpp -o CMakeFiles/jewel_collector.dir/treasure.cpp.s
 
 # Object files for target jewel_collector
 jewel_collector_OBJECTS = \
-"CMakeFiles/jewel_collector.dir/jogo.cpp.obj"
+"CMakeFiles/jewel_collector.dir/main.cpp.obj" \
+"CMakeFiles/jewel_collector.dir/item.cpp.obj" \
+"CMakeFiles/jewel_collector.dir/food.cpp.obj" \
+"CMakeFiles/jewel_collector.dir/jewel.cpp.obj" \
+"CMakeFiles/jewel_collector.dir/map.cpp.obj" \
+"CMakeFiles/jewel_collector.dir/treasure.cpp.obj"
 
 # External object files for target jewel_collector
 jewel_collector_EXTERNAL_OBJECTS =
 
-jewel_collector.exe: CMakeFiles/jewel_collector.dir/jogo.cpp.obj
-jewel_collector.exe: CMakeFiles/jewel_collector.dir/build.make
-jewel_collector.exe: CMakeFiles/jewel_collector.dir/linkLibs.rsp
-jewel_collector.exe: CMakeFiles/jewel_collector.dir/objects1.rsp
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M2/INF1900_M2_tarefa_1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable jewel_collector.exe"
+bin/jewel_collector.exe: CMakeFiles/jewel_collector.dir/main.cpp.obj
+bin/jewel_collector.exe: CMakeFiles/jewel_collector.dir/item.cpp.obj
+bin/jewel_collector.exe: CMakeFiles/jewel_collector.dir/food.cpp.obj
+bin/jewel_collector.exe: CMakeFiles/jewel_collector.dir/jewel.cpp.obj
+bin/jewel_collector.exe: CMakeFiles/jewel_collector.dir/map.cpp.obj
+bin/jewel_collector.exe: CMakeFiles/jewel_collector.dir/treasure.cpp.obj
+bin/jewel_collector.exe: CMakeFiles/jewel_collector.dir/build.make
+bin/jewel_collector.exe: CMakeFiles/jewel_collector.dir/linkLibs.rsp
+bin/jewel_collector.exe: CMakeFiles/jewel_collector.dir/objects1.rsp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M2/INF1900_M2_tarefa_1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable bin/jewel_collector.exe"
 	"C:/Program Files/CMake/bin/cmake.exe" -E rm -f CMakeFiles/jewel_collector.dir/objects.a
 	C:/ProgramData/chocolatey/bin/ar.exe qc CMakeFiles/jewel_collector.dir/objects.a @CMakeFiles/jewel_collector.dir/objects1.rsp
-	C:/ProgramData/chocolatey/bin/c++.exe -g -Wl,--whole-archive CMakeFiles/jewel_collector.dir/objects.a -Wl,--no-whole-archive -o jewel_collector.exe -Wl,--out-implib,libjewel_collector.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/jewel_collector.dir/linkLibs.rsp
+	C:/ProgramData/chocolatey/bin/c++.exe -g -Wl,--whole-archive CMakeFiles/jewel_collector.dir/objects.a -Wl,--no-whole-archive -o bin/jewel_collector.exe -Wl,--out-implib,libjewel_collector.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/jewel_collector.dir/linkLibs.rsp
 
 # Rule to build all files generated by this target.
-CMakeFiles/jewel_collector.dir/build: jewel_collector.exe
+CMakeFiles/jewel_collector.dir/build: bin/jewel_collector.exe
 .PHONY : CMakeFiles/jewel_collector.dir/build
 
 CMakeFiles/jewel_collector.dir/clean:
