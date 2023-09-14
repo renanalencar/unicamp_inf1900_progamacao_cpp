@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Site BuildName="Win32-mingw32-make"
-	BuildStamp="20230911-1158-Experimental"
+	BuildStamp="20230914-0130-Experimental"
 	Name="LAPTOP-86KRD6CF"
 	Generator="ctest-3.27.3"
-	CompilerName="C:/ProgramData/chocolatey/bin/c++.exe"
+	CompilerName="C:/ProgramData/chocolatey/bin/g++.exe"
 	CompilerVersion="12.2.0"
 	OSName="Windows"
 	Hostname="LAPTOP-86KRD6CF"
@@ -24,11 +24,11 @@
 	ProcessorClockFrequency="1992"
 	>
 	<Testing>
-		<StartDateTime>Sep 11 08:58 Hora Padr[NON-UTF-8-BYTE-0xE3]o de Buenos Aires</StartDateTime>
-		<StartTestTime>1694433501</StartTestTime>
+		<StartDateTime>Sep 13 23:31 Hora Padr[NON-UTF-8-BYTE-0xE3]o de Buenos Aires</StartDateTime>
+		<StartTestTime>1694658703</StartTestTime>
 		<TestList/>
-		<EndDateTime>Sep 11 08:58 Hora Padr[NON-UTF-8-BYTE-0xE3]o de Buenos Aires</EndDateTime>
-		<EndTestTime>1694433501</EndTestTime>
+		<EndDateTime>Sep 13 23:31 Hora Padr[NON-UTF-8-BYTE-0xE3]o de Buenos Aires</EndDateTime>
+		<EndTestTime>1694658703</EndTestTime>
 		<ElapsedMinutes>0</ElapsedMinutes>
 	</Testing>
 </Site>

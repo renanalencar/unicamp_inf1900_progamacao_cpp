@@ -1,0 +1,3 @@
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\jewel_collector.dir/objects.a
+C:\ProgramData\chocolatey\bin\ar.exe qc CMakeFiles\jewel_collector.dir/objects.a @CMakeFiles\jewel_collector.dir\objects1.rsp
+C:\ProgramData\chocolatey\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\jewel_collector.dir/objects.a -Wl,--no-whole-archive -o bin\jewel_collector.exe -Wl,--out-implib,libjewel_collector.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\jewel_collector.dir\linkLibs.rsp

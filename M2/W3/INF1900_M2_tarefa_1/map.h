@@ -2,7 +2,7 @@
  * @file map.h
  *
  * @brief Header da classe que representa um mapa.
- * 
+ *
  * @author Rafael Taveira / Renan Alencar
  * Contact: rafael.t@sidi.org.br / renan.a@sidi.org.br
  *
@@ -12,17 +12,20 @@
 #ifndef MAP_H
 #define MAP_H
 
+#include <vector>
+#include "item.h"
+
 class Map
 {
 private:
     int width;
     int height;
-    std::vector<std::vector<char>> mapData;
+    std::vector<std::vector<Item *>> mapData;
 
 public:
     Map(int w, int h);
 
-    void addItem(int x, int y, char item);
+    void addItem(int x, int y, Item *item);
 
     void removeItem(int x, int y);
 

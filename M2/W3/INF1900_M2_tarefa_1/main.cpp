@@ -2,7 +2,7 @@
  * @file main.cpp
  *
  * @brief Programa que simula um ambiente com um mapa e um baú de tesouro.
- * 
+ *
  * @author Rafael Taveira / Renan Alencar
  * Contact: rafael.t@sidi.org.br / renan.a@sidi.org.br
  *
@@ -21,17 +21,15 @@ int main()
     Treasure treasure;
 
     // Adicione algumas joias e comida ao ambiente
-    Jewel jewel1(50);
-    Jewel jewel2(30);
-    Food food1(20);
+    Jewel jewel(50);
+    Food food(20);
 
-    treasure.add(&jewel1);
-    treasure.add(&jewel2);
-    treasure.add(&food1);
+    treasure.add(&jewel);
+    treasure.add(&food);
 
-    gameMap.addItem(2, 3, 'J'); // Exemplo de posição de joia
-    gameMap.addItem(7, 5, 'J'); // Exemplo de posição de joia
-    gameMap.addItem(4, 6, 'T'); // Posição do baú
+    gameMap.addItem(2, 3, &jewel);    // Exemplo de posição de joia
+    gameMap.addItem(7, 5, &food);     // Exemplo de posição de comida
+    gameMap.addItem(4, 6, &treasure); // Posição do baú
 
     std::string userInput;
 

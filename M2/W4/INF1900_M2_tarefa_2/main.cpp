@@ -2,7 +2,7 @@
  * @file main.cpp
  *
  * @brief Programa que simula um ambiente com um mapa e um baú de tesouro.
- * 
+ *
  * @author Rafael Taveira / Renan Alencar
  * Contact: rafael.t@sidi.org.br / renan.a@sidi.org.br
  *
@@ -14,44 +14,72 @@
 #include "jewel.h"
 #include "food.h"
 #include "treasure.h"
+#include "robot.h"
 
 int main()
 {
-    Map gameMap(10, 10);
+    // Crie um mapa 30x30
+    Map gameMap(30, 30);
     Treasure treasure;
 
-    // Adicione algumas joias e comida ao ambiente
-    Jewel jewel1(50);
-    Jewel jewel2(30);
-    Food food1(20);
+    // Povoe o mapa com joias, comidas e tesouro em posições aleatórias
+    for (int i = 0; i < 10; i++)
+    {
+        int x = rand() % 30;
+        int y = rand() % 30;
+        gameMap.addItem(x, y, new Jewel(rand() % 10));
+    }
 
-    treasure.add(&jewel1);
-    treasure.add(&jewel2);
-    treasure.add(&food1);
+    for (int i = 0; i < 5; i++)
+    {
+        int x = rand() % 30;
+        int y = rand() % 30;
+        gameMap.addItem(x, y, new Food(rand() % 5));
+    }
 
-    gameMap.addItem(2, 3, 'J'); // Exemplo de posição de joia
-    gameMap.addItem(7, 5, 'J'); // Exemplo de posição de joia
-    gameMap.addItem(4, 6, 'T'); // Posição do baú
+    int treasureX = rand() % 30;
+    int treasureY = rand() % 30;
+    Treasure treasure;
+    gameMap.addItem(treasureX, treasureY, &treasure);
 
-    std::string userInput;
+    // Crie o robô no mapa
+    Robot robot(&gameMap);
 
+    char command;
     while (true)
     {
-        std::cout << "Digite 'exit' para sair ou 'map' para exibir o mapa: ";
-        std::cin >> userInput;
+        // Limpe a tela (apenas para sistemas Unix-like)
+        system("clear");
 
-        if (userInput == "exit")
+        // Imprima o mapa
+        gameMap.print();
+
+        // Imprima o status do robô
+        robot.printStatus();
+
+        // Leia o comando do usuário
+        std::cout << "Digite um comando (w, a, s, d, g, ou exit): ";
+        std::cin >> command;
+
+        if (command == 'exit')
         {
             break;
         }
-        else if (userInput == "map")
+
+        // Execute o comando do usuário
+        switch (command)
         {
-            gameMap.print();
-            std::cout << "Total de joias no baú: " << treasure.getValue() << std::endl;
-        }
-        else
-        {
-            std::cout << "Comando inválido. Tente novamente." << std::endl;
+        case 'w':
+        case 'a':
+        case 's':
+        case 'd':
+            robot.move(command);
+            break;
+        case 'g':
+            robot.collect();
+            break;
+        default:
+            std::cout << "Comando inválido!" << std::endl;
         }
     }
 

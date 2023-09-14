@@ -2,7 +2,7 @@
  * @file item.cpp
  *
  * @brief Classe que representa um item.
- * 
+ *
  * @author Rafael Taveira / Renan Alencar
  * Contact: rafael.t@sidi.org.br / renan.a@sidi.org.br
  *

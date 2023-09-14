@@ -4,17 +4,17 @@
 
 
 # Configuration directories and files
-SourceDirectory: C:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M2/INF1900_M2_tarefa_1
-BuildDirectory: C:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M2/INF1900_M2_tarefa_1/build
+SourceDirectory: C:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M2/W3/INF1900_M2_tarefa_1
+BuildDirectory: C:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M2/W3/INF1900_M2_tarefa_1/build
 
 # Where to place the cost data store
 CostDataFile: 
 
 # Site is something like machine.domain, i.e. pragmatic.crd
-Site: B760M-AORUS-ELI
+Site: LAPTOP-86KRD6CF
 
 # Build name is osname-revision-compiler, i.e. Linux-2.4.2-2smp-c++
-BuildName: Win32-make
+BuildName: Win32-mingw32-make
 
 # Subprojects
 LabelsForSubprojects: 
@@ -27,8 +27,8 @@ SubmitInactivityTimeout:
 NightlyStartTime: 00:00:00 EDT
 
 # Commands for the build/test/submit cycle
-ConfigureCommand: "C:/Program Files/CMake/bin/cmake.exe" "C:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M2/INF1900_M2_tarefa_1"
-MakeCommand: C:/Program\ Files/CMake/bin/cmake.exe --build . --config "${CTEST_CONFIGURATION_TYPE}" -- -i
+ConfigureCommand: "C:/Program Files/CMake/bin/cmake.exe" "C:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M2/W3/INF1900_M2_tarefa_1"
+MakeCommand: C:/Program\ Files/CMake/bin/cmake.exe --build . --config "${CTEST_CONFIGURATION_TYPE}"
 DefaultCTestConfigurationType: Release
 
 # version control
@@ -63,7 +63,7 @@ UpdateOptions:
 UpdateType: 
 
 # Compiler info
-Compiler: C:/ProgramData/chocolatey/bin/c++.exe
+Compiler: C:/ProgramData/chocolatey/bin/g++.exe
 CompilerVersion: 12.2.0
 
 # Dynamic analysis (MemCheck)

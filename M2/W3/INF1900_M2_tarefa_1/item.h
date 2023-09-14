@@ -2,7 +2,7 @@
  * @file item.h
  *
  * @brief Header da classe que representa um item.
- * 
+ *
  * @author Rafael Taveira / Renan Alencar
  * Contact: rafael.t@sidi.org.br / renan.a@sidi.org.br
  *
@@ -21,7 +21,7 @@ private:
 public:
     Item(std::string const &itemType, int itemValue);
     std::string getType() const;
-    int getValue() const;
+    virtual int getValue() const;
 };
 
 #endif

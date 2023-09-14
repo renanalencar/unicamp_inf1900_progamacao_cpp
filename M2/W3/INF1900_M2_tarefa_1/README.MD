@@ -20,7 +20,7 @@ Crie um mapa com dimensões 10x10, insira algumas joias e um baú no ambiente. A
 Para fazer o deploy desse projeto rode
 
 ```bash
-  cmake -S . -B Build -G "MinGW Makefiles"
-  cmake --build INF1900_M2_lab1\
+  cmake -S . -B build -G "MinGW Makefiles"
+  cmake --build INF1900_M2_tarefa_1\
   make jewel_collector
 ```

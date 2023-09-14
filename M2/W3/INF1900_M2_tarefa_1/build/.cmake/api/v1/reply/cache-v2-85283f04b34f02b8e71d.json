@@ -67,7 +67,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "c:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M2/INF1900_M2_tarefa_1/build"
+			"value" : "c:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M2/W3/INF1900_M2_tarefa_1/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -171,11 +171,11 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "CXX compiler"
+					"value" : "No help, variable specified on the command line."
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/ProgramData/chocolatey/bin/c++.exe"
+			"value" : "C:/ProgramData/chocolatey/bin/g++.exe"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER_AR",
@@ -315,7 +315,7 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "C compiler"
+					"value" : "No help, variable specified on the command line."
 				}
 			],
 			"type" : "FILEPATH",
@@ -603,7 +603,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M2/INF1900_M2_tarefa_1/build/CMakeFiles/pkgRedirects"
+			"value" : "C:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M2/W3/INF1900_M2_tarefa_1/build/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -615,7 +615,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "Unix Makefiles"
+			"value" : "MinGW Makefiles"
 		},
 		{
 			"name" : "CMAKE_GENERATOR_INSTANCE",
@@ -675,7 +675,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M2/INF1900_M2_tarefa_1"
+			"value" : "C:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M2/W3/INF1900_M2_tarefa_1"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -719,7 +719,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/ProgramData/chocolatey/bin/make.exe"
+			"value" : "C:/ProgramData/chocolatey/bin/mingw32-make.exe"
 		},
 		{
 			"name" : "CMAKE_MODULE_LINKER_FLAGS",
@@ -1599,7 +1599,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "C:/Program\\ Files/CMake/bin/cmake.exe --build . --config \"${CTEST_CONFIGURATION_TYPE}\" -- -i"
+			"value" : "C:/Program\\ Files/CMake/bin/cmake.exe --build . --config \"${CTEST_CONFIGURATION_TYPE}\""
 		},
 		{
 			"name" : "MEMORYCHECK_COMMAND",
@@ -1647,7 +1647,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "B760M-AORUS-ELI"
+			"value" : "LAPTOP-86KRD6CF"
 		},
 		{
 			"name" : "_CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED",
@@ -1671,7 +1671,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M2/INF1900_M2_tarefa_1/build"
+			"value" : "C:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M2/W3/INF1900_M2_tarefa_1/build"
 		},
 		{
 			"name" : "jewel_collector_IS_TOP_LEVEL",
@@ -1695,7 +1695,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M2/INF1900_M2_tarefa_1"
+			"value" : "C:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M2/W3/INF1900_M2_tarefa_1"
 		}
 	],
 	"kind" : "cache",

@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M2/INF1900_M2_tarefa_1
+# Install script for directory: C:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M2/W3/INF1900_M2_tarefa_1
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M2/INF1900_M2_tarefa_1/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M2/W3/INF1900_M2_tarefa_1/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

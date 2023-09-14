@@ -11,4 +11,4 @@
 #include <iostream>
 #include "food.h"
 
-Food::Food(int foodValue) : Item::Item("food", foodValue) {}
+Food::Food(int foodValue) : Item::Item("Food", foodValue) {}

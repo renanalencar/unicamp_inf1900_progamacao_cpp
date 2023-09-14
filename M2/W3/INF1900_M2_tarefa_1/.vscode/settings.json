@@ -47,5 +47,6 @@
         "typeinfo": "cpp",
         "map": "cpp"
     },
-    "C_Cpp.errorSquiggles": "enabled"
+    "C_Cpp.errorSquiggles": "enabled",
+    "C_Cpp.default.compilerPath": "C:\\ProgramData\\chocolatey\\bin\\g++.exe"
 }
