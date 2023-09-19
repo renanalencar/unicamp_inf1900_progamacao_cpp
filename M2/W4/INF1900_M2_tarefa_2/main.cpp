@@ -43,7 +43,6 @@ int main()
 
     int treasureX = rand() % 30;
     int treasureY = rand() % 30;
-    Treasure treasure;
 
     treasure.add(&jewel);
     treasure.add(&food);
@@ -57,7 +56,7 @@ int main()
     while (true)
     {
         // Limpe a tela (apenas para sistemas Unix-like)
-        system("clear");
+        system("cls");
 
         // Imprima o mapa
         gameMap.print();

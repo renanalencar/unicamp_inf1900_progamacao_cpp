@@ -14,49 +14,63 @@
 
 Map::Map(int w, int h) : width(w), height(h)
 {
-    mapData.resize(height, std::vector<Item *>(width, nullptr));
+	mapData.resize(height, std::vector<Item*>(width, nullptr));
 }
 
 Map::~Map()
 {
-    for (int i = 0; i < height; i++)
-    {
-        delete[] &mapData[i];
-    }
-    delete[] &mapData;
+	for (int i = 0; i < height; i++)
+	{
+		delete[] & mapData[i];
+	}
+	delete[] & mapData;
 }
 
-void Map::addItem(int x, int y, Item *item)
+void Map::addItem(int x, int y, Item* item)
 {
-    if (x >= 0 && x < width && y >= 0 && y < height)
-    {
-        mapData[y][x] = item;
-    }
+	if (x >= 0 && x < width && y >= 0 && y < height)
+	{
+		mapData[y][x] = item;
+	}
 }
 
 void Map::removeItem(int x, int y)
 {
-    if (x >= 0 && x < width && y >= 0 && y < height)
-    {
-        mapData[y][x] = nullptr;
-    }
+	if (x >= 0 && x < width && y >= 0 && y < height)
+	{
+		mapData[y][x] = nullptr;
+	}
 }
 
 void Map::print() const
 {
-    for (int i = 0; i < height; i++)
-    {
-        for (int j = 0; j < width; j++)
-        {
-            if (mapData[i][j] == nullptr)
-            {
-                std::cout << "  ";
-            }
-            else
-            {
-                std::cout << mapData[i][j]->getType()[0] << " ";
-            }
-        }
-        std::cout << std::endl;
-    }
+	for (int i = 0; i < height; i++)
+	{
+		for (int j = 0; j < width; j++)
+		{
+			if (mapData[i][j] == nullptr)
+			{
+				std::cout << ". ";
+			}
+			else
+			{
+				std::cout << mapData[i][j]->getType()[0] << " "; //show first letter
+			}
+		}
+		std::cout << std::endl;
+	}
+}
+
+bool Map::isValidPosition(int x, int y)
+{
+	if (x >= 0 && x < width && y >= 0 && y < height)
+	{
+		return true;
+	}
+	return false;
+}
+
+std::vector<std::vector<Item*>> Map::getMapData() 
+{
+	return mapData;
 }

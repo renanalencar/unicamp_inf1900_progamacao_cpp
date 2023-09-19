@@ -29,6 +29,8 @@ public:
     void add(Jewel *jewel);
 
     void add(Food *food);
+    
+    void add(Item *item);
 
     void remove(Item *item);
 };

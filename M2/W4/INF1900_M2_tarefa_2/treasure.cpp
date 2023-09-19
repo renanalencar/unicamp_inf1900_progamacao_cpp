@@ -34,6 +34,11 @@ void Treasure::add(Food *food)
     items.push_back(food);
 }
 
+void Treasure::add(Item* item)
+{
+    items.push_back(item);
+}
+
 void Treasure::remove(Item *item)
 {
     for (auto it = items.begin(); it != items.end(); ++it)

@@ -21,6 +21,7 @@ private:
     int width;
     int height;
     std::vector<std::vector<Item *>> mapData;
+    
 
 public:
     Map(int w, int h);
@@ -32,6 +33,11 @@ public:
     void removeItem(int x, int y);
 
     void print() const;
+
+    bool isValidPosition(int x, int y);
+    
+    std::vector<std::vector<Item*>> getMapData();
+
 };
 
 #endif
