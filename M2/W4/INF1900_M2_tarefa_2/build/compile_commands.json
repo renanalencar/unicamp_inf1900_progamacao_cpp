@@ -1,38 +1,38 @@
 [
 {
-  "directory": "C:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M2/INF1900_M2_tarefa_1/build",
-  "command": "C:/ProgramData/chocolatey/bin/c++.exe   -g -o CMakeFiles/jewel_collector.dir/main.cpp.obj -c C:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M2/INF1900_M2_tarefa_1/main.cpp",
-  "file": "C:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M2/INF1900_M2_tarefa_1/main.cpp",
+  "directory": "C:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M2/W4/INF1900_M2_tarefa_2/build",
+  "command": "C:\\ProgramData\\chocolatey\\bin\\g++.exe   -g -o CMakeFiles\\jewel_collector.dir\\main.cpp.obj -c C:\\Users\\renan\\source\\repos\\unicamp_inf1900_progamacao_cpp\\M2\\W4\\INF1900_M2_tarefa_2\\main.cpp",
+  "file": "C:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M2/W4/INF1900_M2_tarefa_2/main.cpp",
   "output": "CMakeFiles/jewel_collector.dir/main.cpp.obj"
 },
 {
-  "directory": "C:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M2/INF1900_M2_tarefa_1/build",
-  "command": "C:/ProgramData/chocolatey/bin/c++.exe   -g -o CMakeFiles/jewel_collector.dir/item.cpp.obj -c C:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M2/INF1900_M2_tarefa_1/item.cpp",
-  "file": "C:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M2/INF1900_M2_tarefa_1/item.cpp",
+  "directory": "C:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M2/W4/INF1900_M2_tarefa_2/build",
+  "command": "C:\\ProgramData\\chocolatey\\bin\\g++.exe   -g -o CMakeFiles\\jewel_collector.dir\\item.cpp.obj -c C:\\Users\\renan\\source\\repos\\unicamp_inf1900_progamacao_cpp\\M2\\W4\\INF1900_M2_tarefa_2\\item.cpp",
+  "file": "C:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M2/W4/INF1900_M2_tarefa_2/item.cpp",
   "output": "CMakeFiles/jewel_collector.dir/item.cpp.obj"
 },
 {
-  "directory": "C:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M2/INF1900_M2_tarefa_1/build",
-  "command": "C:/ProgramData/chocolatey/bin/c++.exe   -g -o CMakeFiles/jewel_collector.dir/food.cpp.obj -c C:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M2/INF1900_M2_tarefa_1/food.cpp",
-  "file": "C:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M2/INF1900_M2_tarefa_1/food.cpp",
+  "directory": "C:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M2/W4/INF1900_M2_tarefa_2/build",
+  "command": "C:\\ProgramData\\chocolatey\\bin\\g++.exe   -g -o CMakeFiles\\jewel_collector.dir\\food.cpp.obj -c C:\\Users\\renan\\source\\repos\\unicamp_inf1900_progamacao_cpp\\M2\\W4\\INF1900_M2_tarefa_2\\food.cpp",
+  "file": "C:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M2/W4/INF1900_M2_tarefa_2/food.cpp",
   "output": "CMakeFiles/jewel_collector.dir/food.cpp.obj"
 },
 {
-  "directory": "C:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M2/INF1900_M2_tarefa_1/build",
-  "command": "C:/ProgramData/chocolatey/bin/c++.exe   -g -o CMakeFiles/jewel_collector.dir/jewel.cpp.obj -c C:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M2/INF1900_M2_tarefa_1/jewel.cpp",
-  "file": "C:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M2/INF1900_M2_tarefa_1/jewel.cpp",
+  "directory": "C:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M2/W4/INF1900_M2_tarefa_2/build",
+  "command": "C:\\ProgramData\\chocolatey\\bin\\g++.exe   -g -o CMakeFiles\\jewel_collector.dir\\jewel.cpp.obj -c C:\\Users\\renan\\source\\repos\\unicamp_inf1900_progamacao_cpp\\M2\\W4\\INF1900_M2_tarefa_2\\jewel.cpp",
+  "file": "C:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M2/W4/INF1900_M2_tarefa_2/jewel.cpp",
   "output": "CMakeFiles/jewel_collector.dir/jewel.cpp.obj"
 },
 {
-  "directory": "C:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M2/INF1900_M2_tarefa_1/build",
-  "command": "C:/ProgramData/chocolatey/bin/c++.exe   -g -o CMakeFiles/jewel_collector.dir/map.cpp.obj -c C:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M2/INF1900_M2_tarefa_1/map.cpp",
-  "file": "C:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M2/INF1900_M2_tarefa_1/map.cpp",
+  "directory": "C:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M2/W4/INF1900_M2_tarefa_2/build",
+  "command": "C:\\ProgramData\\chocolatey\\bin\\g++.exe   -g -o CMakeFiles\\jewel_collector.dir\\map.cpp.obj -c C:\\Users\\renan\\source\\repos\\unicamp_inf1900_progamacao_cpp\\M2\\W4\\INF1900_M2_tarefa_2\\map.cpp",
+  "file": "C:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M2/W4/INF1900_M2_tarefa_2/map.cpp",
   "output": "CMakeFiles/jewel_collector.dir/map.cpp.obj"
 },
 {
-  "directory": "C:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M2/INF1900_M2_tarefa_1/build",
-  "command": "C:/ProgramData/chocolatey/bin/c++.exe   -g -o CMakeFiles/jewel_collector.dir/treasure.cpp.obj -c C:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M2/INF1900_M2_tarefa_1/treasure.cpp",
-  "file": "C:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M2/INF1900_M2_tarefa_1/treasure.cpp",
+  "directory": "C:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M2/W4/INF1900_M2_tarefa_2/build",
+  "command": "C:\\ProgramData\\chocolatey\\bin\\g++.exe   -g -o CMakeFiles\\jewel_collector.dir\\treasure.cpp.obj -c C:\\Users\\renan\\source\\repos\\unicamp_inf1900_progamacao_cpp\\M2\\W4\\INF1900_M2_tarefa_2\\treasure.cpp",
+  "file": "C:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M2/W4/INF1900_M2_tarefa_2/treasure.cpp",
   "output": "CMakeFiles/jewel_collector.dir/treasure.cpp.obj"
 }
 ]

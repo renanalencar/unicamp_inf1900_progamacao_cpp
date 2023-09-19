@@ -98,7 +98,7 @@
 						"kernel32"
 					]
 				},
-				"path" : "C:/ProgramData/chocolatey/bin/c++.exe",
+				"path" : "C:/ProgramData/chocolatey/bin/g++.exe",
 				"version" : "12.2.0"
 			},
 			"language" : "CXX",

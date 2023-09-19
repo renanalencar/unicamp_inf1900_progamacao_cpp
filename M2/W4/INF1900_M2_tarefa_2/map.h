@@ -25,7 +25,7 @@ private:
 public:
     Map(int w, int h);
 
-    // ~Map();
+    ~Map();
 
     void addItem(int x, int y, Item *item);
 

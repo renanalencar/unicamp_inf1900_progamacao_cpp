@@ -37,9 +37,17 @@ int main()
         gameMap.addItem(x, y, new Food(rand() % 5));
     }
 
+    // Adicione algumas joias e comida para o baú de tesouro
+    Jewel jewel(50);
+    Food food(20);
+
     int treasureX = rand() % 30;
     int treasureY = rand() % 30;
     Treasure treasure;
+
+    treasure.add(&jewel);
+    treasure.add(&food);
+
     gameMap.addItem(treasureX, treasureY, &treasure);
 
     // Crie o robô no mapa

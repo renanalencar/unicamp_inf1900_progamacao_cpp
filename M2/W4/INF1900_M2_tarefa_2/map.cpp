@@ -17,14 +17,14 @@ Map::Map(int w, int h) : width(w), height(h)
     mapData.resize(height, std::vector<Item *>(width, nullptr));
 }
 
-// Map::~Map()
-// {
-//     for (int i = 0; i < height; i++)
-//     {
-//         delete[] mapData[i];
-//     }
-//     delete[] mapData;
-// }
+Map::~Map()
+{
+    for (int i = 0; i < height; i++)
+    {
+        delete[] &mapData[i];
+    }
+    delete[] &mapData;
+}
 
 void Map::addItem(int x, int y, Item *item)
 {

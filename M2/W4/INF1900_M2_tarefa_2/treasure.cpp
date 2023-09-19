@@ -2,7 +2,7 @@
  * @file treasure.cpp
  *
  * @brief Classe que representa um tesouro.
- * 
+ *
  * @author Rafael Taveira / Renan Alencar
  * Contact: rafael.t@sidi.org.br / renan.a@sidi.org.br
  *
@@ -11,6 +11,8 @@
 #include <iostream>
 #include <vector>
 #include "treasure.h"
+
+Treasure::Treasure() : Item::Item("treasure", 0) {}
 
 int Treasure::getValue() const
 {
