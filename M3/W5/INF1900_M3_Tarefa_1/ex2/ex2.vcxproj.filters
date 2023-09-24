@@ -20,6 +20,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="hardware.dat" />
+    <CopyFileToFolders Include="hardware.dat" />
   </ItemGroup>
 </Project>
