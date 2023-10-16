@@ -1,0 +1,8 @@
+[
+{
+  "directory": "C:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M3/W8/INF1900_M3_Exercicio_3/build",
+  "command": "C:/ProgramData/chocolatey/bin/g++.exe   -g -o CMakeFiles/INF_1900_M3_Exercicio_3.dir/main.cpp.obj -c C:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M3/W8/INF1900_M3_Exercicio_3/main.cpp",
+  "file": "C:/Users/renan/source/repos/unicamp_inf1900_progamacao_cpp/M3/W8/INF1900_M3_Exercicio_3/main.cpp",
+  "output": "CMakeFiles/INF_1900_M3_Exercicio_3.dir/main.cpp.obj"
+}
+]
