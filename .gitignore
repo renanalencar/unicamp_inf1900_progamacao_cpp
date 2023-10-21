@@ -30,3 +30,6 @@
 *.exe
 *.out
 *.app
+/.vs/Unicamp
+/.vs
+/M2/W4
