@@ -12,6 +12,7 @@
 #include <fstream>
 #include <filesystem>
 #include <exception>
+#include <system_error>
 
 namespace fs = std::filesystem;
 
@@ -33,7 +34,7 @@ int main() {
     try {
         // Passo 2: Verificar se o arquivo existe
         if (!fs::exists(filename)) {
-            throw fs::filesystem_error("Arquivo não encontrado", fs::errc::no_such_file_or_directory);
+            throw fs::filesystem_error("Arquivo não encontrado", std::error_code());
         }
 
         // Passo 3: Tentar abrir o arquivo
@@ -64,7 +65,8 @@ int main() {
                 for (char c : line) {
                     if (std::isspace(c)) {
                         inWord = false;
-                    } else if (!inWord) {
+                    }
+                    else if (!inWord) {
                         inWord = true;
                         wordCount++;
                     }
@@ -75,9 +77,11 @@ int main() {
             std::cout << "Número de linhas: " << lineCount << std::endl;
             std::cout << "Número de palavras: " << wordCount << std::endl;
             std::cout << "Número de caracteres: " << charCount << std::endl;
-        } catch (const NotATextFileException& e) {
+        }
+        catch (const NotATextFileException& e) {
             std::cerr << "Erro: " << e.what() << std::endl;
-        } catch (const std::exception& e) {
+        }
+        catch (const std::exception& e) {
             std::cerr << "Erro ao processar o arquivo: " << e.what() << std::endl;
         }
 
@@ -86,15 +90,17 @@ int main() {
 
         // Se o programa chegar a este ponto, o arquivo existe e foi aberto com sucesso
         std::cout << "Arquivo aberto e processado com sucesso." << std::endl;
-    } catch (const fs::filesystem_error& e) {
+    }
+    catch (const fs::filesystem_error& e) {
         std::cerr << "Erro ao acessar o arquivo: " << e.what() << std::endl;
-    } catch (const std::ios_base::failure& e) {
-        std::cerr << "Erro ao abrir o arquivo: " << e.what() << std::endl;
-    }catch (const std::ifstream::failure& e) {
-        std::cerr << "Erro ao ler o arquivo: " << e.what() << std::endl;
-    }catch (const std::bad_alloc& e) {
+    }
+    catch (const std::bad_alloc& e) {
         std::cerr << "Nâo há memória disponivel para operação:" << e.what() << std::endl;
-    }catch (const std::exception& e) {
+    }
+    catch (const std::ios_base::failure& e) {
+        std::cerr << "Erro ao abrir o arquivo: " << e.what() << std::endl;
+    }
+    catch (const std::exception& e) {
         std::cerr << "Ocorreu um erro:" << e.what() << std::endl;
     }
 
