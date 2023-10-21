@@ -90,6 +90,12 @@ int main() {
         std::cerr << "Erro ao acessar o arquivo: " << e.what() << std::endl;
     } catch (const std::ios_base::failure& e) {
         std::cerr << "Erro ao abrir o arquivo: " << e.what() << std::endl;
+    }catch (const std::ifstream::failure& e) {
+        std::cerr << "Erro ao ler o arquivo: " << e.what() << std::endl;
+    }catch (const std::bad_alloc& e) {
+        std::cerr << "Nâo há memória disponivel para operação:" << e.what() << std::endl;
+    }catch (const std::exception& e) {
+        std::cerr << "Ocorreu um erro:" << e.what() << std::endl;
     }
 
     return 0;
