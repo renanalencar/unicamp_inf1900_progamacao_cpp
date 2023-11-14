@@ -1,0 +1,4 @@
+﻿  Calculator.cpp
+  ATLProject.vcxproj -> D:\Unicamp\M3\W10\INF1900_M3_Exercicio_5\x64\Debug\ATLProject.dll
+C:\Program Files\Microsoft Visual Studio\2022\Professional\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets(2383,5): warning MSB3075: The command "regsvr32 /s "D:\Unicamp\M3\W10\INF1900_M3_Exercicio_5\x64\Debug\ATLProject.dll"" exited with code 5. Please verify that you have sufficient rights to run this command.
+C:\Program Files\Microsoft Visual Studio\2022\Professional\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets(2395,5): error MSB8011: Failed to register output. Please try enabling Per-user Redirection or register the component from a command prompt with elevated permissions.
