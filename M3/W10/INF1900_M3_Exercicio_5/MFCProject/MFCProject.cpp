@@ -1,3 +1,12 @@
+/**
+ * @file MFCProject.cpp
+ *
+ * @brief Classe MFC com função main para execução dos pontos da atividade.
+ *
+ * @author Rafael Taveira / Renan Alencar
+ * Contact: rafael.t@sidi.org.br / renan.a@sidi.org.br
+ *
+ */
 // MFCProject.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 

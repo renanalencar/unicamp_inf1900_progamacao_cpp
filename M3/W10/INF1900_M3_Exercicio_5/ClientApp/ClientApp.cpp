@@ -1,5 +1,5 @@
 /**
- * @file ex2.cpp
+ * @file ClientApp.cpp
  *
  * @brief Classe Client com função main para execução dos pontos da atividade.
  *

@@ -1,5 +1,5 @@
 /**
- * @file ex2.cpp
+ * @file Calculator.cpp
  *
  * @brief Classe Calculator com função AproximatePi.
  *
