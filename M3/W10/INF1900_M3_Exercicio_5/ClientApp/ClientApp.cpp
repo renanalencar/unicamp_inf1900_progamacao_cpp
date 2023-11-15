@@ -1,3 +1,13 @@
+/**
+ * @file ex2.cpp
+ *
+ * @brief Classe Client com função main para execução dos pontos da atividade.
+ *
+ * @author Rafael Taveira / Renan Alencar
+ * Contact: rafael.t@sidi.org.br / renan.a@sidi.org.br
+ *
+ */
+
 // ClientApp.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 

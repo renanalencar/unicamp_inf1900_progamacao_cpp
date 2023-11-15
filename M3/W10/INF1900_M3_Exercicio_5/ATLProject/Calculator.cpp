@@ -1,3 +1,13 @@
+/**
+ * @file ex2.cpp
+ *
+ * @brief Classe Calculator com função AproximatePi.
+ *
+ * @author Rafael Taveira / Renan Alencar
+ * Contact: rafael.t@sidi.org.br / renan.a@sidi.org.br
+ *
+ */
+
 // Calculator.cpp : Implementation of CCalculator
 
 #include "pch.h"
