@@ -112,6 +112,7 @@
       <SubSystem>Windows</SubSystem>
       <ModuleDefinitionFile>.\ATLProject.def</ModuleDefinitionFile>
       <RegisterOutput>true</RegisterOutput>
+      <PerUserRedirection>true</PerUserRedirection>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
