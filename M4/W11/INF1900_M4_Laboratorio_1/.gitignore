@@ -1,0 +1,21 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/lab1-renanalencar_rafaeltaveira
+/.vs/lab1-renanalencar_rafaeltaveira/FileContentIndex
+/.vs/lab1-renanalencar_rafaeltaveira/FileContentIndex/29d06cb8-68fb-48eb-9a84-a57f49d3fa9e.vsidx
+/.vs/lab1-renanalencar_rafaeltaveira/FileContentIndex/84995657-d9d2-47af-8de5-a502bb8aca0c.vsidx
+/.vs/lab1-renanalencar_rafaeltaveira/v17
+/.vs/lab1-renanalencar_rafaeltaveira/v17/.wsuo
+/.vs/lab1-renanalencar_rafaeltaveira/v17/Browse.VC.db
+/.vs/ProjectSettings.json
+/.vs/slnx.sqlite
+/.vs/VSWorkspaceState.json
+/Laboratório1/.vs/Laboratório1
+/Laboratório1/.vs/Laboratório1/FileContentIndex
+/Laboratório1/.vs/Laboratório1/v17
+/Laboratório1/x64/Debug
+/Laboratório1/x64/Debug/Laboratório1.exe
+/Laboratório1/x64/Debug/Laboratório1.pdb
+/Laboratório1/Laboratório1/x64/Debug

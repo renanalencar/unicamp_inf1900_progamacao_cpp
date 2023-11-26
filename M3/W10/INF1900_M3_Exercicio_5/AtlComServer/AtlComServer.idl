@@ -1,0 +1,34 @@
+// AtlComServer.idl : fonte IDL para AtlComServer
+//
+
+// Este arquivo será processado pela ferramenta MIDL para
+// produzir a biblioteca de tipos (AtlComServer.tlb) e o código de marshaling.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+    object,
+        uuid(7ca3b62d-4eb9-43da-8cfb-05a27156eeff),
+        dual,
+        helpstring("ICalculator Interface"),
+        pointer_default(unique)
+]
+interface ICalculator : IDispatch {
+    HRESULT ApproximatePi([out, retval] double* result);
+};
+[
+	uuid(d698ac75-3b16-4b5f-8783-547e77b9eb0f),
+	version(1.0),
+]
+library AtlComServerLib
+{
+	importlib("stdole2.tlb");
+    [
+        uuid(09067233-6e40-4940-93aa-ef4f3d0be730)
+    ]
+    coclass Calculator
+    {
+        [default] interface ICalculator;
+    };
+};

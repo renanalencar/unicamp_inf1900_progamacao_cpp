@@ -1,0 +1,9 @@
+﻿  ex3.cpp
+C:\Users\renan\source\repos\unicamp_inf1900_progamacao_cpp\M4\W12\INF1900_M4_Laboratorio_2\ex3\ex3.cpp(73,101): error C2039: ' getId': não é um membro de 'Cliente'
+  C:\Users\renan\source\repos\unicamp_inf1900_progamacao_cpp\M4\W12\INF1900_M4_Laboratorio_2\ex3\ex3.cpp(21,7):
+  consulte a declaração de 'Cliente'
+  
+C:\Users\renan\source\repos\unicamp_inf1900_progamacao_cpp\M4\W12\INF1900_M4_Laboratorio_2\ex3\ex3.cpp(74,50): error C2039: ' getMesaId': não é um membro de 'Cliente'
+  C:\Users\renan\source\repos\unicamp_inf1900_progamacao_cpp\M4\W12\INF1900_M4_Laboratorio_2\ex3\ex3.cpp(21,7):
+  consulte a declaração de 'Cliente'
+  

@@ -1,3 +1,13 @@
+/**
+ * @file food.cpp
+ *
+ * @brief Exercício 3.
+ * 
+ * @author Rafael Taveira / Renan Alencar
+ * Contact: rafael.t@sidi.org.br / renan.a@sidi.org.br
+ *
+ */
+ 
 #include <cstdlib>
 #include <ctime>
 #include <iostream>
