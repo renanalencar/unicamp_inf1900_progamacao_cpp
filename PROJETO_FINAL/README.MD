@@ -24,48 +24,48 @@ Neste projeto final, você deve criar um jogo de Truco em C++ que incorpora e de
 
 ## Concorrência e Multithreading
 
-**5.Integração de Threads**:
+**5. Integração de Threads**:
 
 - Integre threads de maneira significativa para realizar operações em paralelo, como a execução das ações dos jogadores e a contagem de pontos, demonstrando a aplicação dos conceitos de multithreading. Por exemplo, permita que os jogadores façam suas escolhas simultaneamente.
 
-**6.Técnicas de Sincronização**:
+**6. Técnicas de Sincronização**:
 
 - Utilize técnicas de sincronização e exclusão mútua para garantir a integridade dos dados compartilhados entre threads, evitando problemas como condições de corrida. Analise cuidadosamente seu código em busca de possíveis condições de corrida, onde duas ou mais threads podem acessar os mesmos dados simultaneamente. Utilize exclusão mútua para evitar essas condições de corrida, garantindo que as operações críticas sejam feitas de forma segura e ordenada.
 
 ## Tratamento de Exceção
 
-**7.Implementação de Tratamento de Exceções**:
+**7. Implementação de Tratamento de Exceções**:
 
 - Implemente tratamento de exceções para lidar com erros e situações excepcionais durante a execução do jogo, como movimentos inválidos dos jogadores ou problemas de alocação de memória.
 
 
 ## Interface de Usuário
 
-**8.Criação de Interface de Usuário**:
+**8. Criação de Interface de Usuário**:
 
 - Crie uma interface de usuário amigável que permita aos jogadores interagirem com o jogo de Truco de forma intuitiva. Utilize a Win32 API (ou MFC) para criar e gerenciar janelas, controles e eventos, fornecendo uma experiência de usuário agradável. Isso inclui a representação gráfica das cartas, placar e mensagens informativas.
 
 ## Utilização Adequada de Smart Pointers
 
-**9.Utilização de Smart Pointers**:
+**9. Utilização de Smart Pointers**:
 
 - Utilize smart pointers para gerenciar objetos que requerem alocação dinâmica de memória, como instâncias de jogadores ou recursos dinâmicos. Garanta que a utilização dos smart pointers seja aplicada de forma apropriada para gerenciar a vida útil dos objetos, evitando vazamentos de memória e garantindo a liberação automática de recursos quando não mais necessários.
 
 ## Serialização e Persistência
 
-**10.Serialização e Persistência**:
+**10. Serialização e Persistência**:
 
 - Implemente a serialização de dados do jogo para permitir que os jogadores salvem e carreguem partidas de Truco em qualquer ponto do jogo. Utilize técnicas de serialização para gravar e ler dados do jogo em arquivos, garantindo a capacidade de persistência. Utilize `std::filesystem` para eventuais manipulações de diretórios, como salvar e carregar partidas em pastas específicas.
 
 ## Padrão arquitetural
 
-**11.Implementação de padrão arquitetural**:
+**11. Implementação de padrão arquitetural**:
 
 - Implemente um padrão arquitetural em sua solução de forma a organizar o código visando potencializar propriedades importantes de OO. Espera-se aqui que seja implementado ou o padrão arquitetural MVC ou MVVM.
 
 ## Documentação
 
-**12.Geração de documentação**:
+**12. Geração de documentação**:
 
 - Deve ser gerado um documento descrevendo os requisitos do sistema. O documento deve seguir o template disponibilizado no arquivo anexo a essa atividade (`ExemploRequisitosProjetoFinal.docx`)
 - Além da documentação interna do código e o documento de requisitos, vocês devem gerar diagramas e esquemáticos do projeto. Pelo menos deve ser entregue o diagrama de classes do projeto. Também é recomendada a entrega de fluxograma e/ou diagramas de sequência de partes específicas do projeto.

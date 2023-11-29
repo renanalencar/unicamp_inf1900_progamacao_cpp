@@ -1,0 +1,3 @@
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(531,5): warning MSB8028: O diretório intermediário (x64\Debug\) contém arquivos compartilhados de outro projeto (ex3.vcxproj). Isso pode levar a um comportamento incorreto de limpeza e recompilação.
+  ex3_1.cpp
+  ex3.vcxproj -> C:\Users\renan\source\repos\unicamp_inf1900_progamacao_cpp\M4\W13\INF1900_M4_Laboratorio_3\x64\Debug\ex3_1.exe
