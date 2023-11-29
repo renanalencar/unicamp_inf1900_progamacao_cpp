@@ -31,7 +31,7 @@
 *.out
 *.app
 /.vs/Unicamp
-/.vs
+/.vs/*
 /M2/W4
 /M3/W10/INF1900_M3_Exercicio_5/.vs/INF1900_M3_Exercicio_5/v17/Browse.VC.db
 /M3/W10/INF1900_M3_Exercicio_5/.vs/INF1900_M3_Exercicio_5/v17/Browse.VC.db-shm
