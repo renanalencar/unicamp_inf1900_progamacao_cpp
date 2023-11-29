@@ -1,3 +1,0 @@
-﻿  ex4.cpp
-C:\Users\renan\source\repos\unicamp_inf1900_progamacao_cpp\M4\W12\INF1900_M4_Laboratorio_2\ex4\ex4.cpp(92,42): warning C4267: 'argumento': conversão de 'size_t' para 'int', possível perda de dados
-  ex4.vcxproj -> C:\Users\renan\source\repos\unicamp_inf1900_progamacao_cpp\M4\W12\INF1900_M4_Laboratorio_2\x64\Debug\ex4.exe
