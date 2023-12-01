@@ -12,6 +12,7 @@
 #include <vector>
 #include <thread>
 #include <mutex>
+#include <locale>
 
 std::mutex mergeMutex;
 
@@ -80,6 +81,9 @@ void parallelMergeSort(std::vector<int>& arr, int l, int r, int depth) {
 }
 
 int main() {
+    // Configuração da localização para lidar com acentuação
+    std::locale::global(std::locale("pt_BR.UTF8"));
+
     std::vector<int> arr = { 12, 11, 13, 5, 6, 7 };
 
     std::cout << "Array antes da ordenação:" << std::endl;
@@ -96,6 +100,8 @@ int main() {
         std::cout << num << " ";
     }
     std::cout << std::endl;
+
+    system("pause");
 
     return 0;
 }

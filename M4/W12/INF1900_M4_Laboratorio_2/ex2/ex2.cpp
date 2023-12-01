@@ -9,99 +9,116 @@
  */
 
 #include <iostream>
-#include <vector>
 #include <thread>
 #include <mutex>
+#include <list>
 #include <random>
-#include <chrono>
+#include <locale>
+#include <codecvt>
 
 class ContaBancaria {
 public:
-    ContaBancaria(int numero, double saldo) : numero(numero), saldo(saldo) {}
-
-    int getNumero() const {
-        return numero;
-    }
-
-    double getSaldo() const {
-        return saldo;
-    }
+    ContaBancaria(int numero, double saldo) : numeroConta(numero), saldo(saldo) {}
 
     void depositar(double valor) {
         std::lock_guard<std::mutex> lock(mutexConta);
         saldo += valor;
     }
 
-    bool sacar(double valor) {
+    void sacar(double valor) {
         std::lock_guard<std::mutex> lock(mutexConta);
-        if (valor <= saldo) {
-            saldo -= valor;
-            return true;
-        }
-        return false;
+        saldo -= valor;
     }
 
-    void transferir(ContaBancaria& destino, double valor) {
-        std::lock(mutexConta, destino.mutexConta);
-        std::lock_guard<std::mutex> selfLock(mutexConta, std::adopt_lock);
-        std::lock_guard<std::mutex> destLock(destino.mutexConta, std::adopt_lock);
+    std::mutex& obterMutexConta() {
+        return mutexConta;
+    }
 
-        if (sacar(valor)) {
-            destino.depositar(valor);
-            std::cout << "Transferência de conta " << numero << " para conta " << destino.getNumero() << ": $" << valor << std::endl;
-        }
-        else {
-            std::cout << "Transferência falhou de conta " << numero << " para conta " << destino.getNumero() << ": Saldo insuficiente." << std::endl;
-        }
+    double obterSaldo() const {
+        return saldo;
+    }
+
+    int obterNumeroConta() const {
+        return numeroConta;
     }
 
 private:
-    int numero;
+    int numeroConta;
     double saldo;
-    mutable std::mutex mutexConta;
+    std::mutex mutexConta;
 };
 
-void simularTransacoes(std::vector<ContaBancaria>& contas) {
+std::list<ContaBancaria> contas;
+std::mutex mutexCout;
+
+void imprimirInformacoesConta(const ContaBancaria& conta) {
+    std::lock_guard<std::mutex> lock(mutexCout);
+    std::wcout.imbue(std::locale(""));  // Imbuir a localização para lidar com caracteres acentuados
+    std::wcout << L"Conta " << conta.obterNumeroConta() << L": Saldo = R$" << conta.obterSaldo() << std::endl;
+}
+
+
+void transferir(ContaBancaria& origem, ContaBancaria& destino, double valor) {
+    std::unique_lock<std::mutex> lockOrigem(origem.obterMutexConta(), std::defer_lock);
+    std::unique_lock<std::mutex> lockDestino(destino.obterMutexConta(), std::defer_lock);
+
+    origem.sacar(valor);
+    destino.depositar(valor);
+
+    std::lock_guard<std::mutex> lockCout(mutexCout);
+    std::wcout.imbue(std::locale(""));  // Imbuir a localização para lidar com caracteres acentuados
+    std::wcout << L"Transferência da Conta " << origem.obterNumeroConta() << L" para Conta " << destino.obterNumeroConta() << L": R$" << valor << std::endl;
+}
+
+void simularTransacoes() {
     std::random_device rd;
     std::mt19937 gen(rd());
-    std::uniform_int_distribution<int> distribuicaoContas(0, contas.size() - 1);
+    std::uniform_int_distribution<> distribuicaoContas(0, contas.size() - 1);
+    std::uniform_real_distribution<> distribuicaoValores(10.0, 100.0);
 
     for (int i = 0; i < 10; ++i) {
-        int contaOrigem = distribuicaoContas(gen);
-        int contaDestino = distribuicaoContas(gen);
+        int indiceContaOrigem = distribuicaoContas(gen);
+        int indiceContaDestino = distribuicaoContas(gen);
 
-        if (contaOrigem != contaDestino) {
-            double valor = static_cast<double>(distribuicaoContas(gen)) * 10.0;
-            contas[contaOrigem].transferir(contas[contaDestino], valor);
+        while (indiceContaOrigem == indiceContaDestino) {
+            indiceContaDestino = distribuicaoContas(gen);
         }
-        std::this_thread::sleep_for(std::chrono::milliseconds(100));  // Introduz uma pequena pausa para aumentar a chance de deadlock
+
+        double valorTransferencia = distribuicaoValores(gen);
+
+        transferir(*std::next(contas.begin(), indiceContaOrigem), *std::next(contas.begin(), indiceContaDestino), valorTransferencia);
     }
 }
 
 int main() {
-    std::vector<ContaBancaria> contas = {
-        ContaBancaria(1, 1000.0),
-        ContaBancaria(2, 1500.0),
-        ContaBancaria(3, 2000.0)
-        // Adicione mais contas conforme necessário
-    };
+    // Configuração da localização para lidar com acentuação
+    std::locale::global(std::locale("pt_BR.UTF8"));
 
-    std::cout << "Saldo inicial das contas:" << std::endl;
-    for (const auto& conta : contas) {
-        std::cout << "Conta " << conta.getNumero() << ": $" << conta.getSaldo() << std::endl;
+    // Inicialização de contas
+    contas.emplace_back(1, 1000.0);
+    contas.emplace_back(2, 1500.0);
+    contas.emplace_back(3, 2000.0);
+
+    // Impressão inicial
+    std::for_each(contas.begin(), contas.end(), imprimirInformacoesConta);
+
+    // Criação de threads para simulação de transações
+    const int numThreads = 3;
+    std::thread threads[numThreads];
+
+    for (int i = 0; i < numThreads; ++i) {
+        threads[i] = std::thread(simularTransacoes);
     }
 
-    std::thread thread1(simularTransacoes, std::ref(contas));
-    std::thread thread2(simularTransacoes, std::ref(contas));
-
-    thread1.join();
-    thread2.join();
-
-    std::cout << "Saldo final das contas:" << std::endl;
-    for (const auto& conta : contas) {
-        std::cout << "Conta " << conta.getNumero() << ": $" << conta.getSaldo() << std::endl;
+    // Aguarda todas as threads terminarem
+    for (int i = 0; i < numThreads; ++i) {
+        threads[i].join();
     }
+
+    // Impressão final
+    std::for_each(contas.begin(), contas.end(), imprimirInformacoesConta);
+    
+    system("pause");
 
     return 0;
 }
-

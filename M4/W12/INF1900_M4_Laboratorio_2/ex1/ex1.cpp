@@ -11,6 +11,7 @@
 #include <iostream>
 #include <thread>
 #include <mutex>
+#include <locale>
 
 std::mutex mutexContador;
 int contador = 0;
@@ -26,6 +27,9 @@ void decrementar() {
 }
 
 int main() {
+    // Configuração da localização para lidar com acentuação
+    std::locale::global(std::locale("pt_BR.UTF8"));
+
     const int numThreads = 8;
     std::thread threads[numThreads];
 
@@ -50,6 +54,8 @@ int main() {
     else {
         std::cout << "Erro: o valor do contador não é zero. Contador: " << contador << std::endl;
     }
+
+    system("pause");
 
     return 0;
 }

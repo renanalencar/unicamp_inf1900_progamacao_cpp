@@ -13,6 +13,7 @@
 #include <mutex>
 #include <condition_variable>
 #include <queue>
+#include <locale>
 
 std::mutex mutexPrint;
 std::mutex mutexTables;
@@ -21,6 +22,14 @@ std::condition_variable cvTables;
 class Cliente {
 public:
     Cliente(int id) : id(id) {}
+
+    int getId() {
+        return id;
+    }
+
+    int getMesaId() {
+        return mesaId;
+    }
 
     void esperarMesa() {
         std::unique_lock<std::mutex> lock(mutexTables);
@@ -92,6 +101,9 @@ void clienteThread(Cliente& cliente, Garcom& garcom) {
 }
 
 int main() {
+    // Configuração da localização para lidar com acentuação
+    std::locale::global(std::locale("pt_BR.UTF8"));
+
     const int numMesas = 5;
     const int numGarcons = 3;
     const int numClientes = 10;
@@ -116,6 +128,8 @@ int main() {
     for (auto& thread : threads) {
         thread.join();
     }
+
+    system("pause");
 
     return 0;
 }
