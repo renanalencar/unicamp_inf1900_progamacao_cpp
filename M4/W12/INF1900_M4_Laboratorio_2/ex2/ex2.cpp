@@ -15,18 +15,18 @@
 #include <random>
 #include <locale>
 #include <codecvt>
+#include <chrono>
+#include <stdexcept>
 
 class ContaBancaria {
 public:
     ContaBancaria(int numero, double saldo) : numeroConta(numero), saldo(saldo) {}
 
     void depositar(double valor) {
-        std::lock_guard<std::mutex> lock(mutexConta);
         saldo += valor;
     }
 
     void sacar(double valor) {
-        std::lock_guard<std::mutex> lock(mutexConta);
         saldo -= valor;
     }
 
@@ -62,12 +62,24 @@ void transferir(ContaBancaria& origem, ContaBancaria& destino, double valor) {
     std::unique_lock<std::mutex> lockOrigem(origem.obterMutexConta(), std::defer_lock);
     std::unique_lock<std::mutex> lockDestino(destino.obterMutexConta(), std::defer_lock);
 
-    origem.sacar(valor);
-    destino.depositar(valor);
+    // Tenta adquirir ambos os mutexes simultaneamente
+    std::lock(lockOrigem, lockDestino);
+
+    // Verifica se os mutexes foram adquiridos
+    if (lockOrigem.owns_lock() && lockDestino.owns_lock()) {
+        // Se os mutexes foram adquiridos, realiza a transferência
+        origem.sacar(valor);
+        destino.depositar(valor);
+    }
+    else {
+        // Se não foi possível adquirir os dois mutexes, pode indicar um deadlock
+        throw std::runtime_error("Deadlock detectado na função transferir.");
+    }
 
     std::lock_guard<std::mutex> lockCout(mutexCout);
     std::wcout.imbue(std::locale(""));  // Imbuir a localização para lidar com caracteres acentuados
-    std::wcout << L"Transferência da Conta " << origem.obterNumeroConta() << L" para Conta " << destino.obterNumeroConta() << L": R$" << valor << std::endl;
+    std::wcout << L"Transferência da Conta " << origem.obterNumeroConta() << L" para Conta " 
+        << destino.obterNumeroConta() << L": R$" << std::fixed << std::setprecision(2) << valor << std::endl;
 }
 
 void simularTransacoes() {
