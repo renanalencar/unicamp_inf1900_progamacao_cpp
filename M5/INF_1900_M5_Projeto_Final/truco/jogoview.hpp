@@ -1,5 +1,5 @@
 /**
- * @file jogoview.cpp
+ * @file jogoview.hpp
  *
  * @brief Jogo de Truco - Projeto Final.
  *
