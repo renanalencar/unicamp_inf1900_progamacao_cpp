@@ -7,6 +7,14 @@
 - [@renanalencar](https://www.github.com/renanalencar)
 - [@wandersonmedeiros2](https://www.github.com/wandersonmedeiros2)
 
+## Licença
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
+## Ramificação de Código
+
+Este projeto segue o Git Flow Workflow escrito por [Vicent Driessen]https://nvie.com/posts/a-successful-git-branching-model/). Se você não está familiarizado com esse fluxo, eu recomendo fortemente que leia o artigo original e o tutorial [Atlassian Git Flow Workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow).
+
 ## Descrição do Projeto
 
 Neste projeto final, você deve criar um jogo de Truco em C++ que incorpora e demonstra de forma abrangente os princípios da Programação Orientada a Objetos (OO). O jogo de Truco deve ser totalmente funcional, com suporte para dois jogadores humanos e implementar todas as regras do jogo de Truco.
