@@ -13,7 +13,7 @@
 
 ## Ramificação de Código
 
-Este projeto segue o Git Flow Workflow escrito por [Vicent Driessen]https://nvie.com/posts/a-successful-git-branching-model/). Se você não está familiarizado com esse fluxo, eu recomendo fortemente que leia o artigo original e o tutorial [Atlassian Git Flow Workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow).
+Este projeto segue o Git Flow Workflow escrito por [Vicent Driessen](https://nvie.com/posts/a-successful-git-branching-model/). Se você não está familiarizado com esse fluxo, eu recomendo fortemente que leia o artigo original e o tutorial [Atlassian Git Flow Workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow).
 
 ## Descrição do Projeto
 
