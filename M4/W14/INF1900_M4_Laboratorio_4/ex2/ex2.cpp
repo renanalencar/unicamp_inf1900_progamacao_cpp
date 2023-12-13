@@ -50,31 +50,34 @@ int main() {
 		std::execution::par,  // Execução paralela se possível
 		weatherData.begin(), weatherData.end(),  // Range de dados
 		0.0,  // Valor inicial da soma
-		std::plus<>(),  // Função de soma
-		[](const WeatherData& data) -> double { return data.temperature; },  // Função de transformação
-		[](const double sum, const double value) -> double { return sum + value; }  // Função de redução
+		[](const double sum, const double value) { return sum + value; },  // Função de redução
+		[](const WeatherData& data) { return data.temperature; }  // Função de transformação
 	) / weatherData.size();  // Dividir pela quantidade de dados
 
 	// Usar std::transform_reduce para calcular a média da umidade
 	double averageHumidity = std::transform_reduce(
-		std::execution::par, weatherData.begin(), weatherData.end(),
-		0.0, std::plus<>(),
-		[](const WeatherData& data) -> double { return data.humidity; },
-		[](const double sum, const double value) -> double { return sum + value; }
+		std::execution::par, // Execução paralela se possível
+		weatherData.begin(), weatherData.end(), // Range de dados
+		0.0, // Valor inicial da soma
+		[](const double sum, const double value) { return sum + value; }, // Função de redução
+		[](const WeatherData& data) { return data.humidity; } // Função de transformação
 	) / weatherData.size();
 
 	// Usar std::transform_reduce para calcular a média da velocidade do vento
 	double averageWindSpeed = std::transform_reduce(
-		std::execution::par, weatherData.begin(), weatherData.end(),
-		0.0, std::plus<>(),
-		[](const WeatherData& data) -> double { return data.windSpeed; },
-		[](const double sum, const double value) -> double { return sum + value; }
+		std::execution::par, // Execução paralela se possível
+		weatherData.begin(), weatherData.end(), // Range de dados
+		0.0, // Valor inicial da soma
+		[](const double sum, const double value) { return sum + value; }, // Função de redução
+		[](const WeatherData& data) { return data.windSpeed; } // Função de transformação
 	) / weatherData.size();
 
 	// Imprimir resultados
 	std::cout << "Média da Temperatura: " << averageTemperature << std::endl;
 	std::cout << "Média da Umidade: " << averageHumidity << std::endl;
 	std::cout << "Média da Velocidade do Vento: " << averageWindSpeed << std::endl;
+
+	system("pause");
 
 	return 0;
 }
