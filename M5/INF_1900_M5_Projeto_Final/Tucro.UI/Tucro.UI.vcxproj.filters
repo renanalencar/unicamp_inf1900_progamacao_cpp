@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\src">
+      <UniqueIdentifier>{0fc51126-26e6-45ad-928b-98706f510ba5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\Views">
+      <UniqueIdentifier>{8d2c6e6b-c353-4280-86af-6d27550e23b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\ViewModel">
+      <UniqueIdentifier>{867c0a00-1f09-48ce-8412-939349c684c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\Components">
+      <UniqueIdentifier>{50a65216-ef1c-4d69-8f25-57f5f8981d2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\Components\Common">
+      <UniqueIdentifier>{2caee3c7-7078-4cb3-a4d2-688c0de2e586}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\Components\Common\Interfaces">
+      <UniqueIdentifier>{4b65319b-9dac-4101-be54-5a4dccc54940}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\Components\Common\imp">
+      <UniqueIdentifier>{ea9f013b-9093-419c-bd68-bec08ef01ad2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\Components\Common\imp\ImpMFC">
+      <UniqueIdentifier>{f7afd758-e1af-4104-89ed-5751e127d461}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CustomWindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MainWindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ApplicationMFC.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IApplication.h">
+      <Filter>Source Files\src\Components\Common\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="IButton.h">
+      <Filter>Source Files\src\Components\Common\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="IComponent.h">
+      <Filter>Source Files\src\Components\Common\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="IWidget.h">
+      <Filter>Source Files\src\Components\Common\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="IWindow.h">
+      <Filter>Source Files\src\Components\Common\Interfaces</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ApplicationMFC.cpp">
+      <Filter>Source Files\src\Components\Common\imp\ImpMFC</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomWindow.cpp">
+      <Filter>Source Files\src\Components\Common\imp\ImpMFC</Filter>
+    </ClCompile>
+    <ClCompile Include="MainWindow.cpp">
+      <Filter>Source Files\src\Views</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="assests\paus.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="assests\paus.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
