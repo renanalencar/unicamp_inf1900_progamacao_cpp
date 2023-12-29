@@ -61,3 +61,11 @@ void MainWindow::OnButtonMsgClick()
 {	
 	AfxMessageBox(L"Teste");
 }
+
+void MainWindow::show()
+{
+}
+
+void MainWindow::update()
+{
+}

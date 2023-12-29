@@ -18,5 +18,9 @@ public:
 	afx_msg void OnButtonMsgClick();
 
 	DECLARE_MESSAGE_MAP();
+
+	// Inherited via CustomWindow
+	void show() override;
+	void update() override;
 };
 
