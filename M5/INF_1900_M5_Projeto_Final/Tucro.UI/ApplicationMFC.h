@@ -5,7 +5,10 @@
 
 class ApplicationMFC : public CWinApp{
 
+
+
 public:
 	virtual BOOL InitInstance();
+
 
 };

@@ -1,6 +1,11 @@
 ﻿  ApplicationMFC.cpp
   _WIN32_WINNT not defined. Defaulting to _WIN32_WINNT_MAXVER (see WinSDKVer.h)
+  MainWindow.cpp
+  _WIN32_WINNT not defined. Defaulting to _WIN32_WINNT_MAXVER (see WinSDKVer.h)
+  PathUtils.cpp
+  _WIN32_WINNT not defined. Defaulting to _WIN32_WINNT_MAXVER (see WinSDKVer.h)
   main.cpp
   _WIN32_WINNT not defined. Defaulting to _WIN32_WINNT_MAXVER (see WinSDKVer.h)
   Generating Code...
+  LINK : F:\Documentos\Cursos\Curso_c_plus_plus\Trabalhofinal\unicamp_inf1900_progamacao_cpp\M5\INF_1900_M5_Projeto_Final\Debug\Tucro.UI.exe not found or not built by the last incremental link; performing full link
   Tucro.UI.vcxproj -> F:\Documentos\Cursos\Curso_c_plus_plus\Trabalhofinal\unicamp_inf1900_progamacao_cpp\M5\INF_1900_M5_Projeto_Final\Debug\Tucro.UI.exe

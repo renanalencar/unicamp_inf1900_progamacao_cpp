@@ -136,19 +136,15 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="ApplicationMFC.h" />
-    <ClInclude Include="IApplication.h" />
-    <ClInclude Include="IButton.h" />
-    <ClInclude Include="IComponent.h" />
-    <ClInclude Include="IWidget.h" />
-    <ClInclude Include="IWindow.h" />
-    <ClInclude Include="WindowMFC.h" />
+    <ClInclude Include="AssetsConstants.h" />
     <ClInclude Include="MainWindow.h" />
+    <ClInclude Include="PathUtils.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ApplicationMFC.cpp" />
-    <ClCompile Include="WindowMFC.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MainWindow.cpp" />
+    <ClCompile Include="PathUtils.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="assests\paus.jpg" />

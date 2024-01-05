@@ -7,24 +7,27 @@ END_MESSAGE_MAP()
 #define IDC_IMAGE_CONTROL 1
 #define IDC_VIEW 115
 
-MainWindow::MainWindow() : WindowMFC(0,0,1024,780)
+MainWindow::MainWindow() 
 {	
+	Create(nullptr, L"Truco", WS_OVERLAPPEDWINDOW, CRect(0, 0, MAIN_WINDOW_WIDTH, MAIN_WINDOW_HEIGHT));
+	initComponentes();
+}
+
+void MainWindow::initComponentes()
+{
+	initTexturas();
 
 	pImage.Create(NULL, WS_CHILD | WS_VISIBLE | SS_BITMAP, CRect(10, 10, 800, 600), this, IDC_VIEW);
 
 	CStatic* pImageControl;
-	pImageControl = (CStatic*) GetDlgItem(IDC_VIEW);
-
-	CString filePath = "F:/Documentos/Cursos/Curso_c_plus_plus/Trabalhofinal/unicamp_inf1900_progamacao_cpp/M5/INF_1900_M5_Projeto_Final/Tucro.UI/assests/paus.bmp";
+	pImageControl = (CStatic*)GetDlgItem(IDC_VIEW);
+	
 	CString filePath2 = "D:/Downloads/CPP_321_EXE_MFC_GUI_RPG_Game_Hills_of_Darkness_ver3/media/center.bmp";
 
 	HBITMAP IntroPix = (HBITMAP)LoadImage(NULL, filePath2, IMAGE_BITMAP, 0, 0, LR_DEFAULTSIZE | LR_LOADFROMFILE);
 
-	if (IntroPix) {
-		CImage image;
-		image.Load(filePath2);
-		//pImage.ModifyStyle(SS_ENHMETAFILE, SS_BITMAP);
-		pImage.SetBitmap((HBITMAP)image.Detach());
+	if (IntroPix) {				
+		pImage.SetBitmap(IntroPix);
 	}
 	else
 	{
@@ -32,9 +35,13 @@ MainWindow::MainWindow() : WindowMFC(0,0,1024,780)
 	}
 }
 
-void MainWindow::initComponents() 
+void MainWindow::initTexturas()
 {
-	WindowMFC::initComponents();
+	m_texturaFundo = std::make_shared<CStatic>();
+	m_texturaFundo->Create(NULL, WS_CHILD | WS_VISIBLE | SS_BITMAP, CRect(0, 0, MAIN_WINDOW_WIDTH, MAIN_WINDOW_HEIGHT), this, ID_IMG_FUNDO);
+
+	PathUtils::loadImage(IMG_FUNDO, m_texturaFundo);
+
 }
 
 
@@ -44,10 +51,3 @@ void MainWindow::OnButtonMsgClick()
 	AfxMessageBox(L"Teste");
 }
 
-void MainWindow::show()
-{
-}
-
-void MainWindow::update()
-{
-}

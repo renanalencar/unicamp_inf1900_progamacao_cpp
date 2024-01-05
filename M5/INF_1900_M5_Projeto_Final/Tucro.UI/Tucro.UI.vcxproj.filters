@@ -22,63 +22,45 @@
     <Filter Include="Source Files\src\ViewModel">
       <UniqueIdentifier>{867c0a00-1f09-48ce-8412-939349c684c7}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\src\Components">
-      <UniqueIdentifier>{50a65216-ef1c-4d69-8f25-57f5f8981d2d}</UniqueIdentifier>
+    <Filter Include="Source Files\src\Common">
+      <UniqueIdentifier>{cc48a6c9-6ba5-4d95-be81-3d4008e363f4}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\src\Components\Common">
-      <UniqueIdentifier>{2caee3c7-7078-4cb3-a4d2-688c0de2e586}</UniqueIdentifier>
+    <Filter Include="Source Files\src\Common\Consts">
+      <UniqueIdentifier>{c0fb4680-5049-4538-b0a8-42e35d6eac8e}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\src\Components\Common\Interfaces">
-      <UniqueIdentifier>{4b65319b-9dac-4101-be54-5a4dccc54940}</UniqueIdentifier>
+    <Filter Include="Source Files\src\Common\Utils">
+      <UniqueIdentifier>{3a8363d8-85c6-45ee-b06c-024b4e677c2f}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\src\Components\Common\imp">
-      <UniqueIdentifier>{ea9f013b-9093-419c-bd68-bec08ef01ad2}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\src\Components\Common\imp\ImpMFC">
-      <UniqueIdentifier>{f7afd758-e1af-4104-89ed-5751e127d461}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\src\Components\Common\imp\imp">
-      <UniqueIdentifier>{fa080e51-e83d-4336-a381-6e54ebb6b437}</UniqueIdentifier>
+    <Filter Include="Source Files\src\Common\AppMFC">
+      <UniqueIdentifier>{b82c434e-0426-4fd4-b885-eaec36970e95}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AssetsConstants.h">
+      <Filter>Source Files\src\Common\Consts</Filter>
+    </ClInclude>
+    <ClInclude Include="PathUtils.h">
+      <Filter>Source Files\src\Common\Utils</Filter>
+    </ClInclude>
     <ClInclude Include="MainWindow.h">
-      <Filter>Header Files</Filter>
+      <Filter>Source Files\src\Views</Filter>
     </ClInclude>
     <ClInclude Include="ApplicationMFC.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="IButton.h">
-      <Filter>Source Files\src\Components\Common\Interfaces</Filter>
-    </ClInclude>
-    <ClInclude Include="IComponent.h">
-      <Filter>Source Files\src\Components\Common\Interfaces</Filter>
-    </ClInclude>
-    <ClInclude Include="IWidget.h">
-      <Filter>Source Files\src\Components\Common\Interfaces</Filter>
-    </ClInclude>
-    <ClInclude Include="IWindow.h">
-      <Filter>Source Files\src\Components\Common\Interfaces</Filter>
-    </ClInclude>
-    <ClInclude Include="WindowMFC.h">
-      <Filter>Source Files\src\Components\Common\Interfaces</Filter>
-    </ClInclude>
-    <ClInclude Include="IApplication.h">
-      <Filter>Source Files\src\Components\Common\Interfaces</Filter>
+      <Filter>Source Files\src\Common\AppMFC</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ApplicationMFC.cpp">
-      <Filter>Source Files\src\Components\Common\imp\ImpMFC</Filter>
-    </ClCompile>
-    <ClCompile Include="WindowMFC.cpp">
-      <Filter>Source Files\src\Components\Common\imp\ImpMFC</Filter>
-    </ClCompile>
     <ClCompile Include="MainWindow.cpp">
       <Filter>Source Files\src\Views</Filter>
+    </ClCompile>
+    <ClCompile Include="PathUtils.cpp">
+      <Filter>Source Files\src\Common\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="ApplicationMFC.cpp">
+      <Filter>Source Files\src\Common\AppMFC</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
