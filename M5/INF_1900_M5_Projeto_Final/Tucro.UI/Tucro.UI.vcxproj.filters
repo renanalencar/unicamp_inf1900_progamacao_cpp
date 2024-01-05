@@ -37,19 +37,16 @@
     <Filter Include="Source Files\src\Components\Common\imp\ImpMFC">
       <UniqueIdentifier>{f7afd758-e1af-4104-89ed-5751e127d461}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\src\Components\Common\imp\imp">
+      <UniqueIdentifier>{fa080e51-e83d-4336-a381-6e54ebb6b437}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="CustomWindow.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="MainWindow.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="ApplicationMFC.h">
       <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="IApplication.h">
-      <Filter>Source Files\src\Components\Common\Interfaces</Filter>
     </ClInclude>
     <ClInclude Include="IButton.h">
       <Filter>Source Files\src\Components\Common\Interfaces</Filter>
@@ -63,6 +60,12 @@
     <ClInclude Include="IWindow.h">
       <Filter>Source Files\src\Components\Common\Interfaces</Filter>
     </ClInclude>
+    <ClInclude Include="WindowMFC.h">
+      <Filter>Source Files\src\Components\Common\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="IApplication.h">
+      <Filter>Source Files\src\Components\Common\Interfaces</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -71,7 +74,7 @@
     <ClCompile Include="ApplicationMFC.cpp">
       <Filter>Source Files\src\Components\Common\imp\ImpMFC</Filter>
     </ClCompile>
-    <ClCompile Include="CustomWindow.cpp">
+    <ClCompile Include="WindowMFC.cpp">
       <Filter>Source Files\src\Components\Common\imp\ImpMFC</Filter>
     </ClCompile>
     <ClCompile Include="MainWindow.cpp">

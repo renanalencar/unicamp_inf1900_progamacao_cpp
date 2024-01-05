@@ -2,7 +2,7 @@
 #include <afxwin.h>
 #include "IWindow.h"
 
-class CustomWindow :  public IWindow
+class WindowMFC :  public IWindow
 {
 protected:
 	int m_x;
@@ -12,7 +12,7 @@ protected:
 	std::wstring m_caption;
 
 public:
-	CustomWindow(int x, int y, int width, int height, std::wstring caption = L"new window");
+	WindowMFC(int x, int y, int width, int height, std::wstring caption = L"new window");
 	virtual void initComponents();
 
 	// Inherited via IWindow

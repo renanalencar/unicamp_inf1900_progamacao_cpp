@@ -3,8 +3,8 @@
 #include <afxext.h>
 #include <atlimage.h>
 
-#include "CustomWindow.h"
-class MainWindow :  public CustomWindow
+#include "WindowMFC.h"
+class MainWindow :  public WindowMFC
 {
 protected:
 	CBitmap bitmap;
@@ -13,13 +13,13 @@ protected:
 
 public:
 	MainWindow();
-	// Inherited via CustomWindow
+	// Inherited via WindowMFC
 	void initComponents() override;
 	afx_msg void OnButtonMsgClick();
 
 	DECLARE_MESSAGE_MAP();
 
-	// Inherited via CustomWindow
+	// Inherited via WindowMFC
 	void show() override;
 	void update() override;
 };

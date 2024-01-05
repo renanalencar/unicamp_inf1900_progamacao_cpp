@@ -1,7 +1,7 @@
-#include "CustomWindow.h"
+#include "WindowMFC.h"
 #include <string>
 
-CustomWindow::CustomWindow(int x, int y, int width, int height, std::wstring caption)
+WindowMFC::WindowMFC(int x, int y, int width, int height, std::wstring caption)
 {
 	m_x = x;
 	m_y = y;
@@ -16,67 +16,67 @@ CustomWindow::CustomWindow(int x, int y, int width, int height, std::wstring cap
 	this->initComponents();
 }
 
-void CustomWindow::initComponents()
+void WindowMFC::initComponents()
 {
 	
 }
 
-int CustomWindow::getX() const
+int WindowMFC::getX() const
 {
 	return this->m_x;
 }
 
-void CustomWindow::setX(int x)
+void WindowMFC::setX(int x)
 {
 	this->m_x = x;
 }
 
-int CustomWindow::getY() const
+int WindowMFC::getY() const
 {
 	return this->m_y;
 }
 
-void CustomWindow::setY(int y)
+void WindowMFC::setY(int y)
 {
 	this->m_y = y;
 }
 
-int CustomWindow::getWidth() const
+int WindowMFC::getWidth() const
 {
 	return this->m_width;
 }
 
-void CustomWindow::setWidth(int width)
+void WindowMFC::setWidth(int width)
 {
 	this->m_width = width;
 }
 
-int CustomWindow::getHeight() const
+int WindowMFC::getHeight() const
 {
 	return this->m_height;
 }
 
-void CustomWindow::setHeight(int height)
+void WindowMFC::setHeight(int height)
 {
 	this->m_height = height;
 }
 
-std::wstring CustomWindow::getCaption() const
+std::wstring WindowMFC::getCaption() const
 {
 	return this->m_caption;
 }
 
-void CustomWindow::setCaption(std::wstring caption)
+void WindowMFC::setCaption(std::wstring caption)
 {
 	this->m_caption = caption;
 }
 
-void CustomWindow::show()
+void WindowMFC::show()
 {
 	this->ShowWindow(SW_SHOW);
 }
 
-void CustomWindow::update()
+void WindowMFC::update()
 {
 	this->UpdateWindow();
 }
