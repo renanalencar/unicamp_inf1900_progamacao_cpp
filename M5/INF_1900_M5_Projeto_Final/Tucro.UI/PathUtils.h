@@ -13,5 +13,6 @@ class PathUtils
 public:
 	static std::wstring getPathAssets();
 	static void loadImage(const std::wstring imgName, std::shared_ptr<CStatic> canvas );
+	static HBITMAP loadBitmap(const std::wstring imgName);
 };
 

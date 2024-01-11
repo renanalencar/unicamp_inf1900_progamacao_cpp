@@ -5,6 +5,7 @@
 
 #include "PathUtils.h"
 #include "AssetsConstants.h"
+#include "Carta.h"
 
 
 class MainWindow : public CFrameWnd
@@ -18,7 +19,7 @@ private:
 	const unsigned short int MAIN_WINDOW_HEIGHT = 780;
 
 	std::shared_ptr<CStatic> m_texturaFundo;
-	
+
 	void initComponentes();
 	void initTexturas();
 
