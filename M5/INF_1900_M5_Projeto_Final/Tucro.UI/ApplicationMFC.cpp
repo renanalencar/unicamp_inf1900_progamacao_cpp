@@ -2,7 +2,9 @@
 
 BOOL ApplicationMFC::InitInstance()
 {
-    m_pMainWnd = new MainWindow();
+    m_MainWindow = new MainWindow();
+
+    m_pMainWnd = m_MainWindow;
     m_pMainWnd->ShowWindow(SW_SHOW);
     m_pMainWnd->UpdateWindow();
     

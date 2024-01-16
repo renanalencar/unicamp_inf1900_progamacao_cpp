@@ -5,7 +5,8 @@
 
 class ApplicationMFC : public CWinApp{
 
-
+private:
+	MainWindow* m_MainWindow;
 
 public:
 	virtual BOOL InitInstance();

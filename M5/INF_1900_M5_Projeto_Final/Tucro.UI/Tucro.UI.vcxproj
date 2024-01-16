@@ -138,6 +138,8 @@
     <ClInclude Include="ApplicationMFC.h" />
     <ClInclude Include="AssetsConstants.h" />
     <ClInclude Include="Carta.h" />
+    <ClInclude Include="CartaValor.h" />
+    <ClInclude Include="Naipe.h" />
     <ClInclude Include="TexturasFactory.h" />
     <ClInclude Include="MainWindow.h" />
     <ClInclude Include="PathUtils.h" />

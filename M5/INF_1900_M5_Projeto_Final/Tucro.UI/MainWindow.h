@@ -1,7 +1,7 @@
 #pragma once
 #include <memory>
 #include <afxwin.h>
-#include <afxext.h>
+
 
 #include "PathUtils.h"
 #include "AssetsConstants.h"
@@ -18,13 +18,13 @@ private:
 	const unsigned short int MAIN_WINDOW_WIDTH = 1024;
 	const unsigned short int MAIN_WINDOW_HEIGHT = 780;
 
-	std::shared_ptr<CStatic> m_texturaFundo;
 
 	void initComponentes();
-	void initTexturas();
+	void initTexturas();	
 
-protected:
-	CStatic pImage;
+protected:	
+	std::shared_ptr<CStatic> m_texturaFundo;
+	std::unique_ptr<Carta> m_carta;	
 
 public:
 	MainWindow();

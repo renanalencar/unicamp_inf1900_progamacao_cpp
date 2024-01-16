@@ -9,51 +9,32 @@ END_MESSAGE_MAP()
 
 MainWindow::MainWindow() 
 {	
-	Create(nullptr, L"Truco", WS_OVERLAPPEDWINDOW, CRect(0, 0, MAIN_WINDOW_WIDTH, MAIN_WINDOW_HEIGHT));
+	Create(NULL, L"Truco", WS_OVERLAPPEDWINDOW, CRect(0, 0, MAIN_WINDOW_WIDTH, MAIN_WINDOW_HEIGHT));
 	initComponentes();
+
+	m_carta = std::make_unique<Carta>(this, Naipe::PAUS, CartaValor::KING, 100, 100);
+	m_carta->draw();
+	
+	//_buttonMsg.Create(_T("Message"), WS_CHILD | WS_VISIBLE, CRect(0, 0, 100, 45), this, 2);
 }
 
 void MainWindow::initComponentes()
-{
+{	
 	initTexturas();
 
-	//int w = 150;
-	//int y = 100;
-
-	//int px = ((MAIN_WINDOW_WIDTH - w) /2);
-	//int py = ((MAIN_WINDOW_HEIGHT - y)/ 2);
-
-	//pImage.Create(NULL, WS_CHILD | WS_VISIBLE | SS_BITMAP, CRect(px, py, w, y), this, IDC_VIEW);
-
-	////CStatic* pImageControl;
-	////pImageControl = (CStatic*)GetDlgItem(IDC_VIEW);
-	//
-	//CString filePath2 = "D:/Downloads/CPP_321_EXE_MFC_GUI_RPG_Game_Hills_of_Darkness_ver3/media/center.bmp";
-
-	//HBITMAP IntroPix = (HBITMAP)LoadImage(NULL, filePath2, IMAGE_BITMAP, 0, 0, LR_DEFAULTSIZE | LR_LOADFROMFILE);
-
-	//if (IntroPix) {				
-	//	pImage.SetBitmap(IntroPix);		
-	//}
-	//else
-	//{
-	//	AfxMessageBox(_T("Falha ao carregar a imagem."), MB_OK);
-	//}
 }
 
 void MainWindow::initTexturas()
 {
-	
+	m_texturaFundo = std::make_shared<CStatic>();
+	m_texturaFundo->Create(NULL, WS_CHILD | WS_VISIBLE | SS_BITMAP, CRect(0, 0, MAIN_WINDOW_WIDTH, MAIN_WINDOW_HEIGHT), this, ID_IMG_FUNDO);
 
-	//m_texturaFundo = std::make_shared<CStatic>();
-	//m_texturaFundo->Create(NULL, WS_CHILD | WS_VISIBLE | SS_BITMAP, CRect(0, 0, MAIN_WINDOW_WIDTH, MAIN_WINDOW_HEIGHT), this, ID_IMG_FUNDO);
+	//HBITMAP textura = (HBITMAP)LoadImage(NULL, L"F:/Documentos/Cursos/Curso_c_plus_plus/Trabalhofinal/unicamp_inf1900_progamacao_cpp/M5/INF_1900_M5_Projeto_Final/Tucro.UI/assets/c_paus.bmp", IMAGE_BITMAP, 0, 0, LR_DEFAULTSIZE | LR_LOADFROMFILE);
+	//m_texturaFundo->SetBitmap(textura);
+	PathUtils::loadImage(IMG_BACKGROUND, m_texturaFundo);
 
-	//PathUtils::loadImage(IMG_FUNDO, m_texturaFundo);
 
-	Carta carta(this, 0, 0);
 }
-
-
 
 void MainWindow::OnButtonMsgClick()
 {	

@@ -37,6 +37,9 @@
     <Filter Include="Source Files\src\Common\Compoments">
       <UniqueIdentifier>{65b17b69-8e0c-42bd-9ac3-e072d911d961}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\src\CartaModel">
+      <UniqueIdentifier>{f93d4a3e-57a5-4f44-a9b5-2e2953e38c95}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AssetsConstants.h">
@@ -51,11 +54,17 @@
     <ClInclude Include="ApplicationMFC.h">
       <Filter>Source Files\src\Common\AppMFC</Filter>
     </ClInclude>
-    <ClInclude Include="Carta.h">
-      <Filter>Source Files\src\Common\Compoments</Filter>
-    </ClInclude>
     <ClInclude Include="TexturasFactory.h">
       <Filter>Source Files\src\Common\Consts</Filter>
+    </ClInclude>
+    <ClInclude Include="Carta.h">
+      <Filter>Source Files\src\CartaModel</Filter>
+    </ClInclude>
+    <ClInclude Include="Naipe.h">
+      <Filter>Source Files\src\CartaModel</Filter>
+    </ClInclude>
+    <ClInclude Include="CartaValor.h">
+      <Filter>Source Files\src\CartaModel</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -71,11 +80,11 @@
     <ClCompile Include="ApplicationMFC.cpp">
       <Filter>Source Files\src\Common\AppMFC</Filter>
     </ClCompile>
-    <ClCompile Include="Carta.cpp">
-      <Filter>Source Files\src\Common\Compoments</Filter>
-    </ClCompile>
     <ClCompile Include="TexturasFactory.cpp">
       <Filter>Source Files\src\Common\Consts</Filter>
+    </ClCompile>
+    <ClCompile Include="Carta.cpp">
+      <Filter>Source Files\src\CartaModel</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

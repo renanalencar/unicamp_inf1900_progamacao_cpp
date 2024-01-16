@@ -4,11 +4,16 @@
 #include <memory>
 #include "PathUtils.h"
 
+const UINT ID_TEXTURA_COPAS = 1001;
+const UINT ID_TEXTURA_PAUS = 1002;
+const UINT ID_TEXTURA_OUROS = 1003;
+const UINT ID_TEXTURA_ESPADAS = 1004;
+
+
 struct ConstTexture
 {
-	uint16_t ID;
+	UINT ID;
 	HBITMAP textura;
-
 	ConstTexture(uint16_t id, const HBITMAP& tex): ID(id), textura(tex) {}
 };
 

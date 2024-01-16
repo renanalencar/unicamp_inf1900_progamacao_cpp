@@ -2,10 +2,10 @@
 
 TexturasFactory::TexturasFactory()
 {	
-	m_pCartaPaus = std::make_shared<ConstTexture>(1001, PathUtils::loadBitmap(IMG_NIPE_PAUS));
-	m_pCartaCopas = std::make_shared<ConstTexture>(1002, PathUtils::loadBitmap(IMG_NIPE_COPAS));
-	m_pCartaEspadas = std::make_shared<ConstTexture>(1003, PathUtils::loadBitmap(IMG_NIPE_ESPADAS));
-	m_pCartaOuros = std::make_shared<ConstTexture>(1004, PathUtils::loadBitmap(IMG_NIPE_OUROS));
+	m_pCartaPaus = std::make_shared<ConstTexture>(ID_TEXTURA_PAUS, PathUtils::loadBitmap(IMG_NIPE_PAUS));
+	m_pCartaCopas = std::make_shared<ConstTexture>(ID_TEXTURA_COPAS, PathUtils::loadBitmap(IMG_NIPE_COPAS));
+	m_pCartaEspadas = std::make_shared<ConstTexture>(ID_TEXTURA_ESPADAS, PathUtils::loadBitmap(IMG_NIPE_ESPADAS));
+	m_pCartaOuros = std::make_shared<ConstTexture>(ID_TEXTURA_OUROS, PathUtils::loadBitmap(IMG_NIPE_OUROS));
 	m_pCartaBack = std::make_shared<ConstTexture>(1005, PathUtils::loadBitmap(IMG_BACK_CARTA));
 	m_pBackground = std::make_shared<ConstTexture>(1006, PathUtils::loadBitmap(IMG_BACKGROUND));	
 }
