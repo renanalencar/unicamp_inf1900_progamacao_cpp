@@ -10,13 +10,18 @@ Carta::Carta(CFrameWnd* window, Naipe naipe, CartaValor valor,  int x, int y) : 
 	updateBoundArea();
 	DWORD dwCartaStyle = WS_CHILD | WS_VISIBLE | SS_BITMAP;
 	CRect rectArea(m_bound.get());
-	m_canvas->Create(NULL, dwCartaStyle, rectArea, m_pWindow);
+	m_canvas->Create(NULL, dwCartaStyle, rectArea, m_pWindow, 256);
 	draw();
 }
 
 std::shared_ptr<CartaViewModel> Carta::getViewModel()
 {
 	return m_pViewModel;
+}
+
+std::shared_ptr<CRect> Carta::getBound()
+{
+	return m_bound;
 }
 
 HBITMAP Carta::loadTexture()
@@ -35,7 +40,7 @@ HBITMAP Carta::loadTexture()
 
 void Carta::updateBoundArea()
 {
-	m_bound = std::make_unique<CRect>(m_pViewModel->getDrawArea().X0, m_pViewModel->getDrawArea().Y0, m_pViewModel->getDrawArea().Xf, m_pViewModel->getDrawArea().Yf);
+	m_bound = std::make_shared<CRect>(m_pViewModel->getDrawArea().X0, m_pViewModel->getDrawArea().Y0, m_pViewModel->getDrawArea().Xf, m_pViewModel->getDrawArea().Yf);
 }
 
 void Carta::draw()

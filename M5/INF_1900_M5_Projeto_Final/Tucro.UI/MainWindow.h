@@ -29,6 +29,7 @@ public:
 	
 	afx_msg void OnButtonMsgClick();
 	afx_msg void OnButtonMsgClick2();
+	void OnLButtonDown(UINT nFlags, CPoint point);
 
 	DECLARE_MESSAGE_MAP();	
 };
