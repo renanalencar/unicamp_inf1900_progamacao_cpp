@@ -20,10 +20,12 @@ class CartaViewModel
 {
 private:
 	bool m_virada;
+	bool m_ativa;
 	Naipe m_naipe;
 	CartaValor m_valor;
 	DrawArea m_drawArea;
 	BaseView* m_pView;
+
 
 public:
 	CartaViewModel(BaseView* view, const Naipe& naipe, const CartaValor& valor, int x, int y);

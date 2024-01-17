@@ -15,6 +15,7 @@ MainWindow::MainWindow()
 	initComponentes();
 
 	m_carta = std::make_unique<Carta>(this, Naipe::PAUS, CartaValor::KING, 100, 100);	
+	m_carta->draw();
 }
 
 void MainWindow::initComponentes()
@@ -50,11 +51,7 @@ void MainWindow::OnButtonMsgClick2()
 
 void MainWindow::OnLButtonDown(UINT nFlags, CPoint point)
 {
-	if (m_carta->getBound()->PtInRect(point))
-	{
-		// Manipular o clique na imagem aqui
-		m_carta->getViewModel()->virar();
-	}
+	m_carta->LeftMouseDownEvent(point);
 
 	CFrameWnd::OnLButtonDown(nFlags, point);
 }

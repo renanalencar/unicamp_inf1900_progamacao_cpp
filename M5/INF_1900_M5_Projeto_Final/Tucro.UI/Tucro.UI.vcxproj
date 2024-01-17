@@ -141,6 +141,7 @@
     <ClInclude Include="Carta.h" />
     <ClInclude Include="CartaValor.h" />
     <ClInclude Include="CartaViewModel.h" />
+    <ClInclude Include="IDrawable.h" />
     <ClInclude Include="Naipe.h" />
     <ClInclude Include="TexturasFactory.h" />
     <ClInclude Include="MainWindow.h" />
@@ -151,6 +152,7 @@
     <ClCompile Include="BaseView.cpp" />
     <ClCompile Include="Carta.cpp" />
     <ClCompile Include="CartaViewModel.cpp" />
+    <ClCompile Include="IDrawable.cpp" />
     <ClCompile Include="TexturasFactory.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MainWindow.cpp" />

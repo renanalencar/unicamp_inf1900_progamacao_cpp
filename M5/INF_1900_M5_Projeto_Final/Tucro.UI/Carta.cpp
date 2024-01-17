@@ -1,7 +1,7 @@
 
 #include "Carta.h"
 
-Carta::Carta(CFrameWnd* window, Naipe naipe, CartaValor valor,  int x, int y) : BaseView()
+Carta::Carta(CFrameWnd* window, Naipe naipe, CartaValor valor,  int x, int y) : BaseView(), IDrawable()
 {
 	m_pWindow = window;
 	m_pViewModel = std::make_shared<CartaViewModel>(this, naipe, valor, x, y);	
@@ -11,7 +11,6 @@ Carta::Carta(CFrameWnd* window, Naipe naipe, CartaValor valor,  int x, int y) : 
 	DWORD dwCartaStyle = WS_CHILD | WS_VISIBLE | SS_BITMAP;
 	CRect rectArea(m_bound.get());
 	m_canvas->Create(NULL, dwCartaStyle, rectArea, m_pWindow, 256);
-	draw();
 }
 
 std::shared_ptr<CartaViewModel> Carta::getViewModel()
@@ -19,10 +18,10 @@ std::shared_ptr<CartaViewModel> Carta::getViewModel()
 	return m_pViewModel;
 }
 
-std::shared_ptr<CRect> Carta::getBound()
-{
-	return m_bound;
-}
+//std::shared_ptr<CRect> Carta::getBound()
+//{
+//	return m_bound;
+//}
 
 HBITMAP Carta::loadTexture()
 {
@@ -58,4 +57,10 @@ void Carta::update()
 {
 	draw();
 	moveTo();
+}
+
+void Carta::onLMouseDown()
+{
+	m_pViewModel->virar();
+	update();
 }

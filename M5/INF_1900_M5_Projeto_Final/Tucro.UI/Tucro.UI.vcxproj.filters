@@ -84,6 +84,9 @@
     <ClInclude Include="BaseView.h">
       <Filter>Source Files\src\Common\MVVM</Filter>
     </ClInclude>
+    <ClInclude Include="IDrawable.h">
+      <Filter>Source Files\src\Common\MVVM</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -108,6 +111,9 @@
       <Filter>Source Files\src\CartaModel\ViewModel</Filter>
     </ClCompile>
     <ClCompile Include="BaseView.cpp">
+      <Filter>Source Files\src\Common\MVVM</Filter>
+    </ClCompile>
+    <ClCompile Include="IDrawable.cpp">
       <Filter>Source Files\src\Common\MVVM</Filter>
     </ClCompile>
   </ItemGroup>

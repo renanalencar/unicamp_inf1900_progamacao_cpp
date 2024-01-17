@@ -5,6 +5,7 @@ CartaViewModel::CartaViewModel(BaseView* view, const Naipe& naipe, const CartaVa
 	m_naipe = naipe;
 	m_valor = valor;
 	m_virada = false;
+	m_ativa = true;
 	m_drawArea.X0 = x;
 	m_drawArea.Y0 = y;
 	m_drawArea.Xf = x + CARTA_WIDTH;
