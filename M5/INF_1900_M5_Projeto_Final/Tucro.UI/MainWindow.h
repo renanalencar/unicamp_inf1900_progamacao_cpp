@@ -2,7 +2,6 @@
 #include <memory>
 #include <afxwin.h>
 
-
 #include "PathUtils.h"
 #include "AssetsConstants.h"
 #include "Carta.h"
@@ -15,9 +14,8 @@ private:
 	
 	const unsigned short int ID_IMG_FUNDO = 1;
 
-	const unsigned short int MAIN_WINDOW_WIDTH = 1024;
-	const unsigned short int MAIN_WINDOW_HEIGHT = 780;
-
+	const unsigned short int MAIN_WINDOW_WIDTH = 1043;
+	const unsigned short int MAIN_WINDOW_HEIGHT = 823;
 
 	void initComponentes();
 	void initTexturas();	
@@ -30,6 +28,7 @@ public:
 	MainWindow();
 	
 	afx_msg void OnButtonMsgClick();
+	afx_msg void OnButtonMsgClick2();
 
 	DECLARE_MESSAGE_MAP();	
 };

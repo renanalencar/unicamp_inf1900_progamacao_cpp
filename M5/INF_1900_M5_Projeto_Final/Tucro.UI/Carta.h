@@ -5,25 +5,29 @@
 #include "PathUtils.h"
 #include "Naipe.h"
 #include "CartaValor.h"
+#include "CartaViewModel.h"
+#include "BaseView.h"
 
-const int CARTA_WIDTH = 90;
-const int CARTA_HEIGHT = 120;
-
-class Carta
+class Carta : public BaseView
 {
 private:
 	CFrameWnd* m_pWindow;
-	std::shared_ptr<CRect>  m_bound;
-	std::shared_ptr<CStatic> m_canvas;
-	Naipe m_naipe;
-	CartaValor m_valor;
-	HBITMAP m_textura;
+	std::shared_ptr<CartaViewModel> m_pViewModel;
+	std::unique_ptr<CRect>  m_bound;
+	std::unique_ptr<CStatic> m_canvas;
 
-	void loadTexture();
-public:
-	Carta(CFrameWnd* window, Naipe naipe, CartaValor valor, int x = 0, int y = 0);
+	HBITMAP loadTexture();
+	void updateBoundArea();
 	void draw();
-	void moveTo(int x, int y);
+	void moveTo();
+
+public:
+	Carta(CFrameWnd* window, Naipe naipe, CartaValor valor, int x, int y);
+	std::shared_ptr<CartaViewModel> getViewModel();
+
+	// Inherited via IView
+	void update() override;	
 };
+
 
 

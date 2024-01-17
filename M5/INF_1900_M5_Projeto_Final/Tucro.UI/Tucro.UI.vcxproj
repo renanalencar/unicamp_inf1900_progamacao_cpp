@@ -137,8 +137,10 @@
   <ItemGroup>
     <ClInclude Include="ApplicationMFC.h" />
     <ClInclude Include="AssetsConstants.h" />
+    <ClInclude Include="BaseView.h" />
     <ClInclude Include="Carta.h" />
     <ClInclude Include="CartaValor.h" />
+    <ClInclude Include="CartaViewModel.h" />
     <ClInclude Include="Naipe.h" />
     <ClInclude Include="TexturasFactory.h" />
     <ClInclude Include="MainWindow.h" />
@@ -146,7 +148,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ApplicationMFC.cpp" />
+    <ClCompile Include="BaseView.cpp" />
     <ClCompile Include="Carta.cpp" />
+    <ClCompile Include="CartaViewModel.cpp" />
     <ClCompile Include="TexturasFactory.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MainWindow.cpp" />
