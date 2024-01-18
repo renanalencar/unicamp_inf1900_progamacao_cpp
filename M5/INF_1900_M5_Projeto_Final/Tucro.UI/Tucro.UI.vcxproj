@@ -138,22 +138,22 @@
     <ClInclude Include="ApplicationMFC.h" />
     <ClInclude Include="AssetsConstants.h" />
     <ClInclude Include="BaseView.h" />
-    <ClInclude Include="Carta.h" />
-    <ClInclude Include="CartaValor.h" />
-    <ClInclude Include="CartaViewModel.h" />
-    <ClInclude Include="IDrawable.h" />
+    <ClInclude Include="Card.h" />
+    <ClInclude Include="CardValues.h" />
+    <ClInclude Include="CardViewModel.h" />
+    <ClInclude Include="Drawable.h" />
     <ClInclude Include="Naipe.h" />
-    <ClInclude Include="TexturasFactory.h" />
+    <ClInclude Include="TextureFactory.h" />
     <ClInclude Include="MainWindow.h" />
     <ClInclude Include="PathUtils.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ApplicationMFC.cpp" />
     <ClCompile Include="BaseView.cpp" />
-    <ClCompile Include="Carta.cpp" />
-    <ClCompile Include="CartaViewModel.cpp" />
-    <ClCompile Include="IDrawable.cpp" />
-    <ClCompile Include="TexturasFactory.cpp" />
+    <ClCompile Include="Card.cpp" />
+    <ClCompile Include="CardViewModel.cpp" />
+    <ClCompile Include="Drawable.cpp" />
+    <ClCompile Include="TextureFactory.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MainWindow.cpp" />
     <ClCompile Include="PathUtils.cpp" />

@@ -4,7 +4,7 @@
 
 #include "PathUtils.h"
 #include "AssetsConstants.h"
-#include "Carta.h"
+#include "Card.h"
 
 
 class MainWindow : public CFrameWnd
@@ -22,7 +22,7 @@ private:
 
 protected:	
 	std::shared_ptr<CStatic> m_texturaFundo;
-	std::unique_ptr<Carta> m_carta;	
+	std::unique_ptr<Card> m_carta;	
 
 public:
 	MainWindow();

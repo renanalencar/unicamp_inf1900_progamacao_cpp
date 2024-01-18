@@ -14,7 +14,7 @@ MainWindow::MainWindow()
 	Create(NULL, L"Truco", WS_OVERLAPPEDWINDOW, CRect(0, 0, MAIN_WINDOW_WIDTH, MAIN_WINDOW_HEIGHT));
 	initComponentes();
 
-	m_carta = std::make_unique<Carta>(this, Naipe::PAUS, CartaValor::KING, 100, 100);	
+	m_carta = std::make_unique<Card>(this, Naipe::PAUS, CardValues::KING, 100, 100);	
 	m_carta->draw();
 }
 
@@ -32,26 +32,24 @@ void MainWindow::initTexturas()
 	CButton* button = new CButton(); 
 	button->Create(L"move", WS_CHILD | WS_VISIBLE | SS_LEFT, CRect(0, 0, 150, 50), this, 2);
 
-	//CButton* button2 = new CButton();
-	//button2->Create(L"virar", WS_CHILD | WS_VISIBLE | SS_LEFT, CRect(200, 0, 350, 50), this, 3);
 
 }
 
 void MainWindow::OnButtonMsgClick()
 {	
 //	AfxMessageBox(L"Teste");
-	m_carta->getViewModel()->mover(500, 500);
+	m_carta->getViewModel()->move(500, 500);
 }
 
 void MainWindow::OnButtonMsgClick2()
 {
 	//	AfxMessageBox(L"Teste");
-	m_carta->getViewModel()->virar();
+	m_carta->getViewModel()->turn();
 }
 
 void MainWindow::OnLButtonDown(UINT nFlags, CPoint point)
 {
-	m_carta->LeftMouseDownEvent(point);
+	m_carta->OnLeftMouseButtonDown(point);
 
 	CFrameWnd::OnLButtonDown(nFlags, point);
 }

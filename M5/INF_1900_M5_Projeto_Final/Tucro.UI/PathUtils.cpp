@@ -36,25 +36,25 @@ HBITMAP PathUtils::loadBitmap(const std::wstring imgName)
 	return bitmap;
 }
 
-HBITMAP PathUtils::getTexture(const CartaValor& valor, const Naipe& naipe)
+HBITMAP PathUtils::getTexture(const CardValues& valor, const Naipe& naipe)
 {
 	std::wstring filename = getPathAssets() + L"/cartas/";
 
 	switch (valor)
 	{
-		case CartaValor::A: filename += L"a_"; break;
-		case CartaValor::DOIS: filename += L"2_"; break;
-		case CartaValor::TRES: filename += L"3_"; break;
-		case CartaValor::QUATRO: filename += L"4_"; break;
-		case CartaValor::CINCO: filename += L"5_"; break;
-		case CartaValor::SEIS: filename += L"6_"; break;
-		case CartaValor::SETE: filename += L"7_"; break;
-		case CartaValor::OITO: filename += L"8_"; break;
-		case CartaValor::NOVE: filename += L"9_"; break;
-		case CartaValor::DEZ: filename += L"10_"; break;
-		case CartaValor::VALET: filename += L"j_"; break;
-		case CartaValor::QUEEN: filename += L"q_"; break;
-		case CartaValor::KING: filename += L"k_"; break;
+		case CardValues::A: filename += L"a_"; break;
+		case CardValues::DOIS: filename += L"2_"; break;
+		case CardValues::TRES: filename += L"3_"; break;
+		case CardValues::QUATRO: filename += L"4_"; break;
+		case CardValues::CINCO: filename += L"5_"; break;
+		case CardValues::SEIS: filename += L"6_"; break;
+		case CardValues::SETE: filename += L"7_"; break;
+		case CardValues::OITO: filename += L"8_"; break;
+		case CardValues::NOVE: filename += L"9_"; break;
+		case CardValues::DEZ: filename += L"10_"; break;
+		case CardValues::VALET: filename += L"j_"; break;
+		case CardValues::QUEEN: filename += L"q_"; break;
+		case CardValues::KING: filename += L"k_"; break;
 		default:
 		break;
 	}

@@ -25,9 +25,6 @@
     <Filter Include="Source Files\src\Common\AppMFC">
       <UniqueIdentifier>{b82c434e-0426-4fd4-b885-eaec36970e95}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\src\Common\Compoments">
-      <UniqueIdentifier>{65b17b69-8e0c-42bd-9ac3-e072d911d961}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\src\CartaModel">
       <UniqueIdentifier>{f93d4a3e-57a5-4f44-a9b5-2e2953e38c95}</UniqueIdentifier>
     </Filter>
@@ -66,26 +63,26 @@
     <ClInclude Include="ApplicationMFC.h">
       <Filter>Source Files\src\Common\AppMFC</Filter>
     </ClInclude>
-    <ClInclude Include="TexturasFactory.h">
+    <ClInclude Include="TextureFactory.h">
       <Filter>Source Files\src\Common\Constants</Filter>
     </ClInclude>
     <ClInclude Include="Naipe.h">
       <Filter>Source Files\src\CartaModel</Filter>
     </ClInclude>
-    <ClInclude Include="CartaValor.h">
+    <ClInclude Include="CardValues.h">
       <Filter>Source Files\src\CartaModel</Filter>
     </ClInclude>
-    <ClInclude Include="Carta.h">
+    <ClInclude Include="Card.h">
       <Filter>Source Files\src\CartaModel\View</Filter>
     </ClInclude>
-    <ClInclude Include="CartaViewModel.h">
+    <ClInclude Include="CardViewModel.h">
       <Filter>Source Files\src\CartaModel\ViewModel</Filter>
     </ClInclude>
     <ClInclude Include="BaseView.h">
       <Filter>Source Files\src\Common\MVVM</Filter>
     </ClInclude>
-    <ClInclude Include="IDrawable.h">
-      <Filter>Source Files\src\Common\MVVM</Filter>
+    <ClInclude Include="Drawable.h">
+      <Filter>Source Files\src\Common\AppMFC</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -101,20 +98,20 @@
     <ClCompile Include="ApplicationMFC.cpp">
       <Filter>Source Files\src\Common\AppMFC</Filter>
     </ClCompile>
-    <ClCompile Include="TexturasFactory.cpp">
+    <ClCompile Include="TextureFactory.cpp">
       <Filter>Source Files\src\Common\Constants</Filter>
     </ClCompile>
-    <ClCompile Include="Carta.cpp">
+    <ClCompile Include="Card.cpp">
       <Filter>Source Files\src\CartaModel\View</Filter>
     </ClCompile>
-    <ClCompile Include="CartaViewModel.cpp">
+    <ClCompile Include="CardViewModel.cpp">
       <Filter>Source Files\src\CartaModel\ViewModel</Filter>
     </ClCompile>
     <ClCompile Include="BaseView.cpp">
       <Filter>Source Files\src\Common\MVVM</Filter>
     </ClCompile>
-    <ClCompile Include="IDrawable.cpp">
-      <Filter>Source Files\src\Common\MVVM</Filter>
+    <ClCompile Include="Drawable.cpp">
+      <Filter>Source Files\src\Common\AppMFC</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
