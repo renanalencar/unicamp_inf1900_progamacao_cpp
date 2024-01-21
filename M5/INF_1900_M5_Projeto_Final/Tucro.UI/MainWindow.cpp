@@ -21,6 +21,13 @@ MainWindow::MainWindow()
 void MainWindow::initComponentes()
 {	
 	initTexturas();
+
+	m_texto = std::make_shared<CustomLabel>();
+	m_texto->Create(nullptr, WS_CHILD | WS_VISIBLE , CRect(500, 10, 650, 30), this, 999);
+	m_texto->SetWindowText(L"Isabel de Souza Vieira Medeiros");	
+	m_texto->setForegroundColor(RGB(0,255,0));
+	m_texto->setBackgroundColor(RGB(0, 0, 0));
+	m_texto->setTransparent(true);
 }
 
 void MainWindow::initTexturas()
@@ -31,8 +38,6 @@ void MainWindow::initTexturas()
 
 	CButton* button = new CButton(); 
 	button->Create(L"move", WS_CHILD | WS_VISIBLE | SS_LEFT, CRect(0, 0, 150, 50), this, 2);
-
-
 }
 
 void MainWindow::OnButtonMsgClick()
@@ -53,4 +58,3 @@ void MainWindow::OnLButtonDown(UINT nFlags, CPoint point)
 
 	CFrameWnd::OnLButtonDown(nFlags, point);
 }
-

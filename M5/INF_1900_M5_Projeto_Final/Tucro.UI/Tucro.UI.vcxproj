@@ -142,6 +142,7 @@
     <ClInclude Include="CardValues.h" />
     <ClInclude Include="CardViewModel.h" />
     <ClInclude Include="Drawable.h" />
+    <ClInclude Include="CustomLabel.h" />
     <ClInclude Include="Naipe.h" />
     <ClInclude Include="TextureFactory.h" />
     <ClInclude Include="MainWindow.h" />
@@ -153,6 +154,7 @@
     <ClCompile Include="Card.cpp" />
     <ClCompile Include="CardViewModel.cpp" />
     <ClCompile Include="Drawable.cpp" />
+    <ClCompile Include="CustomLabel.cpp" />
     <ClCompile Include="TextureFactory.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MainWindow.cpp" />

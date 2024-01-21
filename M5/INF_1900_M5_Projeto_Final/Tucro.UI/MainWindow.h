@@ -5,6 +5,7 @@
 #include "PathUtils.h"
 #include "AssetsConstants.h"
 #include "Card.h"
+#include "CustomLabel.h"
 
 
 class MainWindow : public CFrameWnd
@@ -23,6 +24,7 @@ private:
 protected:	
 	std::shared_ptr<CStatic> m_texturaFundo;
 	std::unique_ptr<Card> m_carta;	
+	std::shared_ptr<CustomLabel> m_texto;
 
 public:
 	MainWindow();
@@ -33,4 +35,7 @@ public:
 
 	DECLARE_MESSAGE_MAP();	
 };
+
+
+
 
