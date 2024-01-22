@@ -138,11 +138,15 @@
     <ClInclude Include="ApplicationMFC.h" />
     <ClInclude Include="AssetsConstants.h" />
     <ClInclude Include="BaseView.h" />
+    <ClInclude Include="BaseViewModel.h" />
     <ClInclude Include="Card.h" />
     <ClInclude Include="CardValues.h" />
     <ClInclude Include="CardViewModel.h" />
+    <ClInclude Include="Dialog.h" />
+    <ClInclude Include="DialogViewModel.h" />
     <ClInclude Include="Drawable.h" />
     <ClInclude Include="CustomLabel.h" />
+    <ClInclude Include="DrawArea.h" />
     <ClInclude Include="Naipe.h" />
     <ClInclude Include="TextureFactory.h" />
     <ClInclude Include="MainWindow.h" />
@@ -150,9 +154,10 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ApplicationMFC.cpp" />
-    <ClCompile Include="BaseView.cpp" />
     <ClCompile Include="Card.cpp" />
     <ClCompile Include="CardViewModel.cpp" />
+    <ClCompile Include="Dialog.cpp" />
+    <ClCompile Include="DialogViewModel.cpp" />
     <ClCompile Include="Drawable.cpp" />
     <ClCompile Include="CustomLabel.cpp" />
     <ClCompile Include="TextureFactory.cpp" />

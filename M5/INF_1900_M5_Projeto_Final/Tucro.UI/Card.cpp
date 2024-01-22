@@ -27,7 +27,7 @@ HBITMAP Card::loadTexture()
 
 void Card::updateBoundArea()
 {
-	setBounds(new CRect(m_pViewModel->getDrawArea().X0, m_pViewModel->getDrawArea().Y0, m_pViewModel->getDrawArea().Xf, m_pViewModel->getDrawArea().Yf));	
+	setBounds(new CRect(m_pViewModel->getDrawArea().Left, m_pViewModel->getDrawArea().Top, m_pViewModel->getDrawArea().Width + m_pViewModel->getDrawArea().Left, m_pViewModel->getDrawArea().Height + m_pViewModel->getDrawArea().Top));
 }
 
 void Card::draw()
@@ -40,7 +40,7 @@ void Card::draw()
 void Card::update()
 {
 	draw();
-	move(m_pViewModel->getDrawArea().X0, m_pViewModel->getDrawArea().Y0);
+	move(m_pViewModel->getDrawArea().Left, m_pViewModel->getDrawArea().Top);
 }
 
 

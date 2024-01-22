@@ -3,37 +3,25 @@
 #include "Naipe.h"
 #include "CardValues.h"
 #include "BaseView.h"
-
-
+#include "DrawArea.h"
+#include "BaseViewModel.h"
 
 const int CARD_WIDTH = 91;
 const int CARD_HEIGHT = 120;
 
-struct DrawArea {
-	int X0;
-	int Y0;
-	int Xf;
-	int Yf;
-};
 
-class CardViewModel
+class CardViewModel : public BaseViewModel<CardViewModel>
 {
 private:
-	bool m_IsDown;
-	bool m_ativa;
+	bool m_IsDown;	
 	Naipe m_naipe;
-	CardValues m_value;
-	DrawArea m_drawArea;
-	BaseView<CardViewModel>* m_pView;
-
+	CardValues m_value;	
 
 public:
 	CardViewModel(BaseView<CardViewModel>* view, const Naipe& naipe, const CardValues& valor, int x, int y);
 	bool isDown() const;
 	Naipe getNaipe() const;
-	CardValues getValue() const;
-	DrawArea getDrawArea();
-	void move(int x, int y);
+	CardValues getValue() const;	
 	void turn();
 	void onLeftMouseButtonClick();
 };

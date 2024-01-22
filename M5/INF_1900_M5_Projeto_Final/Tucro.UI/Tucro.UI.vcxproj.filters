@@ -55,6 +55,18 @@
     <Filter Include="Source Files\src\Common\Controls\CustomStaticComponent">
       <UniqueIdentifier>{aae67cf7-ab55-42b1-a479-82f8db76e9e2}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\src\CartaModel\Enums">
+      <UniqueIdentifier>{9d68ba4d-97fd-4284-bcd7-7ef9b64c7e97}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\DialogModel">
+      <UniqueIdentifier>{0f9e330b-addf-4643-ad65-cb0450dbdca9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\DialogModel\View">
+      <UniqueIdentifier>{d44be185-89d3-43eb-92b4-3471bf71d715}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\DialogModel\ViewModel">
+      <UniqueIdentifier>{75b12298-cb06-4813-b300-b543116fb477}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AssetsConstants.h">
@@ -72,12 +84,6 @@
     <ClInclude Include="TextureFactory.h">
       <Filter>Source Files\src\Common\Constants</Filter>
     </ClInclude>
-    <ClInclude Include="Naipe.h">
-      <Filter>Source Files\src\CartaModel</Filter>
-    </ClInclude>
-    <ClInclude Include="CardValues.h">
-      <Filter>Source Files\src\CartaModel</Filter>
-    </ClInclude>
     <ClInclude Include="Card.h">
       <Filter>Source Files\src\CartaModel\View</Filter>
     </ClInclude>
@@ -92,6 +98,24 @@
     </ClInclude>
     <ClInclude Include="CustomLabel.h">
       <Filter>Source Files\src\Common\Controls\CustomStaticComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="CardValues.h">
+      <Filter>Source Files\src\CartaModel\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="Naipe.h">
+      <Filter>Source Files\src\CartaModel\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog.h">
+      <Filter>Source Files\src\DialogModel\View</Filter>
+    </ClInclude>
+    <ClInclude Include="DialogViewModel.h">
+      <Filter>Source Files\src\DialogModel\ViewModel</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawArea.h">
+      <Filter>Source Files\src\Common\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseViewModel.h">
+      <Filter>Source Files\src\Common\MVVM</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -116,14 +140,17 @@
     <ClCompile Include="CardViewModel.cpp">
       <Filter>Source Files\src\CartaModel\ViewModel</Filter>
     </ClCompile>
-    <ClCompile Include="BaseView.cpp">
-      <Filter>Source Files\src\Common\MVVM</Filter>
-    </ClCompile>
     <ClCompile Include="Drawable.cpp">
       <Filter>Source Files\src\Common\AppMFC</Filter>
     </ClCompile>
     <ClCompile Include="CustomLabel.cpp">
       <Filter>Source Files\src\Common\Controls\CustomStaticComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog.cpp">
+      <Filter>Source Files\src\DialogModel\View</Filter>
+    </ClCompile>
+    <ClCompile Include="DialogViewModel.cpp">
+      <Filter>Source Files\src\DialogModel\ViewModel</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
