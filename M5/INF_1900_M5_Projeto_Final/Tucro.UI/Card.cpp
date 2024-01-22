@@ -1,23 +1,15 @@
 
 #include "Card.h"
 
-Card::Card(CFrameWnd* window, Naipe naipe, CardValues valor, int x, int y) : BaseView(), Drawable(window, x, y, CARD_WIDTH, CARD_HEIGHT)
+Card::Card(CFrameWnd* window, Naipe naipe, CardValues valor, int x, int y) : BaseView<CardViewModel>(), Drawable(window, x, y, CARD_WIDTH, CARD_HEIGHT)
 {	
-	m_pViewModel = std::make_shared<CardViewModel>(this, naipe, valor, x, y);	
-	
+	m_pViewModel = std::make_unique<CardViewModel>(this, naipe, valor, x, y);
 }
 
 void Card::leftMouseButtonDownHandle(const CPoint& point)
 {
 	m_pViewModel->onLeftMouseButtonClick();
 }
-
-
-std::shared_ptr<CardViewModel> Card::getViewModel()
-{
-	return m_pViewModel;
-}
-
 
 HBITMAP Card::loadTexture()
 {
@@ -50,4 +42,5 @@ void Card::update()
 	draw();
 	move(m_pViewModel->getDrawArea().X0, m_pViewModel->getDrawArea().Y0);
 }
+
 

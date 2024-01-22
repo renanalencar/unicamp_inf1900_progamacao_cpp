@@ -24,11 +24,11 @@ private:
 	Naipe m_naipe;
 	CardValues m_value;
 	DrawArea m_drawArea;
-	BaseView* m_pView;
+	BaseView<CardViewModel>* m_pView;
 
 
 public:
-	CardViewModel(BaseView* view, const Naipe& naipe, const CardValues& valor, int x, int y);
+	CardViewModel(BaseView<CardViewModel>* view, const Naipe& naipe, const CardValues& valor, int x, int y);
 	bool isDown() const;
 	Naipe getNaipe() const;
 	CardValues getValue() const;

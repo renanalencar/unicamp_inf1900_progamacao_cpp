@@ -1,6 +1,6 @@
 #include "CardViewModel.h"
 
-CardViewModel::CardViewModel(BaseView* view, const Naipe& naipe, const CardValues& valor, int x, int y)
+CardViewModel::CardViewModel(BaseView<CardViewModel>* view, const Naipe& naipe, const CardValues& valor, int x, int y)
 {
 	m_naipe = naipe;
 	m_value = valor;
