@@ -6,6 +6,7 @@
 #include "AssetsConstants.h"
 #include "Card.h"
 #include "CustomLabel.h"
+#include "BaseButton.h"
 
 
 class MainWindow : public CFrameWnd
@@ -21,11 +22,14 @@ private:
 	void initComponentes();
 	void initTexturas();	
 
+	void buttonOnclick(int x, int y);
 protected:	
 	std::shared_ptr<CStatic> m_texturaFundo;
 	std::unique_ptr<Card> m_carta;	
 	std::shared_ptr<CustomLabel> m_texto;
+	BaseButton* bbutton;
 
+	std::unique_ptr<BaseButton> m_button;
 public:
 	MainWindow();
 	

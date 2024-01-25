@@ -137,8 +137,10 @@
   <ItemGroup>
     <ClInclude Include="ApplicationMFC.h" />
     <ClInclude Include="AssetsConstants.h" />
+    <ClInclude Include="BaseButton.h" />
     <ClInclude Include="BaseView.h" />
     <ClInclude Include="BaseViewModel.h" />
+    <ClInclude Include="ButtonFactory.h" />
     <ClInclude Include="Card.h" />
     <ClInclude Include="CardValues.h" />
     <ClInclude Include="CardViewModel.h" />
@@ -147,19 +149,24 @@
     <ClInclude Include="Drawable.h" />
     <ClInclude Include="CustomLabel.h" />
     <ClInclude Include="DrawArea.h" />
+    <ClInclude Include="BaseControl.h" />
     <ClInclude Include="Naipe.h" />
     <ClInclude Include="TextureFactory.h" />
     <ClInclude Include="MainWindow.h" />
     <ClInclude Include="PathUtils.h" />
+    <ClInclude Include="TypeButtons.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ApplicationMFC.cpp" />
+    <ClCompile Include="BaseButton.cpp" />
+    <ClCompile Include="ButtonFactory.cpp" />
     <ClCompile Include="Card.cpp" />
     <ClCompile Include="CardViewModel.cpp" />
     <ClCompile Include="Dialog.cpp" />
     <ClCompile Include="DialogViewModel.cpp" />
     <ClCompile Include="Drawable.cpp" />
     <ClCompile Include="CustomLabel.cpp" />
+    <ClCompile Include="BaseControl.cpp" />
     <ClCompile Include="TextureFactory.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MainWindow.cpp" />

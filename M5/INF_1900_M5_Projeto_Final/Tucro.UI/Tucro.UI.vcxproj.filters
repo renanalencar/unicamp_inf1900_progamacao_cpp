@@ -49,22 +49,25 @@
     <Filter Include="Source Files\src\Common\Constants">
       <UniqueIdentifier>{c0fb4680-5049-4538-b0a8-42e35d6eac8e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\src\CartaModel\Enums">
+      <UniqueIdentifier>{9d68ba4d-97fd-4284-bcd7-7ef9b64c7e97}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Source Files\src\Common\Controls">
       <UniqueIdentifier>{57cea965-be02-4773-a92f-ce7ea5e1fcbd}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\src\Common\Controls\CustomStaticComponent">
       <UniqueIdentifier>{aae67cf7-ab55-42b1-a479-82f8db76e9e2}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\src\CartaModel\Enums">
-      <UniqueIdentifier>{9d68ba4d-97fd-4284-bcd7-7ef9b64c7e97}</UniqueIdentifier>
+    <Filter Include="Source Files\src\Common\Controls\Buttons">
+      <UniqueIdentifier>{8d9a4315-fc0d-407f-8189-675e7cb6976f}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\src\DialogModel">
+    <Filter Include="Source Files\src\Common\Controls\Dialogs">
       <UniqueIdentifier>{0f9e330b-addf-4643-ad65-cb0450dbdca9}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\src\DialogModel\View">
+    <Filter Include="Source Files\src\Common\Controls\Dialogs\View">
       <UniqueIdentifier>{d44be185-89d3-43eb-92b4-3471bf71d715}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\src\DialogModel\ViewModel">
+    <Filter Include="Source Files\src\Common\Controls\Dialogs\ViewModel">
       <UniqueIdentifier>{75b12298-cb06-4813-b300-b543116fb477}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -106,16 +109,28 @@
       <Filter>Source Files\src\CartaModel\Enums</Filter>
     </ClInclude>
     <ClInclude Include="Dialog.h">
-      <Filter>Source Files\src\DialogModel\View</Filter>
+      <Filter>Source Files\src\Common\Controls\Dialogs\View</Filter>
     </ClInclude>
     <ClInclude Include="DialogViewModel.h">
-      <Filter>Source Files\src\DialogModel\ViewModel</Filter>
+      <Filter>Source Files\src\Common\Controls\Dialogs\ViewModel</Filter>
     </ClInclude>
     <ClInclude Include="DrawArea.h">
       <Filter>Source Files\src\Common\Utils</Filter>
     </ClInclude>
     <ClInclude Include="BaseViewModel.h">
       <Filter>Source Files\src\Common\MVVM</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseButton.h">
+      <Filter>Source Files\src\Common\Controls\Buttons</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseControl.h">
+      <Filter>Source Files\src\Common\AppMFC</Filter>
+    </ClInclude>
+    <ClInclude Include="TypeButtons.h">
+      <Filter>Source Files\src\Common\Constants</Filter>
+    </ClInclude>
+    <ClInclude Include="ButtonFactory.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -147,10 +162,19 @@
       <Filter>Source Files\src\Common\Controls\CustomStaticComponent</Filter>
     </ClCompile>
     <ClCompile Include="Dialog.cpp">
-      <Filter>Source Files\src\DialogModel\View</Filter>
+      <Filter>Source Files\src\Common\Controls\Dialogs\View</Filter>
     </ClCompile>
     <ClCompile Include="DialogViewModel.cpp">
-      <Filter>Source Files\src\DialogModel\ViewModel</Filter>
+      <Filter>Source Files\src\Common\Controls\Dialogs\ViewModel</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseButton.cpp">
+      <Filter>Source Files\src\Common\Controls\Buttons</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseControl.cpp">
+      <Filter>Source Files\src\Common\AppMFC</Filter>
+    </ClCompile>
+    <ClCompile Include="ButtonFactory.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

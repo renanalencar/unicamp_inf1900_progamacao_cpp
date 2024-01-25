@@ -4,19 +4,19 @@
 
 #include "PathUtils.h"
 #include "AssetsConstants.h"
+#include "BaseControl.h"
+#include "TypeButtons.h"
 
-class BaseButton : public CStatic
+const int BUTTON_WIDTH = 120;
+const int BUTTON_HEIGHT = 44;
+
+class BaseButton : public BaseControl
 {
 private:
-	const int BUTTON_WIDTH = 120;
-	const int BUTTON_HEIGHT = 44;
+	TypeButton m_type;
 
-public:	
-	
-
-	virtual BOOL Create(DWORD dwStyle,int x, int y, CWnd* pParentWnd, UINT nID = 0xffff);
-	
-	afx_msg void OnPaint();
-	DECLARE_MESSAGE_MAP()
+	void loadTexture();
+public: 
+	BaseButton(CWnd* window, int x, int y, TypeButton type);
 };
 

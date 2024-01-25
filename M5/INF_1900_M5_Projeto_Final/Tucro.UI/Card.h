@@ -7,19 +7,19 @@
 #include "CardValues.h"
 #include "CardViewModel.h"
 #include "BaseView.h"
-#include "Drawable.h"
+#include "BaseControl.h"
 
-class Card : public BaseView<CardViewModel>, public Drawable
+class Card : public BaseView<CardViewModel>, public BaseControl
 {
 private:		
 	HBITMAP loadTexture();
 	void updateBoundArea();	
 
 public:
-	Card(CFrameWnd* window, Naipe naipe, CardValues valor, int x, int y);	
+	Card(CWnd* window, Naipe naipe, CardValues valor, int x, int y);
 	
 	// Inherited via IView
-	void leftMouseButtonDownHandle(const CPoint& point) override;
+	void onLeftMouseButtonDownHandle(int x, int y);
 	void draw() override;
 	void update() override;
 };

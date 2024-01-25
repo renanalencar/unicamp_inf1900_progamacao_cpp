@@ -23,6 +23,6 @@ public:
 	Naipe getNaipe() const;
 	CardValues getValue() const;	
 	void turn();
-	void onLeftMouseButtonClick();
+	void OnLeftMouseButtonClick();
 };
 

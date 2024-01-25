@@ -14,3 +14,8 @@ const std::wstring IMG_NIPE_COPAS = L"c_copas.bmp";
 const std::wstring IMG_NIPE_PAUS = L"c_paus.bmp";
 const std::wstring IMG_NIPE_OUROS = L"c_ouros.bmp";
 const std::wstring IMG_NIPE_ESPADAS = L"c_espadas.bmp";
+
+//HUD
+const std::wstring IMG_ACEITAR_RECT_BUTTON = L"aceitar_rect.bmp";
+const std::wstring IMG_TRUCO_PLAYER_BUTTON_RECT = L"m_truco_rect.bmp";
+

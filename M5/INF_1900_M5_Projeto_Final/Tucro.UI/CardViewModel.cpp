@@ -29,7 +29,7 @@ void CardViewModel::turn()
 	m_pView->update();
 }
 
-void CardViewModel::onLeftMouseButtonClick()
+void CardViewModel::OnLeftMouseButtonClick()
 {
 	turn();
 }

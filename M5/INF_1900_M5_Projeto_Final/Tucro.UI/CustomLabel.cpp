@@ -79,8 +79,7 @@ void CustomLabel::OnPaint()
         DEFAULT_PITCH | FF_SWISS, // Família da fonte
         _T("Arial"));         // Nome da fonte
 
-    
-    //CPaintDC dc(this);
+        
     std::unique_ptr<CPaintDC> pDC;
     pDC = std::make_unique<CPaintDC>(this);
     

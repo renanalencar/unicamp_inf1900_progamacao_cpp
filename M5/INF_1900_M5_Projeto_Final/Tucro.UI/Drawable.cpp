@@ -1,6 +1,6 @@
 #include "Drawable.h"
 
-Drawable::Drawable(CFrameWnd* window, int x, int y, int width, int height)
+Drawable::Drawable(CWnd* window, int x, int y, int width, int height)
 {
     m_pWindow = window;
     m_enable = true;    
@@ -8,7 +8,7 @@ Drawable::Drawable(CFrameWnd* window, int x, int y, int width, int height)
     m_pBounds = std::make_shared<CRect>(x, y, x + width, y + height);
 
     DWORD dwCartaStyle = WS_CHILD | WS_VISIBLE | SS_BITMAP;
-    m_pCanvas->Create(NULL, dwCartaStyle, *m_pBounds.get(), m_pWindow, 256);
+    m_pCanvas->Create(L"DRAWABLE", dwCartaStyle, *m_pBounds.get(), m_pWindow);
 }
 
 void Drawable::setEnable(bool value)
@@ -44,13 +44,6 @@ void Drawable::resize(int width, int height)
     m_pCanvas->MoveWindow(m_pBounds.get(), false);
 }
 
-void Drawable::OnLeftMouseButtonDown(const CPoint& point)
-{
-    if (isEnable() && m_pBounds->PtInRect(point)) {
-        leftMouseButtonDownHandle(point);
-    }
-}
-
 bool Drawable::isEnable() const
 {
     return m_enable;
@@ -58,9 +51,6 @@ bool Drawable::isEnable() const
 
 void Drawable::draw(){    
     m_pCanvas->SetBitmap(m_texture);     
-}
-
-void Drawable::leftMouseButtonDownHandle(const CPoint& point)
-{
+    m_pCanvas->MoveWindow(*m_pBounds.get());
 }
 
