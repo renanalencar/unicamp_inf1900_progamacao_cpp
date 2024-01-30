@@ -6,6 +6,7 @@ Drawable::Drawable(CWnd* window, int x, int y, int width, int height)
     m_enable = true;    
     m_pCanvas = std::make_unique<CStatic>();
     m_pBounds = std::make_shared<CRect>(x, y, x + width, y + height);
+    m_visible = true;
 
     DWORD dwCartaStyle = WS_CHILD | WS_VISIBLE | SS_BITMAP;
     m_pCanvas->Create(L"DRAWABLE", dwCartaStyle, *m_pBounds.get(), m_pWindow);
@@ -47,6 +48,21 @@ void Drawable::resize(int width, int height)
 bool Drawable::isEnable() const
 {
     return m_enable;
+}
+
+bool Drawable::isVisible() const
+{
+    return m_visible;
+}
+
+void Drawable::setVisible(bool value)
+{
+    if (value) {
+        m_pCanvas->ShowWindow(SW_SHOW);
+    }
+    else
+        m_pCanvas->ShowWindow(SW_HIDE);
+    m_visible = value;
 }
 
 void Drawable::draw(){    

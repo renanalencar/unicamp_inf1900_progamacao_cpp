@@ -17,6 +17,6 @@ private:
 
 	void loadTexture();
 public: 
-	BaseButton(CWnd* window, int x, int y, TypeButton type);
+	BaseButton(CWnd* parent, int x, int y, TypeButton type);
 };
 

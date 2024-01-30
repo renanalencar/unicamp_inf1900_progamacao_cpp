@@ -21,6 +21,7 @@ public:
 	static HBITMAP getCardTexture(const CardValues& valor, const Naipe& naipe);
 	static HBITMAP getHUDTexture(std::wstring hudTextureName);
 	static HBITMAP getButtonTexture(TypeButton type);
+	static HBITMAP getDialogTexture(std::wstring hudTextureName);
 };
 
 

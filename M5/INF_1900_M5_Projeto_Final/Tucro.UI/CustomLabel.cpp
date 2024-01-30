@@ -110,6 +110,5 @@ void CustomLabel::OnPaint()
     GetWindowText(text);
     pDC->TextOut(0, 0, text);
     
-    pDC->SelectObject(pFontAntiga);
-    
+    pDC->SelectObject(pFontAntiga);    
 }

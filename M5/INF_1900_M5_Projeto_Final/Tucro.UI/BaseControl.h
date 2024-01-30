@@ -5,6 +5,7 @@
 
 
 using MouseEventHandle = std::function<void(const int&, const int&)>;
+using CommonEventHandle = std::function<void()>;
 
 
 class BaseControl : public Drawable
@@ -13,6 +14,6 @@ public:
 	MouseEventHandle OnLeftMouseButtonDownHandle;
 
 	BaseControl(CWnd* window, int x, int y, int width, int height);
-	void LeftMouseButtonDown(const CPoint& point);	
+	virtual void LeftMouseButtonDown(const CPoint& point);	
 };
 

@@ -10,16 +10,18 @@ protected:
 private:
 	CWnd* m_pWindow;	
 	std::shared_ptr<CRect>  m_pBounds;
-	bool m_enable;		
+	bool m_enable;
+	bool m_visible;
 	HBITMAP m_texture;
 
 public:
 	Drawable(CWnd* window, int x, int y, int width, int height);
-	virtual void draw();
-		
+	virtual void draw();		
 	
 	bool isEnable() const;
 	void setEnable(bool value);
+	bool isVisible() const;
+	void setVisible(bool value);
 	std::shared_ptr<CRect> getBounds() const;
 	void setBounds(const CRect& rect);
 	void setTexture(HBITMAP texture);

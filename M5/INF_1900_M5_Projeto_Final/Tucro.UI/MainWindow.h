@@ -8,6 +8,8 @@
 #include "CustomLabel.h"
 #include "BaseButton.h"
 
+#include "Dialog.h"
+
 
 class MainWindow : public CFrameWnd
 {
@@ -28,6 +30,8 @@ protected:
 	std::unique_ptr<Card> m_carta;	
 	std::shared_ptr<CustomLabel> m_texto;
 	BaseButton* bbutton;
+
+	std::shared_ptr<Dialog> m_dialog;
 
 	std::unique_ptr<BaseButton> m_button;
 public:

@@ -98,7 +98,22 @@ HBITMAP PathUtils::getHUDTexture(std::wstring hudTextureName)
 HBITMAP PathUtils::getButtonTexture(TypeButton type)
 {
 	switch (type) {
-		case TypeButton::MesaTruco:
+		case TypeButton::PlayerTruco:
 			return getHUDTexture(IMG_TRUCO_PLAYER_BUTTON_RECT);
+		case TypeButton::DialogAceitar:
+			return getHUDTexture(IMG_DIALOG_BUTTON_ACEITAR);
+		case TypeButton::DialogRecusar:
+			return getHUDTexture(IMG_DIALOG_BUTTON_RECUSAR);
+		case TypeButton::DialogPedirSeis:
+			return getHUDTexture(IMG_DIALOG_BUTTON_PEDIR_6);
+		case TypeButton::DialogPedirNove:
+			return getHUDTexture(IMG_DIALOG_BUTTON_PEDIR_9);
+		case TypeButton::DialogPedirDoze:
+			return getHUDTexture(IMG_DIALOG_BUTTON_PEDIR_12);
 	}
+}
+
+HBITMAP PathUtils::getDialogTexture(std::wstring hudTextureName)
+{
+	return getHUDTexture(hudTextureName);
 }

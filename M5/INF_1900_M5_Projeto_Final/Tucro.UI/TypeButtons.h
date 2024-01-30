@@ -2,13 +2,14 @@
 
 enum class TypeButton {
 
-	MesaTruco = 10,
-	MesaPedirSeis = 11,
-	MesaPedirNove = 12,
-	MesaPedirDoze = 13,
+	PlayerTruco = 10,
+	PlayerPedirSeis = 11,
+	PlayerPedirNove = 12,
+	PlayerPedirDoze = 13,
 
-	DialogTruco = 20,
-	DialogPedirSeis = 21,
-	DialogPedirNove = 22,
-	DialogPedirDoze = 23,
+	DialogPedirSeis = 20,
+	DialogPedirNove = 21,
+	DialogPedirDoze = 22,
+	DialogAceitar = 23,
+	DialogRecusar = 24	
 };
