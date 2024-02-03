@@ -1,4 +1,4 @@
-#include "CustomLabel.h"
+ï»¿#include "CustomLabel.h"
 
 BEGIN_MESSAGE_MAP(CustomLabel, CStatic)
     ON_WM_PAINT()
@@ -62,27 +62,9 @@ void CustomLabel::setTransparent(bool value)
 
 void CustomLabel::OnPaint()
 {
-    CFont minhaFonte;
-    minhaFonte.CreateFont(
-        m_fontSize,           // Altura da fonte
-        0,                    // Largura média dos caracteres
-        0,                    // Ângulo de escapamento
-        0,                    // Ângulo de orientação
-        (int) m_fontWeight,            // Peso da fonte (FW_BOLD para negrito)
-        FALSE,                // Itálico
-        FALSE,                // Sublinhado
-        0,                    // Tachado
-        ANSI_CHARSET,         // Conjunto de caracteres
-        OUT_DEFAULT_PRECIS,   // Precisão de saída
-        CLIP_DEFAULT_PRECIS,  // Precisão de recorte
-        DEFAULT_QUALITY,      // Qualidade da fonte
-        DEFAULT_PITCH | FF_SWISS, // Família da fonte
-        _T("Arial"));         // Nome da fonte
-
-        
     std::unique_ptr<CPaintDC> pDC;
     pDC = std::make_unique<CPaintDC>(this);
-    
+            
     // Use um pincel transparente
     CBrush brush;
     brush.CreateStockObject(HOLLOW_BRUSH);
@@ -101,14 +83,69 @@ void CustomLabel::OnPaint()
     pDC->SetBkColor(m_backgorund);
     pDC->SetTextColor(m_foregorund);
     
+    //Configurando fonte
+    CFont minhaFonte;
+    minhaFonte.CreateFont(
+        m_fontSize,           // Altura da fonte
+        0,                    // Largura mÃ©dia dos caracteres
+        0,                    // Ã‚ngulo de escapamento
+        0,                    // Ã‚ngulo de orientaÃ§Ã£o
+        (int) m_fontWeight,            // Peso da fonte (FW_BOLD para negrito)
+        FALSE,                // ItÃ¡lico
+        FALSE,                // Sublinhado
+        0,                    // Tachado
+        ANSI_CHARSET,         // Conjunto de caracteres
+        OUT_DEFAULT_PRECIS,   // PrecisÃ£o de saÃ­da
+        CLIP_DEFAULT_PRECIS,  // PrecisÃ£o de recorte
+        DEFAULT_QUALITY,      // Qualidade da fonte
+        DEFAULT_PITCH | FF_SWISS, // FamÃ­lia da fonte
+        _T("Arial"));         // Nome da fonte
     // Selecione a nova fonte no contexto de dispositivo
     CFont* pFontAntiga = pDC->SelectObject(&minhaFonte);
+
+
+    // Adicione aqui o cÃ³digo para desenhar o texto ou outros elementos
+    CString strText;
+    GetWindowText(strText);
+
+    // Configura a margem (pode ajustar conforme necessÃ¡rio)
+    int margin = 10;
+    rect.DeflateRect(margin, margin);
+
+    // Calcula a largura da Ã¡rea de desenho
+    int maxWidth = rect.Width();
+
+    // Inicializa as variÃ¡veis â€‹â€‹para controle de quebra de linha
+    int xPos = rect.left;
+    int yPos = rect.top;
+
+    // Itera sobre cada palavra no texto
+    CStringArray words;
+    int start = 0;
+    int length = strText.GetLength();
+    while (start < length) {
+        int spacePos = strText.Find(_T(' '), start);
+        CString word = (spacePos == -1) ? strText.Mid(start) : strText.Mid(start, spacePos - start);
+        words.Add(word);
+        start = (spacePos == -1) ? length : spacePos + 1;
+    }
+
+    // Desenha o texto com quebra de linha automÃ¡tica
+    for (int i = 0; i < words.GetSize(); i++) {
+        CString word = words.GetAt(i);
+        int wordWidth = pDC->GetTextExtent(word).cx;
+
+        if (xPos + wordWidth > rect.right) {
+            // Quebra de linha
+            xPos = rect.left;
+            yPos += pDC->GetTextExtent(_T("A")).cy; // Altura aproximada de uma linha de texto
+        }
+
+        pDC->TextOut(xPos, yPos, word);
+        xPos += wordWidth + pDC->GetTextExtent(_T(" ")).cx; // Adiciona espaÃ§o entre as palavras
+    }
     
     
-    // Adicione aqui o código para desenhar o texto ou outros elementos
-    CString text;
-    GetWindowText(text);
-    pDC->TextOut(0, 0, text);
-    
+    //pDC->TextOut(0, 0, strText);    
     pDC->SelectObject(pFontAntiga);    
 }

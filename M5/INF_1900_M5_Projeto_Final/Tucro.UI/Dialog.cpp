@@ -48,7 +48,7 @@ Dialog::Dialog(CWnd* window, int x, int y, DialogType type, std::wstring message
 	loadIcon();
 
 	m_message = std::make_unique<CustomLabel>();
-	m_message->Create(nullptr, WS_CHILD | WS_VISIBLE, CRect(190, 30, 550, 100), pCanvas);
+	m_message->Create(nullptr, WS_CHILD | WS_VISIBLE, CRect(190, 10, 590, 100), pCanvas);
 	m_message->setTransparent(true);
 	m_message->setForegroundColor(RGB(255,255,255));
 	m_message->SetWindowTextW(message.c_str());

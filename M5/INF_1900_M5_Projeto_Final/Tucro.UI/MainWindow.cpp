@@ -20,7 +20,7 @@ MainWindow::MainWindow()
 
 
 	DialogBuilder builder(this);
-	m_dialog = builder.WithMessage(L"AAAAAAAAAAAAAA bbbbbbbbbbbbb \n cccccccccccccc dddddddddddddd eeeeeeeeeeeeeee")
+	m_dialog = builder.WithMessage(L"O Jogador \"Wanderson\" pedio TRUCO! O que você deseja fazer?" )
 					  .WithDialogType(DialogType::Truco)
 					  .WithPosition(0, ((int)MAIN_WINDOW_HEIGHT / 2))
 				      //.WithAceitarButton([&]() {m_texto->SetWindowText(L"deu certo");})
@@ -36,8 +36,8 @@ void MainWindow::initComponentes()
 	initTexturas();
 
 	m_texto = std::make_shared<CustomLabel>();
-	m_texto->Create(nullptr, WS_CHILD | WS_VISIBLE | SS_LEFT , CRect(500, 10, 650, 30), this);
-	m_texto->SetWindowText(L"Texto Transparente ccccccccccccc bbbbbbbbbbbbbbbbbbbbb");
+	m_texto->Create(nullptr, WS_CHILD | WS_VISIBLE | SS_LEFT , CRect(500, 10, 550, 30), this);
+	//m_texto->SetWindowText(L"TextoTransparentecccccccccccccbbbbbbbbbbbbbbbbbbbbb");
 	m_texto->setFontSize(30);
 	m_texto->setForegroundColor(RGB(0,255,0));
 	m_texto->setBackgroundColor(RGB(0, 0, 0));
