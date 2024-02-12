@@ -70,6 +70,9 @@
     <Filter Include="Source Files\src\Common\Controls\Dialogs\ViewModel">
       <UniqueIdentifier>{75b12298-cb06-4813-b300-b543116fb477}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\src\PlayerModel">
+      <UniqueIdentifier>{4eb543fb-e0b4-40d6-a2c2-ecc69a9ac6ce}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AssetsConstants.h">
@@ -130,7 +133,7 @@
       <Filter>Source Files\src\Common\Constants</Filter>
     </ClInclude>
     <ClInclude Include="ButtonFactory.h">
-      <Filter>Header Files</Filter>
+      <Filter>Source Files\src\Common\Controls\Buttons</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -174,7 +177,7 @@
       <Filter>Source Files\src\Common\AppMFC</Filter>
     </ClCompile>
     <ClCompile Include="ButtonFactory.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\src\Common\Controls\Buttons</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

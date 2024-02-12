@@ -18,6 +18,8 @@ private:
 	CardValues m_value;	
 
 public:
+	bool operator ==(const CardViewModel& other);
+
 	CardViewModel(BaseView<CardViewModel>* view, const Naipe& naipe, const CardValues& valor, int x, int y);
 	bool isDown() const;
 	Naipe getNaipe() const;

@@ -1,6 +1,11 @@
 #include "CardViewModel.h"
 
-CardViewModel::CardViewModel(BaseView<CardViewModel>* view, const Naipe& naipe, const CardValues& valor, int x, int y): 
+bool CardViewModel::operator==(const CardViewModel& other)
+{
+	return (other.getNaipe() == m_naipe && other.getValue() == m_value);
+}
+
+CardViewModel::CardViewModel(BaseView<CardViewModel>* view, const Naipe& naipe, const CardValues& valor, int x, int y):
 	BaseViewModel<CardViewModel>(view, x, y, CARD_WIDTH, CARD_HEIGHT)
 {
 	m_naipe = naipe;

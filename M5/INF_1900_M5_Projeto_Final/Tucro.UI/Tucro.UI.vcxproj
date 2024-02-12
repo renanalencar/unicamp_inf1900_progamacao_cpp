@@ -24,6 +24,7 @@
     <ProjectGuid>{77ad3030-1e6c-4402-8e7a-13bdf07b6d6b}</ProjectGuid>
     <RootNamespace>TucroUI</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Tucro.UI</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -166,7 +167,7 @@
     <ClCompile Include="DialogViewModel.cpp" />
     <ClCompile Include="Drawable.cpp" />
     <ClCompile Include="CustomLabel.cpp" />
-    <ClCompile Include="BaseControl.cpp" />
+    <ClCompile Include="BaseControl.cpp" />    
     <ClCompile Include="TextureFactory.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MainWindow.cpp" />
