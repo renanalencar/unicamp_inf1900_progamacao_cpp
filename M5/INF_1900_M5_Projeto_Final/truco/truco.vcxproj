@@ -31,6 +31,7 @@
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
@@ -38,12 +39,14 @@
     <PlatformToolset>v143</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
@@ -51,6 +54,7 @@
     <PlatformToolset>v143</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -79,7 +83,7 @@
       <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
-      <SubSystem>Console</SubSystem>
+      <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
@@ -94,7 +98,7 @@
       <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
-      <SubSystem>Console</SubSystem>
+      <SubSystem>Windows</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -109,7 +113,7 @@
       <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
-      <SubSystem>Console</SubSystem>
+      <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
@@ -124,7 +128,7 @@
       <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
-      <SubSystem>Console</SubSystem>
+      <SubSystem>Windows</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -133,6 +137,13 @@
   <ItemGroup>
     <ClCompile Include="baralho.cpp" />
     <ClCompile Include="carta.cpp" />
+    <ClCompile Include="interface\ApplicationMFC.cpp" />
+    <ClCompile Include="interface\BaseControl.cpp" />
+    <ClCompile Include="interface\CustomLabel.cpp" />
+    <ClCompile Include="interface\Drawable.cpp" />
+    <ClCompile Include="interface\MainWindow.cpp" />
+    <ClCompile Include="interface\PathUtils.cpp" />
+    <ClCompile Include="interface\TextureFactory.cpp" />
     <ClCompile Include="jogador.cpp" />
     <ClCompile Include="jogo.cpp" />
     <ClCompile Include="jogoview.cpp" />
@@ -142,6 +153,15 @@
   <ItemGroup>
     <ClInclude Include="baralho.hpp" />
     <ClInclude Include="carta.hpp" />
+    <ClInclude Include="interface\ApplicationMFC.h" />
+    <ClInclude Include="interface\AssetsConstants.h" />
+    <ClInclude Include="interface\BaseControl.h" />
+    <ClInclude Include="interface\CustomLabel.h" />
+    <ClInclude Include="interface\Drawable.h" />
+    <ClInclude Include="interface\MainWindow.h" />
+    <ClInclude Include="interface\PathUtils.h" />
+    <ClInclude Include="interface\TextureFactory.h" />
+    <ClInclude Include="interface\TypeButtons.h" />
     <ClInclude Include="jogador.hpp" />
     <ClInclude Include="jogo.hpp" />
     <ClInclude Include="jogoview.hpp" />

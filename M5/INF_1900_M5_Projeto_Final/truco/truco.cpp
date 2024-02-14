@@ -14,17 +14,21 @@
 #include "jogoviewmodel.hpp"
 #include "jogoview.hpp"
 
-int main() {
-	// Configuração da localização para lidar com acentuação
-	std::locale::global(std::locale("pt_BR.UTF8"));
+#include "interface/ApplicationMFC.h"
 
-	Jogo jogo;
-	JogoViewModel viewModel(jogo);
-	JogoView jogoView(viewModel);
+//int main() {
+//	// Configuração da localização para lidar com acentuação
+//	std::locale::global(std::locale("pt_BR.UTF8"));
+//
+//	Jogo jogo;
+//	JogoViewModel viewModel(jogo);
+//	JogoView jogoView(viewModel);
+//
+//	jogoView.iniciar();
+//
+//	system("pause");
+//
+//	return 0;
+//}
 
-	jogoView.iniciar();
-
-	system("pause");
-
-	return 0;
-}
+ui::ApplicationMFC app;

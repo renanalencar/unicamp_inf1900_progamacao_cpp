@@ -13,48 +13,132 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Arquivos de Origem\Jogo">
+      <UniqueIdentifier>{55202804-1925-4312-8167-ddc66d2bf69a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Origem\Baralho">
+      <UniqueIdentifier>{87c02b6c-2761-4eb3-a6dd-a5a34a00e81f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Origem\Carta">
+      <UniqueIdentifier>{1f6d79d1-2f84-4301-8aad-eebc39049ed8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Origem\Jogador">
+      <UniqueIdentifier>{60e8ba28-e4e0-403b-8d30-262f177a3215}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Origem\Interface">
+      <UniqueIdentifier>{bb942f1a-d419-44b0-bad6-c48657a9953e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Origem\Interface\Common">
+      <UniqueIdentifier>{038b9af7-c906-4108-849b-66c7cee73c98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Origem\Interface\Common\AppMFC">
+      <UniqueIdentifier>{1bc09d5f-814a-4bad-9295-52cdba40aaa2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Origem\Interface\MainWindow">
+      <UniqueIdentifier>{c85c398a-d4fb-48ea-b385-72fb2439c5c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Origem\Interface\MainWindow\View">
+      <UniqueIdentifier>{d6fbb0a2-4f41-4afb-93e0-bee81db98db7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Origem\Interface\Common\Constants">
+      <UniqueIdentifier>{bf61fe10-fd98-4dd9-82b5-480b58f1a7c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Origem\Interface\Common\Controls">
+      <UniqueIdentifier>{2e8db06b-3d87-48a8-8ee1-8eb8ff589328}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Origem\Interface\Common\Controls\CustomStaticComponent">
+      <UniqueIdentifier>{695c132e-bf6e-4d6a-b835-a00e19d29bd0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="truco.cpp">
       <Filter>Arquivos de Origem</Filter>
     </ClCompile>
-    <ClCompile Include="carta.cpp">
-      <Filter>Arquivos de Origem</Filter>
-    </ClCompile>
-    <ClCompile Include="baralho.cpp">
-      <Filter>Arquivos de Origem</Filter>
-    </ClCompile>
-    <ClCompile Include="jogador.cpp">
-      <Filter>Arquivos de Origem</Filter>
-    </ClCompile>
     <ClCompile Include="jogo.cpp">
-      <Filter>Arquivos de Origem</Filter>
-    </ClCompile>
-    <ClCompile Include="jogoviewmodel.cpp">
-      <Filter>Arquivos de Origem</Filter>
+      <Filter>Arquivos de Origem\Jogo</Filter>
     </ClCompile>
     <ClCompile Include="jogoview.cpp">
-      <Filter>Arquivos de Origem</Filter>
+      <Filter>Arquivos de Origem\Jogo</Filter>
+    </ClCompile>
+    <ClCompile Include="jogoviewmodel.cpp">
+      <Filter>Arquivos de Origem\Jogo</Filter>
+    </ClCompile>
+    <ClCompile Include="baralho.cpp">
+      <Filter>Arquivos de Origem\Baralho</Filter>
+    </ClCompile>
+    <ClCompile Include="carta.cpp">
+      <Filter>Arquivos de Origem\Carta</Filter>
+    </ClCompile>
+    <ClCompile Include="jogador.cpp">
+      <Filter>Arquivos de Origem\Jogador</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\ApplicationMFC.cpp">
+      <Filter>Arquivos de Origem\Interface\Common\AppMFC</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\MainWindow.cpp">
+      <Filter>Arquivos de Origem\Interface\MainWindow\View</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\BaseControl.cpp">
+      <Filter>Arquivos de Origem\Interface\Common\AppMFC</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\Drawable.cpp">
+      <Filter>Arquivos de Origem\Interface\Common\AppMFC</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\PathUtils.cpp">
+      <Filter>Arquivos de Origem\Interface\Common\Constants</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\TextureFactory.cpp">
+      <Filter>Arquivos de Origem\Interface\Common\Constants</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\CustomLabel.cpp">
+      <Filter>Arquivos de Origem\Interface\Common\Controls\CustomStaticComponent</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="carta.hpp">
-      <Filter>Arquivos de Cabeçalho</Filter>
-    </ClInclude>
     <ClInclude Include="baralho.hpp">
-      <Filter>Arquivos de Cabeçalho</Filter>
+      <Filter>Arquivos de Origem\Baralho</Filter>
+    </ClInclude>
+    <ClInclude Include="carta.hpp">
+      <Filter>Arquivos de Origem\Carta</Filter>
     </ClInclude>
     <ClInclude Include="jogador.hpp">
-      <Filter>Arquivos de Cabeçalho</Filter>
+      <Filter>Arquivos de Origem\Jogador</Filter>
     </ClInclude>
     <ClInclude Include="jogo.hpp">
-      <Filter>Arquivos de Cabeçalho</Filter>
-    </ClInclude>
-    <ClInclude Include="jogoviewmodel.hpp">
-      <Filter>Arquivos de Cabeçalho</Filter>
+      <Filter>Arquivos de Origem\Jogo</Filter>
     </ClInclude>
     <ClInclude Include="jogoview.hpp">
-      <Filter>Arquivos de Cabeçalho</Filter>
+      <Filter>Arquivos de Origem\Jogo</Filter>
+    </ClInclude>
+    <ClInclude Include="jogoviewmodel.hpp">
+      <Filter>Arquivos de Origem\Jogo</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\ApplicationMFC.h">
+      <Filter>Arquivos de Origem\Interface\Common\AppMFC</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\MainWindow.h">
+      <Filter>Arquivos de Origem\Interface\MainWindow\View</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\BaseControl.h">
+      <Filter>Arquivos de Origem\Interface\Common\AppMFC</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\Drawable.h">
+      <Filter>Arquivos de Origem\Interface\Common\AppMFC</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\AssetsConstants.h">
+      <Filter>Arquivos de Origem\Interface\Common\Constants</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\TextureFactory.h">
+      <Filter>Arquivos de Origem\Interface\Common\Constants</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\TypeButtons.h">
+      <Filter>Arquivos de Origem\Interface\Common\Constants</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\PathUtils.h">
+      <Filter>Arquivos de Origem\Interface\Common\Constants</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\CustomLabel.h">
+      <Filter>Arquivos de Origem\Interface\Common\Controls\CustomStaticComponent</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
