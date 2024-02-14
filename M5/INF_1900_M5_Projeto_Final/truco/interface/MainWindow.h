@@ -3,6 +3,7 @@
 #include <afxwin.h>
 #include "CustomLabel.h"
 #include "../jogo.hpp"
+#include "Dialog.h"
 
 
 namespace ui {
@@ -13,18 +14,18 @@ namespace ui {
 	
 	class MainWindow : public CFrameWnd
 	{
-	private:
-		CMenu menu;
+	private:	
 		std::unique_ptr<Jogo> jogo;
 
 		std::shared_ptr<CStatic> m_texturaFundo;
 		std::unique_ptr<CustomLabel> m_panelRodada;
 
+		std::shared_ptr<Dialog> m_dialog;
+		std::unique_ptr<DialogBuilder> m_dialog_builder;
 
 		void initComponentes();
-		void initTexturas();		
+		void initTexturas();
 
-		
 	public:
 		MainWindow();
 		virtual ~MainWindow();

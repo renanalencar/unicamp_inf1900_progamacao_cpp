@@ -138,8 +138,11 @@
     <ClCompile Include="baralho.cpp" />
     <ClCompile Include="carta.cpp" />
     <ClCompile Include="interface\ApplicationMFC.cpp" />
+    <ClCompile Include="interface\BaseButton.cpp" />
     <ClCompile Include="interface\BaseControl.cpp" />
+    <ClCompile Include="interface\ButtonFactory.cpp" />
     <ClCompile Include="interface\CustomLabel.cpp" />
+    <ClCompile Include="interface\Dialog.cpp" />
     <ClCompile Include="interface\Drawable.cpp" />
     <ClCompile Include="interface\MainWindow.cpp" />
     <ClCompile Include="interface\PathUtils.cpp" />
@@ -155,8 +158,11 @@
     <ClInclude Include="carta.hpp" />
     <ClInclude Include="interface\ApplicationMFC.h" />
     <ClInclude Include="interface\AssetsConstants.h" />
+    <ClInclude Include="interface\BaseButton.h" />
     <ClInclude Include="interface\BaseControl.h" />
+    <ClInclude Include="interface\ButtonFactory.h" />
     <ClInclude Include="interface\CustomLabel.h" />
+    <ClInclude Include="interface\Dialog.h" />
     <ClInclude Include="interface\Drawable.h" />
     <ClInclude Include="interface\MainWindow.h" />
     <ClInclude Include="interface\PathUtils.h" />

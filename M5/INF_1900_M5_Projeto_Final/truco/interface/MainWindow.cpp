@@ -12,9 +12,11 @@ namespace ui {
 	MainWindow::MainWindow()
 	{		
 		Create(NULL, L"Truco", WS_OVERLAPPEDWINDOW, CRect(0, 0, MAIN_WINDOW_WIDTH, MAIN_WINDOW_HEIGHT));
+		initTexturas();
+
+		jogo = std::make_unique<Jogo>();
 
 		initComponentes();
-		jogo = std::make_unique<Jogo>();		
 	}
 
 	MainWindow::~MainWindow()
@@ -24,8 +26,6 @@ namespace ui {
 
 	void MainWindow::initComponentes()
 	{
-		initTexturas();
-
 		//Contador de Rodadas
 		m_panelRodada = std::make_unique<CustomLabel>();
 		m_panelRodada->Create(NULL, WS_CHILD | WS_VISIBLE | SS_LEFT, CRect(0, 0, 100, 200), this);
@@ -33,6 +33,17 @@ namespace ui {
 		m_panelRodada->setFontSize(20);		
 		m_panelRodada->setTransparent(true);
 		m_panelRodada->setForegroundColor(RGB(255,255,255));
+
+
+		//Dialog
+		m_dialog_builder = std::make_unique<DialogBuilder>(this);
+		m_dialog = m_dialog_builder->WithDialogType(DialogType::Info)
+			.WithMessage(L"Pronto para Jogar Truco?")
+			.WithPosition((MAIN_WINDOW_WIDTH - DIALOG_WIDTH)/2, (MAIN_WINDOW_HEIGHT - DIALOG_HEIGHT) / 2)
+			.WithAceitarButton([&]() {m_dialog->setVisible(false); })
+			.WithVisible(false).build();
+		
+		m_dialog->draw();
 	}
 
 	void MainWindow::initTexturas()
