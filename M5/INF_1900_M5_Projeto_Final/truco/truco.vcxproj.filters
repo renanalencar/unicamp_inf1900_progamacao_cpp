@@ -55,6 +55,9 @@
     <Filter Include="Arquivos de Origem\Interface\Common\Controls\Buttons">
       <UniqueIdentifier>{96b3bcf6-23f8-4487-8c51-2f9c07d1a4ee}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Arquivos de Origem\Interface\Common\Exception">
+      <UniqueIdentifier>{a5b6d34e-9875-4299-930a-5aa7925c86a9}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="truco.cpp">
@@ -107,6 +110,12 @@
     </ClCompile>
     <ClCompile Include="interface\Dialog.cpp">
       <Filter>Arquivos de Origem\Interface\Common\Controls\Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\BaseException.cpp">
+      <Filter>Arquivos de Origem\Interface\Common\Exception</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\CommonException.cpp">
+      <Filter>Arquivos de Origem\Interface\Common\Exception</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -163,6 +172,12 @@
     </ClInclude>
     <ClInclude Include="interface\Dialog.h">
       <Filter>Arquivos de Origem\Interface\Common\Controls\Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\BaseException.h">
+      <Filter>Arquivos de Origem\Interface\Common\Exception</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\CommonException.h">
+      <Filter>Arquivos de Origem\Interface\Common\Exception</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

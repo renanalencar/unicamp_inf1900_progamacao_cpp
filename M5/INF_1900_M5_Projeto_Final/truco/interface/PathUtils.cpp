@@ -17,8 +17,10 @@ namespace ui {
 		}
 		else
 		{
-			std::wstring error = L"Falha ao carregar a image: " + filename;
-			AfxMessageBox(error.c_str(), MB_OK);
+			throw CommonException("Falha ao carregar a image");
+
+			/*std::wstring error = L"Falha ao carregar a image: " + filename;
+			AfxMessageBox(error.c_str(), MB_OK);*/
 		}
 	}
 
@@ -29,8 +31,7 @@ namespace ui {
 		HBITMAP bitmap = (HBITMAP)LoadImage(NULL, filename.c_str(), IMAGE_BITMAP, 0, 0, LR_DEFAULTSIZE | LR_LOADFROMFILE);
 
 		if (!bitmap) {
-			std::wstring error = L"Falha ao carregar a image: " + filename;
-			AfxMessageBox(error.c_str(), MB_OK);
+			throw CommonException("Falha ao carregar a image");
 		}
 
 		return bitmap;
@@ -73,8 +74,7 @@ namespace ui {
 		HBITMAP bitmap = (HBITMAP)LoadImage(NULL, filename.c_str(), IMAGE_BITMAP, 0, 0, LR_DEFAULTSIZE | LR_LOADFROMFILE);
 
 		if (!bitmap) {
-			std::wstring error = L"Falha ao carregar a image: " + filename;
-			AfxMessageBox(error.c_str(), MB_OK);
+			throw CommonException("Falha ao carregar a image");
 		}
 
 		return bitmap;
@@ -88,8 +88,7 @@ namespace ui {
 		HBITMAP bitmap = (HBITMAP)LoadImage(NULL, filename.c_str(), IMAGE_BITMAP, 0, 0, LR_DEFAULTSIZE | LR_LOADFROMFILE);
 
 		if (!bitmap) {
-			std::wstring error = L"Falha ao carregar a image: " + filename;
-			AfxMessageBox(error.c_str(), MB_OK);
+			throw CommonException("Falha ao carregar a image");
 		}
 
 		return bitmap;
