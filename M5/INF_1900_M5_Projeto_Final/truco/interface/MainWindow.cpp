@@ -14,7 +14,7 @@ namespace ui {
 	{		
 		m_pViewModel = std::make_unique<MainWindowsViewModel>(this);
 		Create(NULL, L"Truco", WS_OVERLAPPEDWINDOW, CRect(0, 0, MAIN_WINDOW_WIDTH, MAIN_WINDOW_HEIGHT));
-		initTexturas();		
+		//initTexturas();
 		initComponentes();
 	}
 
@@ -40,10 +40,8 @@ namespace ui {
 			.WithMessage(L"Pronto para Jogar Truco?")
 			.WithPosition((MAIN_WINDOW_WIDTH - DIALOG_WIDTH)/2, (MAIN_WINDOW_HEIGHT - DIALOG_HEIGHT) / 2)
 			.WithOkButton([&]() {
-					m_dialog->setVisible(false); 
-					//m_dialog->setMessage(L"TEsatbd");					
-					m_pViewModel->iniciarJogo();
-					m_panelRodada->SetWindowTextW(L"message.c_str()");
+					m_dialog->setVisible(false); 								
+					m_pViewModel->iniciarJogo();					
 				})			
 			.WithVisible(true).build();
 		
@@ -53,7 +51,7 @@ namespace ui {
 	void MainWindow::initTexturas()
 	{		
 		m_texturaFundo = std::make_shared<CStatic>();
-		m_texturaFundo->Create(NULL, WS_CHILD | WS_VISIBLE | SS_BITMAP, CRect(0, 0, MAIN_WINDOW_WIDTH, MAIN_WINDOW_HEIGHT), this);
+		m_texturaFundo->Create(NULL, WS_CHILD | WS_VISIBLE | SS_BITMAP, CRect(0, 0, MAIN_WINDOW_WIDTH, MAIN_WINDOW_HEIGHT), this);		
 		PathUtils::loadImage(IMG_BACKGROUND, m_texturaFundo);		
 	}
 
@@ -66,10 +64,33 @@ namespace ui {
 	{
 		auto jogadores = m_pViewModel->getJogadores();
 
-		auto player = JogadorToPlayerConverter::converter(&jogadores[0]);
-		player->setParent(this);
+		m_players.clear();
 
-		player->draw();
+		int index = 0;
+		for (auto& jogador : jogadores) {
+			std::shared_ptr<Player> player = JogadorToPlayerConverter::converter(&jogador);
+			player->setParent(this);
+
+
+			switch (index)
+			{
+				case 0: 
+					player->move((MAIN_WINDOW_WIDTH - PLAY_WIDTH) / 2, MAIN_WINDOW_HEIGHT - (PLAY_HEIGHT + CARD_HEIGHT));
+					break;
+				case 1:
+					player->move(10, MAIN_WINDOW_HEIGHT/ 2);
+					break;
+
+				default:
+					break;
+			}
+			
+			player->draw();
+
+			index++;
+			m_players.push_back(player);
+		}
+
 	}
 
 	void MainWindow::OnButtonMsgClick()
@@ -93,10 +114,10 @@ namespace ui {
 	}
 
 	void MainWindow::update()
-	{
-		updateRodada();
+	{		
+		//updateRodada();
 		updateJogadores();
 		
-		UpdateWindow();
+		//UpdateWindow();
 	}
 }

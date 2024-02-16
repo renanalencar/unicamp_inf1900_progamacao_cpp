@@ -13,6 +13,8 @@ Jogo::Jogo() : baralho(), rodadaAtual(0), pontosJogador1(0), pontosJogador2(0) {
 	// Adicione os jogadores ao jogo (aqui assumimos dois jogadores)
 	jogadores.emplace_back("Jogador 1");
 	jogadores.emplace_back("Jogador 2");
+	jogadores.emplace_back("Jogador 3");
+	jogadores.emplace_back("Jogador 4");
 }
 
 void Jogo::iniciarJogo() {

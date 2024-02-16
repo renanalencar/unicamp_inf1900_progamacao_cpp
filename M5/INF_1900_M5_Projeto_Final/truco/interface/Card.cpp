@@ -5,7 +5,8 @@ namespace ui {
 	{
 
 	}
-	Card::Card(CWnd* window, Naipe naipe, CardValues valor, int x, int y) : BaseView<CardViewModel>(), BaseControl(window, x, y, CARD_WIDTH, CARD_HEIGHT)
+	Card::Card(CWnd* window, Naipe naipe, CardValues valor, int x, int y) 
+		: BaseView<CardViewModel>(), BaseControl(window, x, y, CARD_WIDTH, CARD_HEIGHT)
 	{
 		m_pViewModel = std::make_unique<CardViewModel>(this, naipe, valor, x, y);
 		OnLeftMouseButtonDownHandle = [&](int x, int y) {onLeftMouseButtonDownHandle(x, y); };

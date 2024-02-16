@@ -9,14 +9,14 @@ namespace ui {
 	class Player : public BaseView<PlayerViewModel>, public BaseControl
 	{
 	private:
-		std::vector<Card*> m_cards;
+		std::vector<std::shared_ptr<Card>> m_cards;
 		std::string m_nome;
 
 	public:		
 		Player();
 		Player(CWnd* window);		
-		void addCard(Card* card);
-		void removeCard(Card* card);
+		void addCard(std::shared_ptr<Card> card);
+		void removeCard(std::shared_ptr<Card> card);
 		std::string getNome() const;
 
 

@@ -7,7 +7,7 @@ namespace ui {
 
 		for (auto& carta : jogador->getMao()) {
 			std::shared_ptr<Card> card = CartaToCardConverter::converter(&carta);			
-			player->addCard(card.get());
+			player->addCard(card);
 		}
 		
 		return player;

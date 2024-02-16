@@ -11,12 +11,12 @@ namespace ui {
 		m_pViewModel = std::make_shared<PlayerViewModel>(this,0,0);
 	}
 
-	void Player::addCard(Card* card)
+	void Player::addCard(std::shared_ptr<Card> card)
 	{
 		m_cards.push_back(card);
 	}
 
-	void Player::removeCard(Card* card)
+	void Player::removeCard(std::shared_ptr<Card> card)
 	{
 		for (auto it = m_cards.begin(); it != m_cards.end(); it++) {
 			if (*it == card) {
@@ -36,10 +36,10 @@ namespace ui {
 		int cardIndex = 0;
 		int margin = 10;
 		for(auto& card : m_cards){
-			cardIndex++;
-			card->move(getBounds()->left + (cardIndex * margin), getBounds()->top);
 			card->draw();
-		}
+			card->move(getBounds()->left + (cardIndex * (margin + CARD_WIDTH)), getBounds()->top + margin);
+			cardIndex++;
+		}	
 	}
 	void Player::update()
 	{
@@ -47,11 +47,9 @@ namespace ui {
 	}
 	void Player::setParent(CWnd* parent)
 	{
-		Drawable::setParent(parent);
+		BaseControl::setParent(parent);
 		for (auto& card : m_cards) {			
-			if (m_pCanvas) {
-				card->setParent(parent);
-			}
+			card->setParent(parent);
 		}
 	}
 }
