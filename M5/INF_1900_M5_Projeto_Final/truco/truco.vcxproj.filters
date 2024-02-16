@@ -88,6 +88,9 @@
     <Filter Include="Arquivos de Origem\Interface\Player\ViewModel">
       <UniqueIdentifier>{54c9f2bc-152b-4f07-a270-6f9df4b6be66}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Arquivos de Origem\Interface\Common\Exception">
+      <UniqueIdentifier>{a5b6d34e-9875-4299-930a-5aa7925c86a9}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="truco.cpp">
@@ -161,6 +164,12 @@
     </ClCompile>
     <ClCompile Include="interface\CartaToCardConverter.cpp">
       <Filter>Arquivos de Origem</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\BaseException.cpp">
+      <Filter>Arquivos de Origem\Interface\Common\Exception</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\CommonException.cpp">
+      <Filter>Arquivos de Origem\Interface\Common\Exception</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -253,6 +262,12 @@
     </ClInclude>
     <ClInclude Include="interface\CartaToCardConverter.h">
       <Filter>Arquivos de Cabeçalho</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\BaseException.h">
+      <Filter>Arquivos de Origem\Interface\Common\Exception</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\CommonException.h">
+      <Filter>Arquivos de Origem\Interface\Common\Exception</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

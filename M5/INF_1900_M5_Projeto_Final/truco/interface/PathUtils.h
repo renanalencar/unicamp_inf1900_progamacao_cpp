@@ -8,6 +8,7 @@
 #include "CardValues.h"
 #include "Naipe.h"
 #include "TypeButtons.h"
+#include "CommonException.h"
 
 namespace ui {
 	const std::wstring BASE_PATH = L"F:/Documentos/Cursos/Curso_c_plus_plus/Trabalhofinal/unicamp_inf1900_progamacao_cpp/M5/INF_1900_M5_Projeto_Final/Tucro.UI";

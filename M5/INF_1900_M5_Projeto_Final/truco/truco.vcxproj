@@ -136,6 +136,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="baralho.cpp" />
+    <ClCompile Include="interface\CommonException.cpp" />
+    <ClCompile Include="interface\BaseException.cpp" />
     <ClCompile Include="carta.cpp" />
     <ClCompile Include="interface\CartaToCardConverter.cpp" />
     <ClCompile Include="interface\ApplicationMFC.cpp" />
@@ -162,6 +164,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="baralho.hpp" />
+    <ClInclude Include="interface\CommonException.h" />
+    <ClInclude Include="interface\BaseException.h" />
     <ClInclude Include="carta.hpp" />
     <ClInclude Include="interface\CartaToCardConverter.h" />
     <ClInclude Include="interface\ApplicationMFC.h" />
