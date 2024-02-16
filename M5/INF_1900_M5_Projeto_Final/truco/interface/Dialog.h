@@ -35,10 +35,12 @@ namespace ui {
 		std::unique_ptr<CustomLabel> m_message;
 
 		std::shared_ptr<BaseButton> m_pAceitarButton;
+		std::shared_ptr<BaseButton> m_pOkButton;
 		std::shared_ptr<BaseButton> m_pRecusarButton;
 		std::shared_ptr<BaseButton> m_pPedirButton;
 
 		CommonEventHandle m_aceiteEventHandler;
+		CommonEventHandle m_okEventHandler;
 		CommonEventHandle m_recusarEventHandler;
 		CommonEventHandle m_pedirEventHandler;
 
@@ -46,7 +48,9 @@ namespace ui {
 
 	public:
 		Dialog(CWnd* window, int x, int y, DialogType type, std::wstring message, bool isVisible = false,
-			CommonEventHandle aceiteEventHandler = nullptr, CommonEventHandle recusarEventHandler = nullptr, CommonEventHandle pedirEventHandler = nullptr);
+			CommonEventHandle aceiteEventHandler = nullptr, CommonEventHandle recusarEventHandler = nullptr, CommonEventHandle pedirEventHandler = nullptr, CommonEventHandle okEventHandler = nullptr);
+
+		void setMessage(std::wstring message);
 
 		// Inherited via BaseView
 		void draw() override;
@@ -63,6 +67,7 @@ namespace ui {
 		int m_y;
 		bool m_isVisible;
 		CommonEventHandle m_aceiteEventHandler;
+		CommonEventHandle m_okEventHandler;
 		CommonEventHandle m_recusarEventHandler;
 		CommonEventHandle m_pedirEventHandler;
 		CWnd* m_parent;
@@ -75,6 +80,7 @@ namespace ui {
 		DialogBuilder WithPosition(int x, int y);
 		DialogBuilder WithVisible(bool isVisible);
 		DialogBuilder WithAceitarButton(CommonEventHandle eventHandler);
+		DialogBuilder WithOkButton(CommonEventHandle eventHandler);
 		DialogBuilder WithRecusarButton(CommonEventHandle eventHandler);
 		DialogBuilder WithPedirButton(CommonEventHandle eventHandler);
 	};

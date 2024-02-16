@@ -24,10 +24,12 @@ public:
 	void jogarRodada();
 
 	// Adicione mais métodos conforme necessário para a lógica do jogo
+	int getRodadaAtual();
+	std::vector<Jogador> getJogadores();
 
 private:
 	Baralho baralho;
-	std::vector<Jogador> jogadores;
+	std::vector<Jogador> jogadores;	
 	int rodadaAtual;
 	int pontosJogador1;
 	int pontosJogador2;

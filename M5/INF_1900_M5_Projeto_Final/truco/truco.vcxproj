@@ -137,10 +137,13 @@
   <ItemGroup>
     <ClCompile Include="baralho.cpp" />
     <ClCompile Include="carta.cpp" />
+    <ClCompile Include="interface\CartaToCardConverter.cpp" />
     <ClCompile Include="interface\ApplicationMFC.cpp" />
     <ClCompile Include="interface\BaseButton.cpp" />
     <ClCompile Include="interface\BaseControl.cpp" />
     <ClCompile Include="interface\ButtonFactory.cpp" />
+    <ClCompile Include="interface\Card.cpp" />
+    <ClCompile Include="interface\CardViewModel.cpp" />
     <ClCompile Include="interface\CustomLabel.cpp" />
     <ClCompile Include="interface\Dialog.cpp" />
     <ClCompile Include="interface\Drawable.cpp" />
@@ -148,30 +151,46 @@
     <ClCompile Include="interface\PathUtils.cpp" />
     <ClCompile Include="interface\TextureFactory.cpp" />
     <ClCompile Include="jogador.cpp" />
+    <ClCompile Include="interface\JogadorToPlayerConverter.cpp" />
     <ClCompile Include="jogo.cpp" />
     <ClCompile Include="jogoview.cpp" />
     <ClCompile Include="jogoviewmodel.cpp" />
+    <ClCompile Include="interface\MainWindowsViewModel.cpp" />
+    <ClCompile Include="interface\Player.cpp" />
+    <ClCompile Include="interface\PlayerViewModel.cpp" />
     <ClCompile Include="truco.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="baralho.hpp" />
     <ClInclude Include="carta.hpp" />
+    <ClInclude Include="interface\CartaToCardConverter.h" />
     <ClInclude Include="interface\ApplicationMFC.h" />
     <ClInclude Include="interface\AssetsConstants.h" />
     <ClInclude Include="interface\BaseButton.h" />
     <ClInclude Include="interface\BaseControl.h" />
+    <ClInclude Include="interface\BaseView.h" />
+    <ClInclude Include="interface\BaseViewModel.h" />
     <ClInclude Include="interface\ButtonFactory.h" />
+    <ClInclude Include="interface\Card.h" />
+    <ClInclude Include="interface\CardValues.h" />
+    <ClInclude Include="interface\CardViewModel.h" />
     <ClInclude Include="interface\CustomLabel.h" />
     <ClInclude Include="interface\Dialog.h" />
     <ClInclude Include="interface\Drawable.h" />
+    <ClInclude Include="interface\DrawArea.h" />
     <ClInclude Include="interface\MainWindow.h" />
+    <ClInclude Include="interface\Naipe.h" />
     <ClInclude Include="interface\PathUtils.h" />
     <ClInclude Include="interface\TextureFactory.h" />
     <ClInclude Include="interface\TypeButtons.h" />
     <ClInclude Include="jogador.hpp" />
+    <ClInclude Include="interface\JogadorToPlayerConverter.h" />
     <ClInclude Include="jogo.hpp" />
     <ClInclude Include="jogoview.hpp" />
     <ClInclude Include="jogoviewmodel.hpp" />
+    <ClInclude Include="interface\MainWindowsViewModel.h" />
+    <ClInclude Include="interface\Player.h" />
+    <ClInclude Include="interface\PlayerViewModel.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -71,4 +71,14 @@ void Jogo::jogarRodada() {
 	rodadaAtual++;
 }
 
+int Jogo::getRodadaAtual()
+{
+	return rodadaAtual;
+}
+
+std::vector<Jogador> Jogo::getJogadores()
+{
+	return jogadores;
+}
+
 // Adicione mais métodos conforme necessário para a lógica do jogo

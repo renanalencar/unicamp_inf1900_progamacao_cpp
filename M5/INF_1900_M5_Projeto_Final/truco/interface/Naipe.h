@@ -1,8 +1,10 @@
 #pragma once
-
-enum class  Naipe{
-	PAUS,
-	COPAS,
-	OUROS,
-	ESPADAS
-};
+namespace ui {
+	enum class  Naipe {
+		NONE = 0,
+		PAUS,
+		COPAS,
+		ESPADAS,
+		OUROS
+	};
+}

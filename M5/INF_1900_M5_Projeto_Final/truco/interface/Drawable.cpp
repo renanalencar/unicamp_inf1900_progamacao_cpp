@@ -9,8 +9,16 @@ namespace ui {
         m_pBounds = std::make_shared<CRect>(x, y, x + width, y + height);
         m_visible = true;
 
-        DWORD dwCartaStyle = WS_CHILD | WS_VISIBLE | SS_BITMAP;
-        m_pCanvas->Create(L"DRAWABLE", dwCartaStyle, *m_pBounds.get(), m_pWindow);
+        CreateCanvas();
+    }
+
+    void Drawable::CreateCanvas()
+    {
+        if (m_pWindow) {
+            DWORD dwCartaStyle = WS_CHILD | WS_VISIBLE | SS_BITMAP;
+            m_pCanvas->DestroyWindow();
+            m_pCanvas->Create(L"DRAWABLE", dwCartaStyle, *m_pBounds.get(), m_pWindow);
+        }
     }
 
     void Drawable::setEnable(bool value)
@@ -38,6 +46,17 @@ namespace ui {
     {
         setBounds(new CRect(x, y, m_pBounds->Width() + x, m_pBounds->Height() + y));
         m_pCanvas->MoveWindow(m_pBounds.get());
+    }
+
+    void Drawable::setParent(CWnd* parent)
+    {
+        m_pWindow = parent;
+        CreateCanvas();
+    }
+
+    CWnd* Drawable::getParent()
+    {
+        return m_pWindow;
     }
 
     void Drawable::resize(int width, int height)

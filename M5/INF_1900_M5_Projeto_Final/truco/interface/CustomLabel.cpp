@@ -60,10 +60,16 @@ namespace ui {
         m_isTransparent = value;
     }
 
+    void CustomLabel::setText(std::wstring message)
+    {
+        m_message = message;
+        RedrawWindow();
+    }
+
     void CustomLabel::OnPaint()
     {
         std::unique_ptr<CPaintDC> pDC;
-        pDC = std::make_unique<CPaintDC>(this);
+        pDC = std::make_unique<CPaintDC>(this);        
 
         // Use um pincel transparente
         CBrush brush;
@@ -106,7 +112,8 @@ namespace ui {
 
         // Adicione aqui o código para desenhar o texto ou outros elementos
         CString strText;
-        GetWindowText(strText);
+        //GetWindowText(strText);
+        strText = m_message.c_str();
 
         // Configura a margem (pode ajustar conforme necessário)
         int margin = 10;

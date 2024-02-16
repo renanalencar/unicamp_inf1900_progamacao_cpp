@@ -1,6 +1,7 @@
 #pragma once
 #include <afxwin.h>
 #include <memory>
+#include <string>
 
 namespace ui {
     enum class FontWeight {
@@ -26,6 +27,7 @@ namespace ui {
         COLORREF m_backgorund;
         UINT8 m_fontSize;
         FontWeight m_fontWeight;
+        std::wstring m_message;
         bool m_isTransparent;
     public:
         CustomLabel();
@@ -40,6 +42,7 @@ namespace ui {
         void setFontWeigth(FontWeight weight);
         FontWeight getFontWeigth();
         void setTransparent(bool value);
+        void setText(std::wstring message);
 
     protected:
         afx_msg void OnPaint();

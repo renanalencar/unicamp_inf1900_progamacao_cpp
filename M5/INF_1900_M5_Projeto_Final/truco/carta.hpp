@@ -11,6 +11,12 @@
 #pragma once
 #include <iostream>
 #include <string>
+
+const std::string PAUS = "Paus";
+const std::string OUROS = "Ouros";
+const std::string ESPADAS = "Espadas";
+const std::string COPAS = "Copas";
+
 class Carta
 {
 public:

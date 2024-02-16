@@ -4,19 +4,13 @@
 #include "CustomLabel.h"
 #include "../jogo.hpp"
 #include "Dialog.h"
+#include "MainWindowsViewModel.h"
+#include "JogadorToPlayerConverter.h"
 
-
-namespace ui {
-
-	const int ID_IMG_FUNDO = 1;
-	const int MAIN_WINDOW_WIDTH = 1043;
-	const int MAIN_WINDOW_HEIGHT = 823;
-	
-	class MainWindow : public CFrameWnd
+namespace ui {	
+	class MainWindow : public CFrameWnd, public BaseView<MainWindowsViewModel>
 	{
-	private:	
-		std::unique_ptr<Jogo> jogo;
-
+	private:					
 		std::shared_ptr<CStatic> m_texturaFundo;
 		std::unique_ptr<CustomLabel> m_panelRodada;
 
@@ -25,6 +19,9 @@ namespace ui {
 
 		void initComponentes();
 		void initTexturas();
+
+		void updateRodada();
+		void updateJogadores();
 
 	public:
 		MainWindow();
@@ -35,6 +32,9 @@ namespace ui {
 		void OnLButtonDown(UINT nFlags, CPoint point);
 
 		DECLARE_MESSAGE_MAP();
+
+		// Inherited via BaseView
+		void update() override;
 	};
 }
 

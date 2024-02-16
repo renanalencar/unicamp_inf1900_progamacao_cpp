@@ -32,7 +32,7 @@ namespace ui {
 	}
 
 	Dialog::Dialog(CWnd* window, int x, int y, DialogType type, std::wstring message, bool isVisible,
-		CommonEventHandle aceiteEventHandler, CommonEventHandle recusarEventHandler, CommonEventHandle pedirEventHandler)
+		CommonEventHandle aceiteEventHandler, CommonEventHandle recusarEventHandler, CommonEventHandle pedirEventHandler, CommonEventHandle okEventHandler)
 		: BaseControl(window, x, y, DIALOG_WIDTH, DIALOG_HEIGHT)
 	{
 		auto pCanvas = m_pCanvas.get();
@@ -40,6 +40,7 @@ namespace ui {
 		m_dialogType = type;
 
 		m_aceiteEventHandler = aceiteEventHandler;
+		m_okEventHandler = okEventHandler;
 		m_recusarEventHandler = recusarEventHandler;
 		m_pedirEventHandler = pedirEventHandler;
 
@@ -51,11 +52,13 @@ namespace ui {
 		m_message = std::make_unique<CustomLabel>();
 		m_message->Create(nullptr, WS_CHILD | WS_VISIBLE, CRect(190, 10, 590, 100), pCanvas);
 		m_message->setTransparent(true);
-		m_message->setForegroundColor(RGB(255, 255, 255));
-		m_message->SetWindowTextW(message.c_str());
+		m_message->setForegroundColor(RGB(255, 0, 0));
+		//m_message->SetWindowTextW(message.c_str());
+		m_message->setText(message);
 		m_message->setFontSize(22);
 
 		m_pAceitarButton = ButtonFactory::CreateDialogAceitarButton(pCanvas, 180, 120);
+		m_pOkButton = ButtonFactory::CreateDialogAceitarButton(pCanvas, 320, 120);
 		m_pRecusarButton = ButtonFactory::CreateDialogRecusarButton(pCanvas, 320, 120);
 		m_pPedirButton = ButtonFactory::CreateDialogPedirButton(pCanvas, 460, 120, TypeButton::DialogPedirSeis);		
 
@@ -63,21 +66,32 @@ namespace ui {
 			if (m_aceiteEventHandler != nullptr) {
 				m_aceiteEventHandler();
 			}
-			};
+		};
+
+		m_pOkButton->OnLeftMouseButtonDownHandle = [&](int x, int y) {
+			if (m_okEventHandler != nullptr) {
+				m_okEventHandler();
+			}
+		};
 
 		m_pRecusarButton->OnLeftMouseButtonDownHandle = [&](int x, int y) {
 			if (m_recusarEventHandler != nullptr) {
 				m_recusarEventHandler();
 			}
-			};
+		};
 
 		m_pPedirButton->OnLeftMouseButtonDownHandle = [&](int x, int y) {
 			if (m_pedirEventHandler != nullptr) {
 				m_pedirEventHandler();
 			}
-			};
+		};
 
 		setVisible(isVisible);
+	}
+
+	void Dialog::setMessage(std::wstring message)
+	{		
+		m_message->setText(message);
 	}
 
 
@@ -86,10 +100,12 @@ namespace ui {
 		BaseControl::draw();
 		m_pIcon->draw();
 		m_pAceitarButton->draw();
+		m_pOkButton->draw();
 		m_pRecusarButton->draw();
 		m_pPedirButton->draw();
 
 		m_pAceitarButton->setVisible(!(!m_aceiteEventHandler));
+		m_pOkButton->setVisible(!(!m_okEventHandler));
 		m_pRecusarButton->setVisible(!(!m_recusarEventHandler));
 		m_pPedirButton->setVisible(!(!m_pedirEventHandler));
 	}
@@ -101,6 +117,7 @@ namespace ui {
 			CPoint dialogPoint(point.x - getBounds()->left, point.y - getBounds()->top);
 
 			m_pAceitarButton->LeftMouseButtonDown(dialogPoint);
+			m_pOkButton->LeftMouseButtonDown(dialogPoint);
 			m_pRecusarButton->LeftMouseButtonDown(dialogPoint);
 			m_pPedirButton->LeftMouseButtonDown(dialogPoint);
 		}
@@ -115,13 +132,14 @@ namespace ui {
 		m_x = 0;
 		m_y = 0;
 		m_aceiteEventHandler = nullptr;
+		m_okEventHandler = nullptr;
 		m_recusarEventHandler = nullptr;
 		m_pedirEventHandler = nullptr;
 	}
 
 	std::shared_ptr<Dialog> DialogBuilder::build()
 	{
-		return std::make_shared<Dialog>(m_parent, m_x, m_y, m_dialogType, m_message, m_isVisible, m_aceiteEventHandler, m_recusarEventHandler, m_pedirEventHandler);
+		return std::make_shared<Dialog>(m_parent, m_x, m_y, m_dialogType, m_message, m_isVisible, m_aceiteEventHandler, m_recusarEventHandler, m_pedirEventHandler, m_okEventHandler);
 	}
 
 	DialogBuilder DialogBuilder::WithDialogType(DialogType type)
@@ -152,6 +170,12 @@ namespace ui {
 	DialogBuilder DialogBuilder::WithAceitarButton(CommonEventHandle eventHandler)
 	{
 		m_aceiteEventHandler = eventHandler;
+		return *this;
+	}
+
+	DialogBuilder DialogBuilder::WithOkButton(CommonEventHandle eventHandler)
+	{
+		m_okEventHandler = eventHandler;
 		return *this;
 	}
 
