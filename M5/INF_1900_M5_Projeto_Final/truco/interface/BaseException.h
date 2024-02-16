@@ -6,10 +6,12 @@ namespace ui {
 
 	class BaseException : public std::exception
 	{
+	private:
+		std::string m_message;
 
 	public:
-		BaseException(std::string message);
-
+		explicit BaseException(const std::string& message);
+		const char* what() const noexcept override;
 	};
 
 }

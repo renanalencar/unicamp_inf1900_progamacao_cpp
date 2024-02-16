@@ -35,7 +35,7 @@ namespace ui {
 
 
 		//Dialog
-		m_dialog_builder = std::make_unique<DialogBuilder>(this);
+		m_dialog_builder = std::make_shared<DialogBuilder>(this);
 		m_dialog = m_dialog_builder->WithDialogType(DialogType::Info)
 			.WithMessage(L"Pronto para Jogar Truco?")
 			.WithPosition((MAIN_WINDOW_WIDTH - DIALOG_WIDTH)/2, (MAIN_WINDOW_HEIGHT - DIALOG_HEIGHT) / 2)

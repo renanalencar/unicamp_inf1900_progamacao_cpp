@@ -15,7 +15,7 @@ namespace ui {
 		std::unique_ptr<CustomLabel> m_panelRodada;
 
 		std::shared_ptr<Dialog> m_dialog;
-		std::unique_ptr<DialogBuilder> m_dialog_builder;
+		std::shared_ptr<DialogBuilder> m_dialog_builder;
 
 		void initComponentes();
 		void initTexturas();

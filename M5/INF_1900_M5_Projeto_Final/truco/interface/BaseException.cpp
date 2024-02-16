@@ -2,9 +2,11 @@
 
 namespace ui {
 
-	BaseException::BaseException(std::string message)
+	BaseException::BaseException(const std::string& message) : m_message(m_message)	{}
+
+	const char* BaseException::what() const noexcept
 	{
-		const char* _Message = message.c_str();
-		std::exception(_Message);
+		return m_message.c_str();
 	}
+
 }
