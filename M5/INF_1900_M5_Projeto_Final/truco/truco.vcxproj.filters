@@ -13,48 +13,261 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Arquivos de Origem\Jogo">
+      <UniqueIdentifier>{55202804-1925-4312-8167-ddc66d2bf69a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Origem\Baralho">
+      <UniqueIdentifier>{87c02b6c-2761-4eb3-a6dd-a5a34a00e81f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Origem\Carta">
+      <UniqueIdentifier>{1f6d79d1-2f84-4301-8aad-eebc39049ed8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Origem\Jogador">
+      <UniqueIdentifier>{60e8ba28-e4e0-403b-8d30-262f177a3215}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Origem\Interface">
+      <UniqueIdentifier>{bb942f1a-d419-44b0-bad6-c48657a9953e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Origem\Interface\Common">
+      <UniqueIdentifier>{038b9af7-c906-4108-849b-66c7cee73c98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Origem\Interface\Common\AppMFC">
+      <UniqueIdentifier>{1bc09d5f-814a-4bad-9295-52cdba40aaa2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Origem\Interface\MainWindow">
+      <UniqueIdentifier>{c85c398a-d4fb-48ea-b385-72fb2439c5c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Origem\Interface\MainWindow\View">
+      <UniqueIdentifier>{d6fbb0a2-4f41-4afb-93e0-bee81db98db7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Origem\Interface\Common\Constants">
+      <UniqueIdentifier>{bf61fe10-fd98-4dd9-82b5-480b58f1a7c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Origem\Interface\Common\Controls">
+      <UniqueIdentifier>{2e8db06b-3d87-48a8-8ee1-8eb8ff589328}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Origem\Interface\Common\Controls\CustomStaticComponent">
+      <UniqueIdentifier>{695c132e-bf6e-4d6a-b835-a00e19d29bd0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Origem\Interface\Common\Controls\Dialogs">
+      <UniqueIdentifier>{2d7ab764-0a03-45ed-8fd1-9a58b8ec0d65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Origem\Interface\Common\Controls\Buttons">
+      <UniqueIdentifier>{96b3bcf6-23f8-4487-8c51-2f9c07d1a4ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Origem\Interface\MainWindow\ViewModel">
+      <UniqueIdentifier>{e033671c-1d62-48a4-a5ad-4e40b48b9735}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Origem\Interface\Common\Utils">
+      <UniqueIdentifier>{a70c3dc3-9f30-481e-903b-3dbbbd77d8d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Origem\Interface\Common\MVVM">
+      <UniqueIdentifier>{208c6c94-a538-4268-84bf-0d58cee63cdd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Origem\Interface\Player">
+      <UniqueIdentifier>{dd3d89ff-eb8b-4152-97d7-ae6420dda718}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Origem\Interface\Card">
+      <UniqueIdentifier>{6369483f-f85f-4cdd-92c3-ee6054ca69a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Origem\Interface\Card\Enum">
+      <UniqueIdentifier>{18ff83c2-69a2-49e3-8b3d-1ff3e91f059f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Origem\Interface\Card\View">
+      <UniqueIdentifier>{67bd8fb1-f979-446e-b59f-722ce51bb4a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Origem\Interface\Card\ViewModel">
+      <UniqueIdentifier>{7e9a8791-c8f3-4d4b-9fde-73b95a632cd9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Origem\Interface\Common\Converters">
+      <UniqueIdentifier>{be2d491b-1479-4272-98bd-35c526e618ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Origem\Interface\Player\View">
+      <UniqueIdentifier>{eb09e67b-5384-49f4-a4bb-c31f84a2960a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Origem\Interface\Player\ViewModel">
+      <UniqueIdentifier>{54c9f2bc-152b-4f07-a270-6f9df4b6be66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Origem\Interface\Common\Exception">
+      <UniqueIdentifier>{a5b6d34e-9875-4299-930a-5aa7925c86a9}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="truco.cpp">
       <Filter>Arquivos de Origem</Filter>
     </ClCompile>
-    <ClCompile Include="carta.cpp">
-      <Filter>Arquivos de Origem</Filter>
-    </ClCompile>
-    <ClCompile Include="baralho.cpp">
-      <Filter>Arquivos de Origem</Filter>
-    </ClCompile>
-    <ClCompile Include="jogador.cpp">
-      <Filter>Arquivos de Origem</Filter>
-    </ClCompile>
     <ClCompile Include="jogo.cpp">
-      <Filter>Arquivos de Origem</Filter>
-    </ClCompile>
-    <ClCompile Include="jogoviewmodel.cpp">
-      <Filter>Arquivos de Origem</Filter>
+      <Filter>Arquivos de Origem\Jogo</Filter>
     </ClCompile>
     <ClCompile Include="jogoview.cpp">
+      <Filter>Arquivos de Origem\Jogo</Filter>
+    </ClCompile>
+    <ClCompile Include="jogoviewmodel.cpp">
+      <Filter>Arquivos de Origem\Jogo</Filter>
+    </ClCompile>
+    <ClCompile Include="baralho.cpp">
+      <Filter>Arquivos de Origem\Baralho</Filter>
+    </ClCompile>
+    <ClCompile Include="carta.cpp">
+      <Filter>Arquivos de Origem\Carta</Filter>
+    </ClCompile>
+    <ClCompile Include="jogador.cpp">
+      <Filter>Arquivos de Origem\Jogador</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\ApplicationMFC.cpp">
+      <Filter>Arquivos de Origem\Interface\Common\AppMFC</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\MainWindow.cpp">
+      <Filter>Arquivos de Origem\Interface\MainWindow\View</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\BaseControl.cpp">
+      <Filter>Arquivos de Origem\Interface\Common\AppMFC</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\Drawable.cpp">
+      <Filter>Arquivos de Origem\Interface\Common\AppMFC</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\TextureFactory.cpp">
+      <Filter>Arquivos de Origem\Interface\Common\Constants</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\CustomLabel.cpp">
+      <Filter>Arquivos de Origem\Interface\Common\Controls\CustomStaticComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\BaseButton.cpp">
+      <Filter>Arquivos de Origem\Interface\Common\Controls\Buttons</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\ButtonFactory.cpp">
+      <Filter>Arquivos de Origem\Interface\Common\Controls\Buttons</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\Dialog.cpp">
+      <Filter>Arquivos de Origem\Interface\Common\Controls\Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\MainWindowsViewModel.cpp">
+      <Filter>Arquivos de Origem\Interface\MainWindow\ViewModel</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\PathUtils.cpp">
+      <Filter>Arquivos de Origem\Interface\Common\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\Card.cpp">
+      <Filter>Arquivos de Origem\Interface\Card\View</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\CardViewModel.cpp">
+      <Filter>Arquivos de Origem\Interface\Card\ViewModel</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\Player.cpp">
+      <Filter>Arquivos de Origem\Interface\Player\View</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\PlayerViewModel.cpp">
+      <Filter>Arquivos de Origem\Interface\Player\ViewModel</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\JogadorToPlayerConverter.cpp">
       <Filter>Arquivos de Origem</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\CartaToCardConverter.cpp">
+      <Filter>Arquivos de Origem</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\BaseException.cpp">
+      <Filter>Arquivos de Origem\Interface\Common\Exception</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\CommonException.cpp">
+      <Filter>Arquivos de Origem\Interface\Common\Exception</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="carta.hpp">
-      <Filter>Arquivos de Cabeçalho</Filter>
-    </ClInclude>
     <ClInclude Include="baralho.hpp">
-      <Filter>Arquivos de Cabeçalho</Filter>
+      <Filter>Arquivos de Origem\Baralho</Filter>
+    </ClInclude>
+    <ClInclude Include="carta.hpp">
+      <Filter>Arquivos de Origem\Carta</Filter>
     </ClInclude>
     <ClInclude Include="jogador.hpp">
-      <Filter>Arquivos de Cabeçalho</Filter>
+      <Filter>Arquivos de Origem\Jogador</Filter>
     </ClInclude>
     <ClInclude Include="jogo.hpp">
-      <Filter>Arquivos de Cabeçalho</Filter>
-    </ClInclude>
-    <ClInclude Include="jogoviewmodel.hpp">
-      <Filter>Arquivos de Cabeçalho</Filter>
+      <Filter>Arquivos de Origem\Jogo</Filter>
     </ClInclude>
     <ClInclude Include="jogoview.hpp">
+      <Filter>Arquivos de Origem\Jogo</Filter>
+    </ClInclude>
+    <ClInclude Include="jogoviewmodel.hpp">
+      <Filter>Arquivos de Origem\Jogo</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\ApplicationMFC.h">
+      <Filter>Arquivos de Origem\Interface\Common\AppMFC</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\MainWindow.h">
+      <Filter>Arquivos de Origem\Interface\MainWindow\View</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\BaseControl.h">
+      <Filter>Arquivos de Origem\Interface\Common\AppMFC</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\Drawable.h">
+      <Filter>Arquivos de Origem\Interface\Common\AppMFC</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\AssetsConstants.h">
+      <Filter>Arquivos de Origem\Interface\Common\Constants</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\TextureFactory.h">
+      <Filter>Arquivos de Origem\Interface\Common\Constants</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\TypeButtons.h">
+      <Filter>Arquivos de Origem\Interface\Common\Constants</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\CustomLabel.h">
+      <Filter>Arquivos de Origem\Interface\Common\Controls\CustomStaticComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\BaseButton.h">
+      <Filter>Arquivos de Origem\Interface\Common\Controls\Buttons</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\ButtonFactory.h">
+      <Filter>Arquivos de Origem\Interface\Common\Controls\Buttons</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\Dialog.h">
+      <Filter>Arquivos de Origem\Interface\Common\Controls\Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\MainWindowsViewModel.h">
+      <Filter>Arquivos de Origem\Interface\MainWindow\ViewModel</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\BaseView.h">
+      <Filter>Arquivos de Origem\Interface\Common\MVVM</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\BaseViewModel.h">
+      <Filter>Arquivos de Origem\Interface\Common\MVVM</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\DrawArea.h">
+      <Filter>Arquivos de Origem\Interface\Common\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\PathUtils.h">
+      <Filter>Arquivos de Origem\Interface\Common\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\Card.h">
+      <Filter>Arquivos de Origem\Interface\Card\View</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\CardValues.h">
+      <Filter>Arquivos de Origem\Interface\Card\Enum</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\Naipe.h">
+      <Filter>Arquivos de Origem\Interface\Card\Enum</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\CardViewModel.h">
+      <Filter>Arquivos de Origem\Interface\Card\ViewModel</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\Player.h">
+      <Filter>Arquivos de Origem\Interface\Player\View</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\PlayerViewModel.h">
+      <Filter>Arquivos de Origem\Interface\Player\ViewModel</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\JogadorToPlayerConverter.h">
       <Filter>Arquivos de Cabeçalho</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\CartaToCardConverter.h">
+      <Filter>Arquivos de Cabeçalho</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\BaseException.h">
+      <Filter>Arquivos de Origem\Interface\Common\Exception</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\CommonException.h">
+      <Filter>Arquivos de Origem\Interface\Common\Exception</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

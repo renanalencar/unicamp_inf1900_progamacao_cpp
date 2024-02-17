@@ -60,4 +60,9 @@ std::string Jogador::getNome() const
     return nome;
 }
 
+std::vector<Carta> Jogador::getMao() const
+{
+    return mao;
+}
+
 // Adicione mais métodos conforme necessário para a lógica do jogo

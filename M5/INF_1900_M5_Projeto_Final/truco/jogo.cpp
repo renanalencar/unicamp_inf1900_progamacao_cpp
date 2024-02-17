@@ -13,6 +13,8 @@ Jogo::Jogo() : baralho(), rodadaAtual(0), pontosJogador1(0), pontosJogador2(0) {
 	// Adicione os jogadores ao jogo (aqui assumimos dois jogadores)
 	jogadores.emplace_back("Jogador 1");
 	jogadores.emplace_back("Jogador 2");
+	jogadores.emplace_back("Jogador 3");
+	jogadores.emplace_back("Jogador 4");
 }
 
 void Jogo::iniciarJogo() {
@@ -35,8 +37,11 @@ void Jogo::jogarRodada() {
 		jogador.exibirCartas();
 	}
 
+	Carta _manilha = baralho.distribuirCarta();
+	manilha = std::make_shared<Carta>(_manilha);
+
 	// Lógica da rodada (aqui você pode adicionar a lógica específica do truco)
-	std::vector<Carta> cartasJogadas;
+	cartasJogadas.clear();
 
 	// Cada jogador faz um lance (simplificado para escolher a primeira carta)
 	for (Jogador& jogador : jogadores) {
@@ -69,6 +74,26 @@ void Jogo::jogarRodada() {
 
 	// Incrementar o número da rodada
 	rodadaAtual++;
+}
+
+int Jogo::getRodadaAtual()
+{
+	return rodadaAtual;
+}
+
+std::shared_ptr<Carta> Jogo::getManilha()
+{
+	return manilha;
+}
+
+std::vector<Jogador> Jogo::getJogadores()
+{
+	return jogadores;
+}
+
+std::vector<Carta> Jogo::getCartasJogadas()
+{
+	return cartasJogadas;
 }
 
 // Adicione mais métodos conforme necessário para a lógica do jogo

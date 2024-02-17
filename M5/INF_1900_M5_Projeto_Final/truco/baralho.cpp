@@ -14,6 +14,12 @@
 Baralho::Baralho() {
 	// Inicializa o baralho com cartas
 	for (int valor = 1; valor <= 12; ++valor) {
+
+		//cartas removidas do Truco Paulista
+		if (valor >= 8 && valor <= 10) {
+			continue;
+		}
+
 		for (const std::string& naipe : naipes) {
 			cartas.emplace_back(valor, naipe);
 		}

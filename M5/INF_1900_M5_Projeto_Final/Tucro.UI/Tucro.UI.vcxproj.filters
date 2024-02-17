@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\src">
+      <UniqueIdentifier>{0fc51126-26e6-45ad-928b-98706f510ba5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\Common">
+      <UniqueIdentifier>{cc48a6c9-6ba5-4d95-be81-3d4008e363f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\Common\Utils">
+      <UniqueIdentifier>{3a8363d8-85c6-45ee-b06c-024b4e677c2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\Common\AppMFC">
+      <UniqueIdentifier>{b82c434e-0426-4fd4-b885-eaec36970e95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\CartaModel">
+      <UniqueIdentifier>{f93d4a3e-57a5-4f44-a9b5-2e2953e38c95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\MainPage">
+      <UniqueIdentifier>{1166cfa7-a671-4e61-ac4b-173bb5de8dd6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\MainPage\ViewModel">
+      <UniqueIdentifier>{867c0a00-1f09-48ce-8412-939349c684c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\MainPage\Views">
+      <UniqueIdentifier>{8d2c6e6b-c353-4280-86af-6d27550e23b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\CartaModel\View">
+      <UniqueIdentifier>{db671bb4-53b4-444f-a240-04d8084cc8eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\CartaModel\ViewModel">
+      <UniqueIdentifier>{0b918c9c-439d-4241-acf8-ae960e945693}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\Common\MVVM">
+      <UniqueIdentifier>{24c50f52-fa3b-4a6c-b613-080b683d6b51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\Common\Constants">
+      <UniqueIdentifier>{c0fb4680-5049-4538-b0a8-42e35d6eac8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\CartaModel\Enums">
+      <UniqueIdentifier>{9d68ba4d-97fd-4284-bcd7-7ef9b64c7e97}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\Common\Controls">
+      <UniqueIdentifier>{57cea965-be02-4773-a92f-ce7ea5e1fcbd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\Common\Controls\CustomStaticComponent">
+      <UniqueIdentifier>{aae67cf7-ab55-42b1-a479-82f8db76e9e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\Common\Controls\Buttons">
+      <UniqueIdentifier>{8d9a4315-fc0d-407f-8189-675e7cb6976f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\Common\Controls\Dialogs">
+      <UniqueIdentifier>{0f9e330b-addf-4643-ad65-cb0450dbdca9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\Common\Controls\Dialogs\View">
+      <UniqueIdentifier>{d44be185-89d3-43eb-92b4-3471bf71d715}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\Common\Controls\Dialogs\ViewModel">
+      <UniqueIdentifier>{75b12298-cb06-4813-b300-b543116fb477}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\PlayerModel">
+      <UniqueIdentifier>{4eb543fb-e0b4-40d6-a2c2-ecc69a9ac6ce}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AssetsConstants.h">
+      <Filter>Source Files\src\Common\Constants</Filter>
+    </ClInclude>
+    <ClInclude Include="PathUtils.h">
+      <Filter>Source Files\src\Common\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="MainWindow.h">
+      <Filter>Source Files\src\MainPage\Views</Filter>
+    </ClInclude>
+    <ClInclude Include="ApplicationMFC.h">
+      <Filter>Source Files\src\Common\AppMFC</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureFactory.h">
+      <Filter>Source Files\src\Common\Constants</Filter>
+    </ClInclude>
+    <ClInclude Include="Card.h">
+      <Filter>Source Files\src\CartaModel\View</Filter>
+    </ClInclude>
+    <ClInclude Include="CardViewModel.h">
+      <Filter>Source Files\src\CartaModel\ViewModel</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseView.h">
+      <Filter>Source Files\src\Common\MVVM</Filter>
+    </ClInclude>
+    <ClInclude Include="Drawable.h">
+      <Filter>Source Files\src\Common\AppMFC</Filter>
+    </ClInclude>
+    <ClInclude Include="CustomLabel.h">
+      <Filter>Source Files\src\Common\Controls\CustomStaticComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="CardValues.h">
+      <Filter>Source Files\src\CartaModel\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="Naipe.h">
+      <Filter>Source Files\src\CartaModel\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog.h">
+      <Filter>Source Files\src\Common\Controls\Dialogs\View</Filter>
+    </ClInclude>
+    <ClInclude Include="DialogViewModel.h">
+      <Filter>Source Files\src\Common\Controls\Dialogs\ViewModel</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawArea.h">
+      <Filter>Source Files\src\Common\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseViewModel.h">
+      <Filter>Source Files\src\Common\MVVM</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseButton.h">
+      <Filter>Source Files\src\Common\Controls\Buttons</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseControl.h">
+      <Filter>Source Files\src\Common\AppMFC</Filter>
+    </ClInclude>
+    <ClInclude Include="TypeButtons.h">
+      <Filter>Source Files\src\Common\Constants</Filter>
+    </ClInclude>
+    <ClInclude Include="ButtonFactory.h">
+      <Filter>Source Files\src\Common\Controls\Buttons</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MainWindow.cpp">
+      <Filter>Source Files\src\MainPage\Views</Filter>
+    </ClCompile>
+    <ClCompile Include="PathUtils.cpp">
+      <Filter>Source Files\src\Common\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="ApplicationMFC.cpp">
+      <Filter>Source Files\src\Common\AppMFC</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureFactory.cpp">
+      <Filter>Source Files\src\Common\Constants</Filter>
+    </ClCompile>
+    <ClCompile Include="Card.cpp">
+      <Filter>Source Files\src\CartaModel\View</Filter>
+    </ClCompile>
+    <ClCompile Include="CardViewModel.cpp">
+      <Filter>Source Files\src\CartaModel\ViewModel</Filter>
+    </ClCompile>
+    <ClCompile Include="Drawable.cpp">
+      <Filter>Source Files\src\Common\AppMFC</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomLabel.cpp">
+      <Filter>Source Files\src\Common\Controls\CustomStaticComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog.cpp">
+      <Filter>Source Files\src\Common\Controls\Dialogs\View</Filter>
+    </ClCompile>
+    <ClCompile Include="DialogViewModel.cpp">
+      <Filter>Source Files\src\Common\Controls\Dialogs\ViewModel</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseButton.cpp">
+      <Filter>Source Files\src\Common\Controls\Buttons</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseControl.cpp">
+      <Filter>Source Files\src\Common\AppMFC</Filter>
+    </ClCompile>
+    <ClCompile Include="ButtonFactory.cpp">
+      <Filter>Source Files\src\Common\Controls\Buttons</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="assests\paus.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="assests\paus.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

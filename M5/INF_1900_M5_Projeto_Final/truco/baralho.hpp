@@ -26,6 +26,6 @@ public:
 private:
 	std::vector<Carta> cartas;
 	int indiceCartaAtual;
-	const std::vector<std::string> naipes = { "Copas", "Espadas", "Ouros", "Paus" };
+	const std::vector<std::string> naipes = { COPAS, ESPADAS, OUROS, PAUS };
 };
 

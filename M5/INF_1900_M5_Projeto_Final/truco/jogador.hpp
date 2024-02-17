@@ -30,6 +30,7 @@ public:
     std::string getNome() const;
 
     // Adicione mais métodos conforme necessário para a lógica do jogo
+    std::vector<Carta> getMao() const;
 
 private:
     std::string nome;
