@@ -30,4 +30,8 @@ namespace ui {
 	{
 		return m_jogo->getManilha();
 	}
+	std::vector<Carta> MainWindowsViewModel::getCartasJogadas()
+	{
+		return m_jogo->getCartasJogadas();
+	}
 }

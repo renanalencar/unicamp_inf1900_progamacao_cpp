@@ -41,7 +41,7 @@ void Jogo::jogarRodada() {
 	manilha = std::make_shared<Carta>(_manilha);
 
 	// Lógica da rodada (aqui você pode adicionar a lógica específica do truco)
-	std::vector<Carta> cartasJogadas;
+	cartasJogadas.clear();
 
 	// Cada jogador faz um lance (simplificado para escolher a primeira carta)
 	for (Jogador& jogador : jogadores) {
@@ -89,6 +89,11 @@ std::shared_ptr<Carta> Jogo::getManilha()
 std::vector<Jogador> Jogo::getJogadores()
 {
 	return jogadores;
+}
+
+std::vector<Carta> Jogo::getCartasJogadas()
+{
+	return cartasJogadas;
 }
 
 // Adicione mais métodos conforme necessário para a lógica do jogo

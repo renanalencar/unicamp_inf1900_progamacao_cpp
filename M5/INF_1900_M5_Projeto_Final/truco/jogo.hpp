@@ -27,12 +27,15 @@ public:
 	int getRodadaAtual();
 	std::shared_ptr<Carta> getManilha();
 	std::vector<Jogador> getJogadores();
+	std::vector<Carta> getCartasJogadas();
 
 private:
 	Baralho baralho;
+
 	std::vector<Jogador> jogadores;	
-	
+	std::vector<Carta> cartasJogadas;
 	std::shared_ptr<Carta> manilha;
+	
 	int rodadaAtual;
 	int pontosJogador1;
 	int pontosJogador2;

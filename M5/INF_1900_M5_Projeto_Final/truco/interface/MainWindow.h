@@ -15,7 +15,8 @@ namespace ui {
 		std::shared_ptr<CStatic> m_texturaFundo;
 		std::unique_ptr<CustomLabel> m_panelRodada;
 		std::vector<std::shared_ptr<Player>> m_players;		
-		std::shared_ptr<Card> m_manilha;
+		std::vector<std::shared_ptr<Card>> m_cartasJogadas;
+		std::shared_ptr<Card> m_manilha;		 
 
 		std::shared_ptr<Dialog> m_dialog;
 		std::shared_ptr<DialogBuilder> m_dialog_builder;
@@ -26,6 +27,7 @@ namespace ui {
 		void updateRodada();
 		void updateManilha();
 		void updateJogadores();
+		void updateCartasJogadas();
 
 	public:
 		MainWindow();

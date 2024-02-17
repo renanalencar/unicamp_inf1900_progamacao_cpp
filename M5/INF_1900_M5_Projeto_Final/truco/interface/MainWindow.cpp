@@ -107,6 +107,34 @@ namespace ui {
 
 	}
 
+	void MainWindow::updateCartasJogadas()
+	{
+		auto cartasJogadas = m_pViewModel->getCartasJogadas();
+
+		int index = 0;
+		m_cartasJogadas.clear();
+		for (auto& carta : cartasJogadas) {
+			std::shared_ptr<Card> card = CartaToCardConverter::converter(&carta);
+			card->setParent(this);
+			card->draw();
+
+			switch (index)
+			{
+			case 0:
+				card->move(122, MAIN_WINDOW_HEIGHT - (PLAY_HEIGHT + CARD_HEIGHT));
+				break;
+			case 1:
+				card->move(10, MAIN_WINDOW_HEIGHT / 2);
+				break;
+
+			default:
+				break;
+			}
+			m_cartasJogadas.push_back(card);
+			index++;
+		}
+	}
+
 	void MainWindow::OnButtonMsgClick()
 	{
 		
@@ -131,7 +159,8 @@ namespace ui {
 	{		
 		//updateRodada();
 		updateJogadores();
-		updateManilha();		
+		updateManilha();
+		updateCartasJogadas();
 		
 	}
 }
