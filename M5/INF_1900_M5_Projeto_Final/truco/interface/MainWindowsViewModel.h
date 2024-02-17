@@ -19,5 +19,6 @@ namespace ui {
 		void jogarRodada();
 		int getRodada();
 		std::vector<Jogador> getJogadores();
+		std::shared_ptr<Carta> getManilha();
 	};
 }

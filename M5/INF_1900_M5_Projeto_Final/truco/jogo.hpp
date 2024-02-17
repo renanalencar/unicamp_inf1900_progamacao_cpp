@@ -25,11 +25,14 @@ public:
 
 	// Adicione mais métodos conforme necessário para a lógica do jogo
 	int getRodadaAtual();
+	std::shared_ptr<Carta> getManilha();
 	std::vector<Jogador> getJogadores();
 
 private:
 	Baralho baralho;
 	std::vector<Jogador> jogadores;	
+	
+	std::shared_ptr<Carta> manilha;
 	int rodadaAtual;
 	int pontosJogador1;
 	int pontosJogador2;

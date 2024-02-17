@@ -37,6 +37,9 @@ void Jogo::jogarRodada() {
 		jogador.exibirCartas();
 	}
 
+	Carta _manilha = baralho.distribuirCarta();
+	manilha = std::make_shared<Carta>(_manilha);
+
 	// Lógica da rodada (aqui você pode adicionar a lógica específica do truco)
 	std::vector<Carta> cartasJogadas;
 
@@ -76,6 +79,11 @@ void Jogo::jogarRodada() {
 int Jogo::getRodadaAtual()
 {
 	return rodadaAtual;
+}
+
+std::shared_ptr<Carta> Jogo::getManilha()
+{
+	return manilha;
 }
 
 std::vector<Jogador> Jogo::getJogadores()

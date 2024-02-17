@@ -39,10 +39,13 @@ namespace ui {
 		m_dialog = m_dialog_builder->WithDialogType(DialogType::Info)
 			.WithMessage(L"Pronto para Jogar Truco?")
 			.WithPosition((MAIN_WINDOW_WIDTH - DIALOG_WIDTH)/2, (MAIN_WINDOW_HEIGHT - DIALOG_HEIGHT) / 2)
-			.WithOkButton([&]() {
-					m_dialog->setVisible(false); 								
+			.WithOkButton([&]() {												
 					m_pViewModel->iniciarJogo();					
 				})			
+			.WithAceitarButton([&]() {
+					m_pViewModel->jogarRodada();
+					m_dialog->setVisible(false);
+				})
 			.WithVisible(true).build();
 		
 		m_dialog->draw();
@@ -58,6 +61,17 @@ namespace ui {
 	void MainWindow::updateRodada()
 	{
 		std::wstring message = L"Rodada: " + std::to_wstring(m_pViewModel->getRodada());
+	}
+
+	void MainWindow::updateManilha()
+	{
+		Carta* carta = m_pViewModel->getManilha().get();
+		if (carta != nullptr) {
+			m_manilha = CartaToCardConverter::converter( m_pViewModel->getManilha().get());
+			m_manilha->setParent(this);
+			m_manilha->draw();
+			m_manilha->move((MAIN_WINDOW_WIDTH - PLAY_WIDTH) / 2, (MAIN_WINDOW_HEIGHT - PLAY_HEIGHT)/2);
+		}
 	}
 
 	void MainWindow::updateJogadores()
@@ -117,7 +131,7 @@ namespace ui {
 	{		
 		//updateRodada();
 		updateJogadores();
+		updateManilha();		
 		
-		//UpdateWindow();
 	}
 }

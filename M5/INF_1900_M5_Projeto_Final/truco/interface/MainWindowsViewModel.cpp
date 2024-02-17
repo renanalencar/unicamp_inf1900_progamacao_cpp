@@ -16,6 +16,7 @@ namespace ui {
 	void MainWindowsViewModel::jogarRodada()
 	{
 		m_jogo->jogarRodada();
+		m_pView->update();
 	}
 	int MainWindowsViewModel::getRodada()
 	{
@@ -24,5 +25,9 @@ namespace ui {
 	std::vector<Jogador> MainWindowsViewModel::getJogadores()
 	{
 		return m_jogo->getJogadores();
+	}
+	std::shared_ptr<Carta> MainWindowsViewModel::getManilha()
+	{
+		return m_jogo->getManilha();
 	}
 }
