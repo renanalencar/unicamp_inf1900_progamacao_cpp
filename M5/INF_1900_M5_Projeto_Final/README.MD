@@ -11,6 +11,9 @@
 
 [MIT](https://choosealicense.com/licenses/mit/)
 
+## Observações
+Para executar a aplicação é necessário modificar a costante BASE_PATH = <SEU DIRETORIO DE PROJETO/unicamp_inf1900_progamacao_cpp/M5/INF_1900_M5_Projeto_Final/truco  do arquivo PathUtils.h com o valor do caminho da pasta da aplicação em seu computador.
+
 ## Ramificação de Código
 
 Este projeto segue o Git Flow Workflow escrito por [Vicent Driessen](https://nvie.com/posts/a-successful-git-branching-model/). Se você não está familiarizado com esse fluxo, eu recomendo fortemente que leia o artigo original e o tutorial [Atlassian Git Flow Workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow).
