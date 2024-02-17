@@ -52,7 +52,7 @@ namespace ui {
 		m_message = std::make_unique<CustomLabel>();
 		m_message->Create(nullptr, WS_CHILD | WS_VISIBLE, CRect(190, 10, 590, 100), pCanvas);
 		m_message->setTransparent(true);
-		m_message->setForegroundColor(RGB(255, 0, 0));
+		m_message->setForegroundColor(RGB(255, 255, 255));
 		//m_message->SetWindowTextW(message.c_str());
 		m_message->setText(message);
 		m_message->setFontSize(22);

@@ -20,6 +20,7 @@ namespace ui {
 
 		std::shared_ptr<Dialog> m_dialog;
 		std::shared_ptr<DialogBuilder> m_dialog_builder;
+		CButton nextButton;
 
 		void initComponentes();
 		void initTexturas();
@@ -33,7 +34,7 @@ namespace ui {
 		MainWindow();
 		virtual ~MainWindow();
 
-		afx_msg void OnButtonMsgClick();
+		afx_msg void OnButtonNextClick();
 		afx_msg void OnButtonMsgClick2();
 		void OnLButtonDown(UINT nFlags, CPoint point);
 

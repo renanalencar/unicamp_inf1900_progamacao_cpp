@@ -3,10 +3,10 @@
 #include "Player.h"
 
 namespace ui {
+#define ID_NEXT_BUTTON 2
 
 	BEGIN_MESSAGE_MAP(MainWindow, CFrameWnd)
-		ON_COMMAND(2, OnButtonMsgClick)
-		ON_COMMAND(256, OnButtonMsgClick2)
+		ON_COMMAND(ID_NEXT_BUTTON, OnButtonNextClick)
 		ON_WM_LBUTTONDOWN()
 	END_MESSAGE_MAP()
 
@@ -37,25 +37,26 @@ namespace ui {
 		//Dialog
 		m_dialog_builder = std::make_shared<DialogBuilder>(this);
 		m_dialog = m_dialog_builder->WithDialogType(DialogType::Info)
-			.WithMessage(L"Pronto para Jogar Truco?")
+			.WithMessage(L"Iniciar jogo?")
 			.WithPosition((MAIN_WINDOW_WIDTH - DIALOG_WIDTH)/2, (MAIN_WINDOW_HEIGHT - DIALOG_HEIGHT) / 2)
-			.WithOkButton([&]() {												
-					m_pViewModel->iniciarJogo();					
-				})			
-			.WithAceitarButton([&]() {
-					m_pViewModel->jogarRodada();
+			.WithOkButton([&]() {
 					m_dialog->setVisible(false);
+					m_pViewModel->iniciarJogo();					
 				})
 			.WithVisible(true).build();
-		
+				int x_button = MAIN_WINDOW_WIDTH - CARD_WIDTH*3;
+				int y_button = MAIN_WINDOW_HEIGHT - CARD_HEIGHT;
+
+		nextButton.Create(_T("Próxima rodada"), WS_CHILD | WS_VISIBLE, CRect(x_button, y_button, x_button + 150, y_button + 50), this, ID_NEXT_BUTTON);
 		m_dialog->draw();
+
 	}
 
 	void MainWindow::initTexturas()
 	{		
 		m_texturaFundo = std::make_shared<CStatic>();
 		m_texturaFundo->Create(NULL, WS_CHILD | WS_VISIBLE | SS_BITMAP, CRect(0, 0, MAIN_WINDOW_WIDTH, MAIN_WINDOW_HEIGHT), this);		
-		PathUtils::loadImage(IMG_BACKGROUND, m_texturaFundo);		
+		PathUtils::loadImage(IMG_BACKGROUND, m_texturaFundo);
 	}
 
 	void MainWindow::updateRodada()
@@ -145,9 +146,10 @@ namespace ui {
 		}
 	}
 
-	void MainWindow::OnButtonMsgClick()
+	void MainWindow::OnButtonNextClick()
 	{
-		
+		if (!m_dialog->isVisible())
+			m_pViewModel->jogarRodada();
 	}
 
 	void MainWindow::OnButtonMsgClick2()
