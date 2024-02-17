@@ -125,16 +125,16 @@ namespace ui {
 			switch (index)
 			{
 			case 0:
-				card->move(MAIN_WINDOW_WIDTH / 2, MAIN_WINDOW_HEIGHT - (PLAY_HEIGHT + CARD_HEIGHT));
+				card->move((MAIN_WINDOW_WIDTH - CARD_WIDTH - 80) / 2, MAIN_WINDOW_HEIGHT - PLAY_HEIGHT - CARD_HEIGHT*2.5);
 				break;
 			case 1:
-				card->move(10, MAIN_WINDOW_HEIGHT / 2);
+				card->move(CARD_WIDTH*3.5, (MAIN_WINDOW_HEIGHT - CARD_HEIGHT - PLAY_HEIGHT) / 2);
 				break;
 			case 2:
-				card->move(10, MAIN_WINDOW_HEIGHT / 2);
+				card->move((MAIN_WINDOW_WIDTH - CARD_WIDTH - 80) / 2, PLAY_HEIGHT + CARD_HEIGHT/3);
 				break;
 			case 3:
-				card->move(10, MAIN_WINDOW_HEIGHT / 2);
+				card->move(MAIN_WINDOW_WIDTH - CARD_WIDTH * 5.4, (MAIN_WINDOW_HEIGHT - CARD_HEIGHT - PLAY_HEIGHT) / 2);
 				break;
 
 			default:
