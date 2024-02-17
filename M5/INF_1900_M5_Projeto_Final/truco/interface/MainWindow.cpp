@@ -14,7 +14,7 @@ namespace ui {
 	{		
 		m_pViewModel = std::make_unique<MainWindowsViewModel>(this);
 		Create(NULL, L"Truco", WS_OVERLAPPEDWINDOW, CRect(0, 0, MAIN_WINDOW_WIDTH, MAIN_WINDOW_HEIGHT));
-		//initTexturas();
+		initTexturas();
 		initComponentes();
 	}
 
@@ -70,7 +70,7 @@ namespace ui {
 			m_manilha = CartaToCardConverter::converter( m_pViewModel->getManilha().get());
 			m_manilha->setParent(this);
 			m_manilha->draw();
-			m_manilha->move((MAIN_WINDOW_WIDTH - PLAY_WIDTH) / 2, (MAIN_WINDOW_HEIGHT - PLAY_HEIGHT)/2);
+			m_manilha->move(CARD_WIDTH / 2, MAIN_WINDOW_HEIGHT - PLAY_HEIGHT - CARD_HEIGHT / 2);
 		}
 	}
 
@@ -85,16 +85,20 @@ namespace ui {
 			std::shared_ptr<Player> player = JogadorToPlayerConverter::converter(&jogador);
 			player->setParent(this);
 
-
 			switch (index)
 			{
 				case 0: 
-					player->move((MAIN_WINDOW_WIDTH - PLAY_WIDTH) / 2, MAIN_WINDOW_HEIGHT - (PLAY_HEIGHT + CARD_HEIGHT));
+					player->move((MAIN_WINDOW_WIDTH - PLAY_WIDTH) / 2, MAIN_WINDOW_HEIGHT - PLAY_HEIGHT - CARD_HEIGHT/2);
 					break;
 				case 1:
-					player->move(10, MAIN_WINDOW_HEIGHT/ 2);
+					player->move(CARD_WIDTH / 2, (MAIN_WINDOW_HEIGHT - CARD_HEIGHT - PLAY_HEIGHT) / 2);
 					break;
-
+				case 2:
+					player->move((MAIN_WINDOW_WIDTH - PLAY_WIDTH) / 2, PLAY_HEIGHT - CARD_HEIGHT);
+					break;
+				case 3:
+					player->move(MAIN_WINDOW_WIDTH - (CARD_WIDTH/2 + PLAY_WIDTH), (MAIN_WINDOW_HEIGHT - CARD_HEIGHT - PLAY_HEIGHT) / 2);
+					break;
 				default:
 					break;
 			}
@@ -121,9 +125,15 @@ namespace ui {
 			switch (index)
 			{
 			case 0:
-				card->move(122, MAIN_WINDOW_HEIGHT - (PLAY_HEIGHT + CARD_HEIGHT));
+				card->move(MAIN_WINDOW_WIDTH / 2, MAIN_WINDOW_HEIGHT - (PLAY_HEIGHT + CARD_HEIGHT));
 				break;
 			case 1:
+				card->move(10, MAIN_WINDOW_HEIGHT / 2);
+				break;
+			case 2:
+				card->move(10, MAIN_WINDOW_HEIGHT / 2);
+				break;
+			case 3:
 				card->move(10, MAIN_WINDOW_HEIGHT / 2);
 				break;
 
